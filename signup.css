@@ -1,0 +1,195 @@
+.signupp {
+    background-color: #f2f2f2;
+}
+
+
+.register {
+    margin-bottom: 3em;
+    margin-top: 3em;
+    font-family: Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto, sans-serif;;
+    background-color: #fff;
+    width: 40%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+.register1 {
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+}
+
+.heading {
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+.work {
+    font-size: 32px;
+    text-indent: 10px;
+    width: fit-content;
+    border-left: 8px solid #0CAFFF;
+}
+.starthere{
+font-size: 22px;
+}
+.required{
+    color: red;
+    font-weight: bolder;
+}
+.some{
+    color:#0047AB;
+    font-weight: bold;
+}
+input[type="radio"]{
+    zoom: 1.5;
+    outline: none;
+}
+.detailing{
+    width: 100%;
+    line-height: 1.8;
+    font-size: 22px;
+}
+input[type="text"]{
+    width: 70%;
+    padding: 12px;
+    border: 1PX solid brown;
+    border-radius: 12px;
+    outline: none;
+}
+input[type="password"]{
+    width: 70%;
+    padding: 12px;
+    border-radius: 12px;
+    outline: none;
+    border: 1PX solid brown;
+
+}
+select{
+    width: 73%;
+    padding: 12px;
+    border-radius: 12px;
+    outline: none;
+    border: 1PX solid brown;
+
+}
+.correct{
+    text-align: center;
+    color:green;
+    font-weight: bolder;
+}
+.null{
+    color: red;
+    text-align: center;
+    font-weight: bolder;
+}
+
+option{
+    width: 100%;
+    font-size: 19px;
+    border: none;
+    border-radius: 12px;
+}
+.ex{
+    color: #6F00FF;
+}
+input[type="text"]:hover,:focus{
+    border:3px #6F00FF groove;   
+}
+.detailing > label{
+    font-weight: bolder;  
+} 
+input[type="submit"]{
+    word-wrap: break-word;
+    width: 60%;
+    padding: 13px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 12px;
+    outline: none;
+    background-color: #0000FF;
+}
+.submit{
+    margin-left: auto;
+    margin-right: auto;
+}
+input[type="submit"]:hover,:focus{
+    background-color: #002D62;
+}
+.haveac{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: none;
+}
+.have{
+    color: #2a2a2a;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.have:hover,:focus{
+    border: none;
+    color: blue;
+    background: none;
+    outline: none;
+}
+@media screen and (max-width:800px){
+    .heading{
+        line-height: 1.6;
+        font-size: 16px;
+    }
+    .register{
+        width: 100%;
+    }
+}
+@media screen and (max-width:400px){
+    .work{
+        font-size: 22px;
+        border-left:8px solid blue;
+    }
+    .starthere{
+        font-size: 18px;
+    }
+    input[type="radio"]{
+        zoom: 1;
+    }
+    .detailing{
+        font-size: 19px;
+    }
+    input[type="text"]{
+        width: 90%;
+        padding: 7px;
+    }
+    input[type="password"]{
+        width: 90%;
+        padding: 7px;
+    }
+    select{
+        width: 95%;
+        padding: 7px;
+        border: 1px solid black;
+    }
+    option{
+        font-size: 16px;
+    }
+    input[type="submit"]{
+        width: 50%;
+        padding: 7px;
+    }
+    .have{
+        font-size: 18px;
+    }
+
+    
+
+}

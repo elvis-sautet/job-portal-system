@@ -1,0 +1,286 @@
+body {
+    margin: 0px;
+}
+
+.social {
+    position: relative;
+    top: 0px;
+    width: 100%;
+}
+
+.icons {
+  display: flex;
+    flex-direction: row;
+    padding: 3px;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 15px;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    text-decoration: none;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+
+/*the navigation*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+#credentials{
+  position: sticky;
+  top: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom,#eee 0%,#d4d4d4 100%);
+  background-repeat: repeat-x;
+}
+.dropdown-menu{
+  margin-right: auto;
+  margin-left: auto;
+    margin-top: .6em;
+    background-color: #fff;
+position: fixed;
+width: fit-content;
+height: fit-content;
+}
+.dropdown-item:active{
+  background: none;
+}
+.dropdown-menu .dropdown-item{
+  color: #000000;
+  font-size: 22px;
+  font-weight: bold;
+}
+.fa-file{
+  font-weight: bolder;
+  color: #0047AB;
+  font-size: 1.5em;
+}
+.fa-users-cog{
+  font-weight: bolder;
+  font-size: 1.5em;
+  color: #008E97;
+}
+.fa-sign-out-alt{
+  font-weight: bolder;
+  color: red;
+  font-size: 1.5em;
+}
+/*end of login click*/
+
+.link {
+  float: right;
+}
+
+
+.link  a {
+  font-size:22px ;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bolder;
+  margin-right: 1rem;
+  margin-top: 15px;
+  color: white;
+font-weight: bolder;
+}
+.link a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+#iconstart{
+  color: #002244;
+  position: relative;
+  font-size: 1.5em;
+
+}
+#iconstart2{
+  color: #0039a6;
+  font-size: 1.5em;
+}
+#logo{
+  float: left;
+  margin-left: 2rem;
+}
+.img{
+  border-radius: 12pc;
+  height: 4em;
+}
+#nav-header{
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 26px -50px 10px 50px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 26px -50px 10px 50px rgba(0,0,0,0);
+  border-bottom: 3px dotted black;
+  height: fit-content;
+  top: 0;
+  border-radius: 9px;
+  display: flex;
+  width: 100%;
+  flex-direction: column-reverse;
+  position: sticky;
+}
+@media screen and (max-width:900px){
+  .img{
+    margin-left: 0px;
+    height: 3em;
+    float: left;
+    margin-top: 4px;
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+  }
+  #logo{
+    margin: 0;
+  }
+  .link a{
+    margin-right: 0rem;
+    margin: 6px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    float: right;
+    font-size: 17px;
+    color: blue;
+    border-bottom: 1px solid black;
+  }
+  #iconstart{
+    font-size: 2em;
+    position: relative;
+  }
+  #iconstart1{
+    font-size: 2em;
+  }
+  #iconstart2{
+    font-size: 2em;
+  }
+  #nav-header{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  #credentials{
+    height: fit-content;
+    max-width: 100%;
+    margin-right: 0px;
+  }
+  .icons{
+    padding:3px;
+  }
+  .fa{
+    padding: 9px;
+    font-size: 13px;
+  }
+  .dropdown-menu .dropdown-item{
+    font-size: 16px;
+  }
+}
+/*the srarch bar*/
+.search{
+  text-align: center;
+}
+.searchbox{
+
+  margin: auto;
+  margin: 1px solid blue;
+  padding: 13px;
+  margin-bottom: 10px;
+  
+}
+input[type="text"]{
+  width: 40%;
+  color: black;
+  padding: 13px;
+  border-radius: 12px;
+  outline: none;
+  border-color: brown;
+  text-align: center;
+  -webkit-box-shadow: 7px 10px 5px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 10px 5px 1px rgba(0,0,0,0.75);
+box-shadow: 7px 10px 5px 1px rgba(0,0,0,0.75);
+}
+input[type="text"]:active,:focus{
+  border: none;
+  border-bottom: 5px solid;
+
+}
+.searching{
+  width: fit-content;
+  padding: 12 px;
+  margin-top: 1em;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 3px;
+  margin-top: 0px;
+}
+.searching:focus{
+  outline: none;
+}
+#searching{
+  font-size: 2em;
+  color: #120A8F;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:400px) {
+  .link a{
+    font-size: 12px;
+  }
+  #credentials{
+    background-color: whitesmoke;
+  }
+  .fa{
+    font-size: 7px;
+  }
+  .dropdown-menu .dropdown-item{
+    font-size: 10px;
+  }
+  #logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+}

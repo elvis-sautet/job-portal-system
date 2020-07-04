@@ -1,0 +1,225 @@
+.login{
+    background-color: #f2f2f2;
+}
+.loginform {  
+    margin-bottom: 10em;
+    margin-top: 3em;
+    margin-right: auto;
+    margin-left: auto;
+    width: 30%;
+    background-color: #fff;
+}
+
+.allt {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.signin {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+}
+label{
+    font-size: 22px;
+    cursor: default;
+    color: #4b4b4b;
+    font-family: Helvetica Neue,Helvetica,Arial,Liberation Sans,Roboto,Noto,sans-serif;;
+
+}
+.show{
+    color: #4b4b4b;
+    font-family: Helvetica Neue,Helvetica,Arial,Liberation Sans,Roboto,Noto,sans-serif;;
+    font-size: 19px;
+    padding-bottom: 12px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.otheroptions {
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.social {
+    color: #fff;
+    font-size: 22px;
+}
+
+.fb {
+    background-color: #3457D5;
+    border-radius: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    padding: 13px;
+    border: 1px solid;
+}
+
+.twitter {
+    background-color: #00416A;
+    border-radius: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    padding: 13px;
+    border: 1px solid;
+}
+
+.google {
+    background-color: #367588;
+    border-radius: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    padding: 13px;
+    border: 1px solid;
+}
+.fa-facebook-f{
+    color:#120A8F;
+    font-size: 2em;
+}
+.fa-twitter{
+    color:#fff;
+    font-size: 2em;
+}
+.fa-google{
+    color:#FF3800;
+    font-size: 2em;
+}
+
+input[type="text"] {
+    outline: none;
+    border: 1px solid #cccccc;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+input[type="password"] {
+    outline: none;
+    border: 1px solid #cccccc;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    outline: none;
+    border: #085ff7;
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0000FF;
+    font-size: 22px;
+}
+input[type="submit"]:hover{
+    background-color: #0CAFFF;
+}
+.gyeylne{
+    border-bottom: 3px solid grey;
+}
+input[type="checkbox"] {
+    zoom: 2;
+    padding: 10px;
+    margin: 5px 0px;
+}
+.getin{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+.txt6{
+    font-size: 23px;
+    font-family: Helvetica Neue,Helvetica,Arial,Liberation Sans,Roboto,Noto,sans-serif;;
+}
+.linksss:hover{
+    text-decoration: none;
+}
+.accountcreate{
+    display: flex;
+    flex-direction: column;
+text-align: center;
+}
+.accountc{
+    font-weight: bolder;
+    color: #002244;
+    padding: 4px;
+    font-size: 19px;
+}
+.accountc:hover{
+    text-decoration: none;
+}
+@media screen and (max-width:890px){
+    .loginform{
+        width: 50%;
+    }
+    .signin{
+        font-size: 18px;
+    }
+    label{
+        font-size: 15px;
+    }
+    .show{
+        font-size: 15px;
+        padding-bottom: 9px;
+    }
+    .social{
+        font-size: 15px;
+    }
+    .fb{
+        padding: 6px;
+    }
+    .google{
+        padding: 6px;
+    }
+    .twitter{
+        padding: 6px;
+    }
+    .fa-facebook-f{
+        font-size: 1.2em;
+    }
+    .fa-twitter{
+        font-size: 1.2em;
+
+    }
+    .fa-google{
+        font-size: 1.2em;
+    }
+    input[type="text"]{
+        padding: 3px;
+    }
+    input[type="password"]{
+        padding: 3px;
+    }
+    input[type="submit"]{
+        padding: 3px;
+        font-size: 16px;
+    }
+    input[type="checkbox"]{
+        padding: 3px;
+        zoom: 1;
+    }
+    .accountc{
+        font-size: 13px;
+    }
+    .txt6{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:370px){
+    .loginform{
+        width:100%;
+    }
+}

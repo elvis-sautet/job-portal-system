@@ -1,0 +1,104 @@
+/*the outside div*/
+.myfooter{
+    margin-top: 6px;
+    max-width: 100%;
+    border: 1px solid black;
+   background-color: black;
+   color: white;
+   overflow: hidden;
+   display: flex;
+    padding:14px;
+    clear:both;
+
+}
+.myfinalf{
+    margin: 0;
+}
+/*the links*/
+.home{
+    color: cornsilk;
+    font-size: 14px;
+    text-decoration: none;
+}
+.home::after{
+    content: "|";
+}
+
+.centerall{
+    flex-grow: 1;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}
+.phone a{
+    text-decoration: none;
+    color: red;
+}
+#icon1{
+    font-size: 22px;
+    color: rgb(3, 0, 202);  
+}
+#icon2{
+    font-size: 22px;
+    color: rgb(0, 255, 34);  
+}#icon3{
+    font-size: 22px;
+    color: tomato;  
+}
+.name{
+    font-size: 22px;
+}
+.first1{
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4em;
+
+}
+.third3{
+    padding: 12px;
+    width: 40%;
+    font-size: 17px;
+}
+
+.second2{
+    align-content: center;
+    justify-content: center;
+   padding-left: 13px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+@media screen and (max-width:400px){
+    .centerall{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .home{
+        color: cornsilk;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    .second2{
+        display: flex;
+        flex-direction: column;
+    }
+    .phone{
+        margin-left: 3em;
+        display: flex;
+    }
+    .one22{
+        margin-left: 3em;
+    }
+    .foooooter{
+        font-size: 15px;
+        margin-left: 3em;
+    }
+    .third3{
+        padding: 12px;
+        width: 100%;;
+        font-size: 17px;
+    }
+}
