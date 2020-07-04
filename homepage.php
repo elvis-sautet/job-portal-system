@@ -5,6 +5,7 @@ session_start();
 <html lang="en">
 
 <head>
+    <!--remember to include the sessions in this page-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
         integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 
