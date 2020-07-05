@@ -58,7 +58,6 @@ session_start();
                         id="iconstart" class="fas fa-user"></i>User</a>
             </li>
 
-            <li class="link"><a href="#"><i id="iconstart2" class="fas fa-share-square"></i> POST JOB</a></li>
         </ul>
     </div>
 

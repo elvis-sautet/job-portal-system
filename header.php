@@ -16,10 +16,9 @@
         <ul id="credentials">
             <li id="logo"><a href="frontpage.php"><img class="img" src="index images\mylogo for (2).PNG" alt=""></a>
             </li>
-            <li class="link"><a href="login.php"><i id="iconstart" class="fas fa-user"></i>LOGIN</a>
+            <li class="link"><a href="login.php"><i id="iconstart" class="fas fa-user"></i>USER LOGIN</a>
             </li>
-            <li class="link"><a href="signup.php"><i id="iconstart1" class="fas fa-user-plus"></i> SIGN UP</a></li>
-            <li class="link"><a href="#"><i id="iconstart2" class="fas fa-share-square"></i> Companies/employer</a></li>
+            <li class="link"><a href="companylogin.php"><i id="iconstart2" class="fas fa-share-square"></i> Companies Login</a></li>
         </ul>
     </div>
 </body>

@@ -18,15 +18,15 @@
     ?>
     <div class="loginform">
         <div class="allt">
-            <p class="signin">Welcome Back💯💯</p>
+            <p class="signin">Welcome back👌👌👌 </p>
             <div class="form">
-                <form method="post" action="includes/login.php">
-                    <label for="username">Enter Username</label> <br>
+                <form method="post" action="includes/companieslogin.php">
+                    <label for="username">Company Username</label> <br>
                     <input type="text" name="usernameemail"> <br>
                     <label for="myPassword">Enter password</label> <br>
                     <input type="password" name="Password1" id="pass"> <br>
                     <input onclick="showpass()" type="checkbox"><span class="show"> Show Password</span> <br>
-                    <input type="submit" name="login-submit" value="Sign In">
+                    <input type="submit" name="login" value="Sign In">
                 </form>
             </div>
             <br>
@@ -55,7 +55,7 @@
                     and <a href="termspolicy.php" class="linksss">Terms of Service</a> apply.</p>
             </div>
             <div class="accountcreate">
-                <a href="signup.php?welcome%register%here" style="color:#FF00FF;text-transform:capitalize;" class="accountc">Not a member?Create an account free</a>
+                <a href="companies_signup.php?welcome%register%here" style="color:#FF00FF;text-transform:capitalize;" class="accountc">Not a member? Create an account free👨‍💻👨‍💻</a>
                 <a href="#" class="accountc">Forgot Your Password?</a>
                 <a href="#" class="accountc">Help Center</a>
             </div>

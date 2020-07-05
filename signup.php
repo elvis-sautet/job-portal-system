@@ -20,7 +20,7 @@ $jobgiver="Recruiter";
     <div class="register">
         <div class="register1">
             <div class="heading">
-                <h2 class="work">Register to <?php echo $company ?></h2>
+                <h2 class="work" style="color:#002244;font-weight:bold;" >Register to <?php echo $company ?> Today to and get employed</h2>
                 <p class="ex"><?php echo $company?> Team is ready to help you with any questions or assistance. Our goal
                     is to solve all your questions and problems quickly and efficiently, and to help you become familiar
                     with
@@ -84,7 +84,7 @@ $jobgiver="Recruiter";
             </div>
             <br>
             <div class="haveac">
-                <a href="login.php?welcome" class="have">Have Account? Login Here</a>
+                <a href="login.php?welcome" class="have">Have Account? Login Here👉👉</a>
 
             </div>
         </div>

@@ -23,11 +23,10 @@ function showpass() {
         show.type = "password";
 
     }
-
-
 }
+
 //quering between the password and validating them.
-function check(){
+function check() {
     function checkPasswordMatch() {
         var password = $("#mypass").val();
         var confirmPassword = $("#my_pass").val();
