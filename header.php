@@ -19,7 +19,7 @@
             <li class="link"><a href="login.php"><i id="iconstart" class="fas fa-user"></i>LOGIN</a>
             </li>
             <li class="link"><a href="signup.php"><i id="iconstart1" class="fas fa-user-plus"></i> SIGN UP</a></li>
-            <li class="link"><a href="#"><i id="iconstart2" class="fas fa-share-square"></i> POST JOB</a></li>
+            <li class="link"><a href="#"><i id="iconstart2" class="fas fa-share-square"></i> Companies/employer</a></li>
         </ul>
     </div>
 </body>

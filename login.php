@@ -47,12 +47,12 @@
             </div>
             <br>
             <div class="getin">
-                <p class="txt6">By signing in to your account, you agree to Indeed's <a href="#" class="linksss">Terms
-                        of Service </a>and consent to our <a href="#" class="linksss">Cookie Policy</a> and <a
+                <p class="txt6">By signing in to your account, you agree to Indeed's <a href="termspolicy.php" class="linksss">Terms
+                        of Service </a>and consent to our <a href="termspolicy.php" class="linksss">Cookie Policy</a> and <a
                         href="https://policies.google.com/privacy?hl=en_US" class="linksss">Privacy Policy</a>.
                     This site is protected by reCAPTCHA and the Google <a
                         href="https://policies.google.com/privacy?hl=en_US" class="linksss">Privacy Policy</a>
-                    and <a href="#" class="linksss">Terms of Service</a> apply.</p>
+                    and <a href="termspolicy.php" class="linksss">Terms of Service</a> apply.</p>
             </div>
             <div class="accountcreate">
                 <a href="signup.php?welcome%register%here" class="accountc">Not a member? Create an account free</a>
