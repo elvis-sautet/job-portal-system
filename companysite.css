@@ -1,0 +1,23 @@
+body{
+    background-color: silver;
+    margin: 0px;
+}
+.welcome{
+    border-radius: 10pc;
+    width: fit-content;
+    background-color: white;
+    margin: auto;
+}
+.welcome-note{
+    margin-top: 1em;
+    font-size: 22px;
+    font-family:Helvetica Neue,Helvetica,Arial,Liberation Sans,Roboto,Noto,sans-serif;;
+    width: fit-content;
+    padding: 12px;
+    text-align: center;
+}
+.link{
+    color:#00416A ;
+    font-weight: bold;
+    text-transform: capitalize;
+}

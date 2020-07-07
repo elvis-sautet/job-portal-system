@@ -19,6 +19,7 @@
             <li class="link"><a href="login.php"><i id="iconstart" class="fas fa-user"></i>USER LOGIN</a>
             </li>
             <li class="link"><a href="companylogin.php"><i id="iconstart2" class="fas fa-share-square"></i> Companies Login</a></li>
+            <li class="link"><a href="companylogin.php"><i id="iconstart2" class="fas fa-info"></i>About</a></li>
         </ul>
     </div>
 </body>

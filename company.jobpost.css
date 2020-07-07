@@ -1,0 +1,82 @@
+body {
+    background-color: #f2f2f2;
+    margin: 0px;
+}
+
+.postjob {
+    margin: auto;
+    width: fit-content;
+    padding: 14px;
+    background-color: white;
+    border-radius: 12px;
+   margin-top: 3rem;
+}
+
+.thejob {
+    padding: 13px;
+    width: fit-content;
+    background-color: white;
+    padding: 13px;
+}
+
+label {
+    font-family: Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto, sans-serif;
+    ;
+    color: #4b4b4b;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    outline: none;
+    border: 1px solid #5F9EA0;
+    background-color: #fff;
+    width: 90%;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 12px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    outline: none;
+    border: #085ff7;
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0000FF;
+    font-size: 22px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0CAFFF;
+}
+
+@media screen and (max-width:800px) {
+    input[type="submit"] {
+        width: 60%;
+        padding: 12px;
+        color: #fff;
+        font-size: 15px;
+    }
+    input[type="text"] {
+        width: 60%;
+        padding: 6px;
+        font-size: 13px;
+        border-radius: 12px;
+    }
+    label{
+        font-size: 16px;
+    }
+    .postjob {
+        width: fit-content;
+        padding: 14px;
+        background-color: white;
+        margin-top: 2rem;
+       margin-left: 0px;
+    }
+    
+    
+}

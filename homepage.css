@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    background-color: silver;
 }
 
 .social {
@@ -124,7 +125,7 @@ font-weight: bolder;
 }
 
 #iconstart{
-  color: #002244;
+  color: #00BFFF;
   position: relative;
   font-size: 1.5em;
 

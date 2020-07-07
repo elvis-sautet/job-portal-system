@@ -1,0 +1,68 @@
+body{
+    background-color:silver;
+    margin: 0px;
+}
+.companyheader{
+    background-color: snow;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.header{
+    padding: 12px;
+}
+.logo{
+    border-radius: 10pc;
+    height: 4em;
+}
+.first{
+    padding-right: 13px;
+    float: right;
+    list-style-type: none;
+    font-weight: bolder;
+}
+.first .links{
+    font-size: 22px;
+    display: inline-block;
+    color:#002244 ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.logout{
+    background-color: #00308F;
+    color: white;
+    border-radius: 10pc;
+}
+.fa-user-alt{
+    color: #0000FF;
+    border-bottom: 3px solid black;
+}
+@media screen and (max-width:800px){
+    .header{
+        padding: 8px;
+    }
+    .logo{
+        height: 2em;
+    }
+    .first .links{
+        padding: 8px;
+        font-size: 13px;
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:387px){
+    .first .links{
+        width: 100%;
+    }
+    .first{
+        width: 50%;
+        
+    }
+    
+}

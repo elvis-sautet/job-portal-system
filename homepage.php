@@ -41,7 +41,7 @@ session_start();
             <a href="#" class="fa fa-instagram"></a>
         </div>
     </div>
-    <!-- the header bow for the home page after one log ins-->
+    <!-- the header for for the home page after one log ins-->
     <div id="nav-header">
         <ul id="credentials">
             <li id="logo"><a href="#"><img class="img" src="index images\mylogo for (2).PNG" alt=""></a>
@@ -56,6 +56,8 @@ session_start();
             </div>
             <li data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="link"><a href="#"><i
                         id="iconstart" class="fas fa-user"></i>User</a>
+            </li>
+            <li class="link"><a href="students.php"><i  id="iconstart2" class="fas fa-user-graduate"></i></i>Students</a>
             </li>
 
         </ul>
