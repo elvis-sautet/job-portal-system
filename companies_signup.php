@@ -29,6 +29,34 @@ include "header.php";
                 <span style="color:red" id="validating"></span> <br>
                 <input type="checkbox" style="zoom:1.5;" onclick="showpass()"><span style="color:brown;">Check
                     Password</span> <br> <br>
+                    <?php
+            $empty = 'fill up all the fields';
+            if(isset($_GET['error'])){
+                if($_GET['error']== "emptyfields"){
+                    echo '<p class = "null" style="color:red"> fill all the fields!</p>';
+                }elseif($_GET['error']== "details error"){
+                    echo '<p class = "null" style="color:red"> Fill the fields Correctly !<p>';
+                }elseif($_GET['error']== "invalidemail"){
+                    echo '<p class = "null" style="color:red"> incorrect email!</p>';
+                }elseif($_GET['error']== "invalidusername"){
+                    echo '<p class = "null" style="color:red"> please use a correct format username!</p>';
+                }elseif($_GET['error']== "invalidcompanyname"){
+                    echo '<p class = "null" style="color:red">Please use a correct company name!</p>';
+                }elseif($_GET['error']== "invalidlastname"){
+                    echo '<p class="null" style="color:red">Please use a correct Laststname!</p>';
+                }elseif($_GET['error']== "usernametaken"){
+                    echo '<p class="null" style="color:red"> please use another username, this is already taken!<span>';
+                }elseif($_GET['error']== "invalidaddress"){
+                    echo '<p class="null" style="color:red"> please use a correct address!<span>';
+                }
+            }
+        
+           
+            if(isset($_GET['signup'])){
+                if($_GET['signup']== "success")
+                echo '<p class = "correct" style="color:green"> Signup successful!</p>';
+            }
+            ?>
                 <div class="submit">
                     <input type="submit" name="register-company" value="Register">
                 </div>
