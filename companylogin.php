@@ -26,6 +26,19 @@
                     <label for="myPassword">Enter password</label> <br>
                     <input type="password" name="Password1" id="pass"> <br>
                     <input onclick="showpass()" type="checkbox"><span class="show"> Show Password</span> <br>
+                    <?php
+            
+            if(isset($_GET['error'])){
+                if($_GET['error']== "emptyfields"){
+                    echo '<p class = "null" style="color:red;"> fill all the fields!</p>';
+                }elseif($_GET['error']== "wrong-password"){
+                    echo '<p class = "null" style="color:red;"> Incorrect Password!<p>';
+                }elseif($_GET['error']== "no-usser"){
+                    echo '<p class = "null" style="color:red;"> Incorrect company_username & password!</p>';
+                }
+            }
+
+            ?>
                     <input type="submit" name="login" value="Sign In">
                 </form>
             </div>

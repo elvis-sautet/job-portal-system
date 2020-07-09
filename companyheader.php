@@ -17,17 +17,17 @@
 <body>
     <div class="companyheader">
         <div class="header">
-            <img class="logo" src="index images\mylogo for (2).PNG" alt="">
+           <a href="companysite.php"><img class="logo" src="index images\mylogo for (2).PNG" alt=""></a>
             <li class="first"><a class="links" href="#">
                     <form action="includes/logout.php" method="post">
                         <button class="logout">Logout</button>
                     </form>
                 </a></li>
             <li class="first"><a class="links" href="#"><i class="fas fa-user-alt"></i></a></li>
-            <li class="first"><a class="links" href="#">postjob</a></li>
+            <li class="first"><a class="links" href="company.jobpost.php">postjob</a></li>
             <li class="first"><a class="links" href="#">Reviews</a></li>         
         </div>
     </div>
-</body>
 
+</body>
 </html>

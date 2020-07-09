@@ -10,13 +10,15 @@ body {
     background-color: white;
     border-radius: 12px;
    margin-top: 3rem;
+   margin-bottom: 3rem;
+   padding-top: 6px;
+
 }
 
 .thejob {
     padding: 13px;
     width: fit-content;
     background-color: white;
-    padding: 13px;
 }
 
 label {
@@ -36,7 +38,18 @@ input[type="text"] {
     font-size: 22px;
     border-radius: 12px;
 }
-
+select{
+    outline: none;
+    border: 1px solid #5F9EA0;
+    background-color: #fff;
+    width: 90%;
+    padding: 13px;
+    font-size: 22px;
+    border-radius: 12px;
+}
+option{
+    font-size: 20px;
+}
 input[type="submit"] {
     cursor: pointer;
     outline: none;
@@ -76,6 +89,14 @@ input[type="submit"]:hover {
         background-color: white;
         margin-top: 2rem;
        margin-left: 0px;
+    }
+    select{
+        width: 60%;
+        padding: 8px;
+        border-radius: 12px;
+    }
+    option{
+        font-size: 13px;
     }
     
     

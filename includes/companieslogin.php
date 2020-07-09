@@ -23,6 +23,7 @@
                     session_start();           
                     $_SESSION['companyname']= $row['companyName'];
                     $_SESSION['email']= $row['email'];
+                    $_SESSION['id']=$row['id'];
                     header("location: ../companysite.php?login=success");
                     exit();
                 }else{

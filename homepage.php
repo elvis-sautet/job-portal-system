@@ -51,25 +51,26 @@ session_start();
                 <a class="dropdown-item" href="#"><i class="fas fa-file"></i> Resume upload</a>
                 <a class="dropdown-item" href="#"><i class="fas fa-users-cog"></i> settings</a>
                 <form action="includes/logout.php" method="POST">
-                    <button type="submit" name="logout"> LOGOUT</a></button>
+                    <button class="dropdown-item" id="logout" type="submit" name="logout"> LOGOUT</a></button>
                 </form>
             </div>
             <li data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="link"><a href="#"><i
                         id="iconstart" class="fas fa-user"></i>User</a>
             </li>
-            <li class="link"><a href="students.php"><i  id="iconstart2" class="fas fa-user-graduate"></i></i>Students</a>
+            <li class="link"><a href="students.php"><i id="iconstart2" class="fas fa-user-graduate"></i></i>Students</a>
             </li>
 
         </ul>
     </div>
 
-  
+
     <div class="search">
         <div class="searchbox">
             <form action="#" method="post">
 
-                <input type="text" name="searchjob" placeholder="search jobs" >
-               <button class="searching" type="submit" name="search-job"><i id="searching" class="fas fa-search" ></i></button> 
+                <input id="seachit" type="text" name="searchjob" placeholder="search jobs">
+                <button type="submit"  class="searching" name="search-job"><i id="searching"
+                        class="fas fa-search"></i></button>
             </form>
 
         </div>

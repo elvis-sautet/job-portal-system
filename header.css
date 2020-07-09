@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: lightgoldenrodyellow;
+  background-color:#002D72;
 }
 
 
@@ -31,29 +31,26 @@
   margin-right: 1rem;
   margin-top: 15px;
   color: white;
-  color: transparent;
-  background-image: linear-gradient(to left, violet, indigo, red, green, yellow, orange, red);
-  -webkit-background-clip: text;
+  
 }
 .link a:hover{
   color: black;
   text-decoration: none;
 }
-#iconstart{
-  color: blueviolet;
-  font-size: 2em;
-}
+
 #iconstart{
   color: #008200;
   position: relative;
+  font-size: 1.5em;
+
 }
-#iconstart1{
-  color: #33006F;
-  font-size: 2em;
+#iconstart3{
+  color: #E6E6FA;
+  font-size: 1.5em;
 }
 #iconstart2{
-  color: #191970;
-  font-size: 2em;
+  color: #800080;
+  font-size: 1.5em;
 }
 #logo{
   float: left;
@@ -61,7 +58,7 @@
 }
 .img{
   border-radius: 12pc;
-  height: fit-content;
+  height: 4em;
 }
 #nav-header{
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 26px -50px 10px 50px rgba(0,0,0,0); 
@@ -104,7 +101,7 @@ box-shadow: 0px 10px 13px -7px #000000, 26px -50px 10px 50px rgba(0,0,0,0);
     font-size: 2em;
     position: relative;
   }
-  #iconstart1{
+  #iconstart3{
     font-size: 2em;
   }
   #iconstart2{

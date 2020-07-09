@@ -19,13 +19,13 @@ if(isset($_POST['register-company'])){
     }elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)){
         header("Location: ../companies_signup.php?error=invalidemail&username1=".$username."&cname=".$companyname."&cAdress=".$adress);
         exit();
-    }elseif(!preg_match("/^[a-zA-Z0-9]*$/",$username)){
+    }elseif(!preg_match("/^[a-zA-Z0-9\s_-]*$/",$username)){
         header("Location: ../companies_signup.php?error=invalidusername&cname=".$companyname."&cAdress=".$adress."&email=".$email);
         exit();
-    }elseif(!preg_match("/^[a-zA-Z0-9]*$/",$companyname)){
+    }elseif(!preg_match("/^[a-zA-Z0-9\s_-]*$/",$companyname)){
         header("Location: ../companies_signup.php?error=invalidcompanyname&username1=".$username."&cAdress=".$adress."&email=".$email);
         exit();
-    }elseif(!preg_match("/^[a-zA-Z0-9]*$/",$adress)){
+    }elseif(!preg_match("/^[a-zA-Z0-9\s_-]*$/",$adress)){
         header("Location: ../companies_signup.php?error=invalidaddress&username1=".$username."&email=".$email."&cname=".$companyname);
         exit();
     }else{

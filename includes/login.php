@@ -25,7 +25,6 @@
                     $_SESSION['UserName']= $row['username'];
                     $_SESSION['LastName']= $row['lastname'];
                     $_SESSION['email']= $row['email'];
-
                     header("location: ../homepage.php?login=success");
                     exit();
 

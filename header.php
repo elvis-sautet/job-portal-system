@@ -16,10 +16,10 @@
         <ul id="credentials">
             <li id="logo"><a href="frontpage.php"><img class="img" src="index images\mylogo for (2).PNG" alt=""></a>
             </li>
-            <li class="link"><a href="login.php"><i id="iconstart" class="fas fa-user"></i>USER LOGIN</a>
+            <li class="link"><a href="login.php"><i id="iconstart" class="fas fa-user"></i> User Login</a>
             </li>
             <li class="link"><a href="companylogin.php"><i id="iconstart2" class="fas fa-share-square"></i> Companies Login</a></li>
-            <li class="link"><a href="companylogin.php"><i id="iconstart2" class="fas fa-info"></i>About</a></li>
+            <li class="link"><a href="companylogin.php"><i id="iconstart3" class="fas fa-info"></i> About</a></li>
         </ul>
     </div>
 </body>
