@@ -1,0 +1,82 @@
+body{
+    background-color: #f2f2f2;
+}
+.jobsheader {
+    margin-top: 5em;
+    max-width: 50%;
+    margin-left: 1em;
+    border-radius: 12px;
+    margin-bottom: 4em;
+  }
+  
+  .jobsin {
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto, sans-serif;
+    ;
+    background-color: white;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  .jobname {
+    color: brown;
+    font-weight: bolder;
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+  
+  #some {
+    text-transform: capitalize;
+  }
+  
+  .companyname {
+    margin-top: 0px;
+    color: #367588;
+    text-transform: capitalize;
+  }
+  
+  .jobsumarry {
+    border-top: 1px solid #CCCCFF;
+    color: #4e5559;
+    margin-top: 2em;
+    line-height: 1.6;
+    font-size: 17px;
+  }
+  
+  .goto {
+    text-decoration: none;
+  }
+  
+  .goto:hover {
+    text-decoration: none;
+  }
+  
+  .line {
+    border: 1px solid #CCCCFF;
+  }
+@media screen and (max-width:850px){
+    .jobsheader {
+        margin-top: .5em;
+        max-width: 100%;
+        margin-left: 6px;
+        margin-right: 6px;
+    
+        border-radius: 12px;
+    
+      }
+    
+      .jobsin {
+    
+        padding: 6px;
+        text-decoration: none;
+      }
+    
+      .jobname {
+        color: brown;
+        font-weight: bolder;
+        font-size: 13px;
+      }
+}

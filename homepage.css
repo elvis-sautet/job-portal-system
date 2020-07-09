@@ -1,4 +1,4 @@
-body {
+.jobbbbs {
   margin: 0px;
   background-color: #f2f2f2;
 }
@@ -69,26 +69,6 @@ body {
 
 }
 
-.dropdown-menu {
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: .6em;
-  background-color: #fff;
-  position: fixed;
-  width: fit-content;
-  height: fit-content;
-}
-
-.dropdown-item:active {
-  background: none;
-}
-
-.dropdown-menu .dropdown-item {
-  color: #000000;
-  font-size: 22px;
-  font-weight: bold;
-}
-
 .fa-file {
   font-weight: bolder;
   color: #0047AB;
@@ -144,6 +124,7 @@ body {
 }
 
 #logo {
+  margin-top: .7em;
   float: left;
   margin-left: 2rem;
 }
@@ -163,12 +144,13 @@ body {
   width: 100%;
   flex-direction: column-reverse;
   position: sticky;
-  background-color:#132257;
+  background-color: #132257;
 }
 
 /*the search bar*/
 .search {
   text-align: center;
+  
 }
 
 .searchbox {
@@ -176,7 +158,6 @@ body {
   margin: 1px solid blue;
   padding: 13px;
   margin-bottom: 10px;
-
 }
 
 #seachit {
@@ -211,10 +192,15 @@ body {
   font-size: 2em;
   color: #120A8F;
 }
-#logout{
-  background-color: cadetblue;
+#lnk{
+  padding: 12px;
+  margin-top: .9em;
+  margin-right: 2em;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  background-color: #002387;
 }
-
 @media screen and (max-width:900px) {
   .img {
     margin-left: 0px;
@@ -239,7 +225,7 @@ body {
     height: fit-content;
     float: right;
     font-size: 17px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
   }
 
   #iconstart {
@@ -277,18 +263,20 @@ body {
     font-size: 13px;
   }
 
-  .dropdown-menu .dropdown-item {
-    font-size: 16px;
-  }
-  .searchbox{
+ 
+
+  .searchbox {
     padding: 5px;
     margin: auto;
   }
-  #searchit{
+
+  #searchit {
     widows: 100%;
   }
+
   
 }
+
 
 
 @media screen and (max-width:400px) {
@@ -309,4 +297,5 @@ body {
     justify-content: center;
     align-content: center;
   }
+
 }

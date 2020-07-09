@@ -1,4 +1,5 @@
-
+<?php session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,20 +32,29 @@
 
 
 <body class="jobbbbs">
-<?php include 'homepageheader.php';
-?>
-    <div class="search">
-        <div class="searchbox">
-            <form action="#">
-
-                <input id="seachit" type="text" name="searchjob" placeholder="search jobs">
-                <button type="submit" class="searching" name="search-job"><i id="searching"
-                        class="fas fa-search"></i></button>
-            </form>
+    <div class="social">
+        <div class="icons">
+            <!-- Add font awesome icons -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
         </div>
     </div>
-    <?php include 'jobs.php';
-?>
-</body>
+    <!-- the header for for the home page after one log ins-->
+    <div id="nav-header">
+        <ul id="credentials">
+            <li id="logo"><a href="homepage.php"><img class="img" src="index images\mylogo for (2).PNG" alt=""></a>
+            </li>
+            <form action="includes/logout.php" method="POST">
+                <button class="link" id="lnk" type="submit">Logout</button>
+            </form>
+            <li class="link"><a href="#"><i id="iconstart" class="fas fa-user"></i> <?php echo $_SESSION['Firstname'] ?></a>
+            </li>
+            <li class="link"><a href="students.php"><i id="iconstart2" class="fas fa-user-graduate"></i></i>Students</a>
+            </li>
 
-</html>
+        </ul>
+    </div>
+</body>

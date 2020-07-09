@@ -15,12 +15,8 @@
             header("Location: ../company.jobpost.php?error=emptyfields&jobname=".$jobname."&location=".$joblocation."&overview=".$joboverview."&responsibilities=".$jobduties);
             exit();
         }
-        elseif(!preg_match("/^[a-zA-Z0-9\s_- +]*$/",$jobname)&& !preg_match("/^[a-zA-Z0-9\s_-]*$/",$joblocation)){
+        elseif(!preg_match("/^[a-zA-Z0-9\s_ '-' :{'+','()',':'}]*$/",$jobname)&& !preg_match("/^[a-zA-Z0-9\s_-]*$/",$joblocation)){
             header("Location: ../signup.php?error=details error");
-            exit();
-        }
-        elseif(!preg_match("/^[a-zA-Z0-9\s_-{'+',','}]*$/",$jobname)){
-            header("Location: ../company.jobpost.php?error=invalidjobname&location=".$joblocation."&overview=".$joboverview."&responsibilities=".$jobduties);
             exit();
         }
         elseif(!preg_match("/^[a-zA-Z0-9\s_-]*$/",$joblocation)){

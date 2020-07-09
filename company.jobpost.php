@@ -43,6 +43,7 @@
                     <option value="">--select--</option>
                     <option value="fulltime">Full Time</option>
                     <option value="parttime">Part Time</option>
+                    <option value="Intern & Graduate">Intern & Graduate</option>
                     <option value="fulltime,Part Time">Full Time, Part Time</option>
                     <option value="casual">Casual</option>
                     <option value="Contract">Contract</option>
