@@ -23,27 +23,16 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="pagination.css?v=<?php  echo time()  ?>">
     <link rel="stylesheet" href="homepage.css?v=<?php echo time()  ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
-
-
 <body class="jobbbbs">
-<?php include 'homepageheader.php';
-?>
-    <div class="search">
-        <div class="searchbox">
-            <form action="#">
-
-                <input id="seachit" type="text" name="searchjob" placeholder="search jobs">
-                <button type="submit" class="searching" name="search-job"><i id="searching"
-                        class="fas fa-search"></i></button>
-            </form>
-        </div>
-    </div>
     <?php include 'jobs.php';
+        ?>
+<?php
+include "myfooter.php";
 ?>
 </body>
 

@@ -17,12 +17,9 @@
   float: right;
 
 }
-#info{
-  float: left;
-  margin-left:17rem ;
-}
+
 .link  a {
-  font-size:22px ;
+  font-size:15px ;
   display: block;
   padding: 10px;
   text-align: center;
@@ -54,11 +51,12 @@
 }
 #logo{
   float: left;
-  margin-left: 2rem;
+  margin-left: .4rem;
 }
 .img{
+  padding-top: 3px;
   border-radius: 12pc;
-  height: 4em;
+  height: 3em;
 }
 #nav-header{
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 26px -50px 10px 50px rgba(0,0,0,0); 
@@ -93,19 +91,20 @@ box-shadow: 0px 10px 13px -7px #000000, 26px -50px 10px 50px rgba(0,0,0,0);
     flex-direction: column;
     height: fit-content;
     float: right;
-    font-size: 17px;
-    color: blue;
+    font-size: 13px;
+    color: white;
+    font-weight: bolder;
     border-bottom: 1px solid black;
   }
   #iconstart{
-    font-size: 2em;
+    font-size: 1em;
     position: relative;
   }
   #iconstart3{
-    font-size: 2em;
+    font-size: 1em;
   }
   #iconstart2{
-    font-size: 2em;
+    font-size: 1em;
   }
   #nav-header{
     width: 100%;

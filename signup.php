@@ -67,9 +67,16 @@ $jobgiver="Recruiter";
                     <input type="text" name="fname"> <br>
                     <label for="lastname">Last Name <span class="required">*</span></label> <br>
                     <input type="text" name="lname"> <br>
-
                     <label for="emaill">Email<span class="required">*</span></label> <br>
                     <input type="text" name="email"> <br>
+                    <label for="phone">Phone number<span class="required">*</span></label> <br>
+                    <input type="number" name="phone"> <br> <br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label> <br>
                     <label for="password">password<span class="required">*</span></label><br>
                     <input type="password" name="password1" id="mypass" onclick=" check()"> <br>
                     <label for="confirmpassword">Confirm password<span class="required">*</span></label><br>

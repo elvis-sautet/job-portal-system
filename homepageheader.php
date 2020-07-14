@@ -5,6 +5,7 @@
 
 <head>
     <!--remember to include the sessions in this page-->
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
@@ -29,32 +30,30 @@
     <title>Document</title>
 </head>
 
-
-
 <body class="jobbbbs">
-    <div class="social">
-        <div class="icons">
-            <!-- Add font awesome icons -->
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-google"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-instagram"></a>
+    <!--the header-->
+    <div class="navgation">
+        <div class="header">
+            <div class="logo"><img id="mylogo" src="index images\mylogo for (2).PNG" alt="logo"></div>
+            <ul class="main">
+                <li><a href="#"><i class="fas fa-user"> </i><i class="fas fa-angle-down"></i></a>
+                    <ul>
+                        <li><a href="#"><?php echo  $_SESSION['Firstname']  ?></a></li>
+                        <li><a href="usersprofileupdate1.php">Account</a></li>
+                        <li><a href="#">Career</a></li>
+
+                        <li>
+                            <form action="includes/logout.php" method="post">
+                              <a href="#"><button id="logout" type="submit" name="logout"><i class="fas fa-sign-out-alt"></i> logout</button></a> 
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fas fa-user-graduate"></i> Students</a></li>
+            </ul>
         </div>
     </div>
-    <!-- the header for for the home page after one log ins-->
-    <div id="nav-header">
-        <ul id="credentials">
-            <li id="logo"><a href="homepage.php"><img class="img" src="index images\mylogo for (2).PNG" alt=""></a>
-            </li>
-            <form action="includes/logout.php" method="POST">
-                <button class="link" id="lnk" type="submit">Logout</button>
-            </form>
-            <li class="link"><a href="#"><i id="iconstart" class="fas fa-user"></i> <?php echo $_SESSION['Firstname'] ?></a>
-            </li>
-            <li class="link"><a href="students.php"><i id="iconstart2" class="fas fa-user-graduate"></i></i>Students</a>
-            </li>
 
-        </ul>
-    </div>
+
+
 </body>

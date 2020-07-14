@@ -40,5 +40,15 @@ if(isset($_GET['companyname'])){
             <div class="jobsumarry"><?php echo  $jobduties ?></div>
         </div>
     </div>
- 
+ <div class="apply">
+     <div class="jobto">
+         <div class="applyhere">
+             Apply Here
+         </div>
+     </div>
+ </div>
+ <?php
+include "myfooter.php";
+
+?>
 </body>

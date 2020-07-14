@@ -19,23 +19,20 @@
     <title>privacy policy password_get_info</title>
 </head>
 
-<body>
+<body class="terms">
     <?php $lastupdated = date("7/07/Y");
     $Company_name = "OneCode";
     ?>
+<?php
+    include "header.php";
+?>
 
-
-    <div class="logoss">
-
-        <a href="frontpage.php?<?php echo "welcome%20%OneCode " ?>""><img class="lo" src="index images\mylogo for (2).PNG" alt=""></a>
-
-    </div>
-
-    <div class="allterms">
+    <div class="alltermss">
         <div class="thecookie">
-            <h1>About <?php echo $Company_name?></php>
+            <h1 class="h1">About <?php echo $Company_name?></php>
             </h1>
-            <p> <?php echo $Company_name ?> is the #1 job site in the world with over 250 thousand unique visitors every
+            <p class="para"> <?php echo $Company_name ?> is the #1 job site in the world with over 250 thousand unique
+                visitors every
                 month. <?php echo $Company_name ?>
                 strives to put job seekers first, giving them free access to search for jobs, post resumes, and
                 research
@@ -45,7 +42,8 @@
             <br> <br>
             <h2 class="policy">Cookie Policy</h2>
             <h5>last Updated: <?php echo $lastupdated; ?></h5>
-            <p>By using or accessing OneCode websites (“Site”), you agree to OneCode use of Cookies as outlined
+            <p class="para">By using or accessing OneCode websites (“Site”), you agree to OneCode use of Cookies as
+                outlined
                 below.
                 All references to Job Seeker and Employer are defined as provided for in the OneCode Terms of
                 Service.
@@ -53,7 +51,8 @@
             <h3>
                 <li class="numbering"> Introduction: What is a cookie? </li>
             </h3>
-            <p>This Cookie policy helps to explain the occasions when and why cookies may be sent to visitors to the
+            <p class="para">This Cookie policy helps to explain the occasions when and why cookies may be sent to
+                visitors to the
                 Site (referred to in this policy as “we”, “us” or “our”). “Cookies” are text-only pieces of
                 information
                 that a website transfers to an individual’s hard drive or other website-browsing equipment for
@@ -69,22 +68,24 @@
                 the
                 Site.
             </p>
-            </p> Persistent Cookies remain in the cookie file of your browser for much longer (though how long will
-            depend on the lifetime of the specific cookie). When we use session cookies to track the total number of
-            visitors to our Site, this is done on an anonymous aggregate basis (as cookies do not in themselves
-            carry any personal data). We may also employ cookies so that we remember your computer when it is used
-            to return to the Site to help customize your <?php echo $Company_name?> web experience. We may associate
-            personal
-            information with a cookie file in those instances.
+            <p class="para"> Persistent Cookies remain in the cookie file of your browser for much longer (though how
+                long will
+                depend on the lifetime of the specific cookie). When we use session cookies to track the total number of
+                visitors to our Site, this is done on an anonymous aggregate basis (as cookies do not in themselves
+                carry any personal data). We may also employ cookies so that we remember your computer when it is used
+                to return to the Site to help customize your <?php echo $Company_name?> web experience. We may associate
+                personal
+                information with a cookie file in those instances.
             </p>
             <h3>
                 <li class="numbering"> How <?php echo $Company_name; ?> uses cookies</li>
             </h3>
-            <p>We use cookies, web beacons, and other storage technologies, including from third-party partners such
+            <p class="para">We use cookies, web beacons, and other storage technologies, including from third-party
+                partners such
                 as
                 Google and Facebook, for measurement services, better targeting advertisements, and for marketing
                 purposes.</p>
-            <p>These cookies, web beacons, and other storage technologies allow us to display
+            <p class="para">These cookies, web beacons, and other storage technologies allow us to display
                 <?php echo $Company_name?>
                 promotional material to you on other sites you visit across the Internet. <?php echo $Company_name?>
                 may
@@ -108,7 +109,8 @@
             <h3>
                 <li class="numbering">Your Preferences & User Experience</li>
             </h3>
-            <p><?php echo $Company_name ?> and its affiliates use cookies to gather certain information about users,
+            <p class="para"><?php echo $Company_name ?> and its affiliates use cookies to gather certain information
+                about users,
                 such as browser type,
                 server, language preference, and country setting, in order to store user preferences on our Site to
                 make
@@ -136,16 +138,19 @@
             <li class="terms"> Applying to Jobs Through
                 <?php echo $Company_name ?>
             </li>
-            <p> Any resume or application information that you submit through the Site, including Personal Data included
+            <p class="para"> Any resume or application information that you submit through the Site, including Personal
+                Data included
                 in a resume, application and more other is subject to this Agreement and to
                 <? echo $Company_name ?> Privacy Policy. </p>
-            <p>Once you provide information to an Employer (whether in the form of a job application, resume, email, or
+            <p class="para">Once you provide information to an Employer (whether in the form of a job application,
+                resume, email, or
                 otherwise),
                 <? echo $Company_name ?> does not have control over the Employer’s use or disclosure of that
                 information. If
                 you want to request the Employer delete, modify, or maintain confidence over any such information, you
                 must make such a request directly to the Employer.</p>
-            <p>You acknowledge and agree that Employers may request that <?php echo $Company_name?> assemble your
+            <p class="para">You acknowledge and agree that Employers may request that <?php echo $Company_name?>
+                assemble your
                 application materials,
                 resume, answers to screener questions, assessment responses and other information you provide to
                 <?php echo $Company_name?>
@@ -158,7 +163,7 @@
                 through <?php echo $Company_name?> being processed and analyzed by <?php echo $Company_name?> according
                 to this Agreement and <?php echo $Company_name?>’s Privacy
                 Policy.</p>
-            <p>When you apply to a job using
+            <p class="para">When you apply to a job using
                 <?php echo $Company_name ?> Apply,
                 <?php echo $Company_name ?> will attempt to send your application to the contact
                 information provided to us by an Employer or their Agent. We cannot guarantee that such messages and
@@ -168,10 +173,10 @@
                 application material, or that there will be no mistakes in the transmission or storage of the data.
                 However,
                 <?php echo $Company_name ?> may alert you when any of the above events occur.</p>
-            <p>If you require alternative methods of screening or application you must approach the Employer directly to
+            <p class="para">If you require alternative methods of screening or application you must approach the Employer directly to
                 request such as
                 <?php echo $Company_name ?> is not responsible for the Employer application process.</p>
-            <p>By using
+            <p class="para">By using
                 <?php echo $Company_name ?>, you agree that
                 <?php echo $Company_name ?> is not responsible for the content of the Employer’s job
                 application, messages, screener questions, skills assessments or their format or method of delivery, and

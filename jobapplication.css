@@ -2,7 +2,7 @@ body{
     background-color: #f2f2f2;
 }
 .jobsheader {
-    margin-top: 5em;
+    margin-top: 1em;
     max-width: 50%;
     margin-left: 1em;
     border-radius: 12px;
@@ -24,15 +24,17 @@ body{
   .jobname {
     color: brown;
     font-weight: bolder;
-    font-size: 26px;
+    font-size: 16px;
     margin-bottom: 8px;
   }
   
   #some {
+    font-size: 12px;
     text-transform: capitalize;
   }
   
   .companyname {
+    font-size: 12px;
     margin-top: 0px;
     color: #367588;
     text-transform: capitalize;
@@ -43,7 +45,7 @@ body{
     color: #4e5559;
     margin-top: 2em;
     line-height: 1.6;
-    font-size: 17px;
+    font-size: .75rem;
   }
   
   .goto {

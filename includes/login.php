@@ -21,6 +21,7 @@
                     exit();
                 }elseif($pwdcheck == true){
                     session_start();
+                    $_SESSION['id']=$row->id;
                     $_SESSION['Firstname']= $row['firstname'];
                     $_SESSION['UserName']= $row['username'];
                     $_SESSION['LastName']= $row['lastname'];

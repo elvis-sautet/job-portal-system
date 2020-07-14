@@ -47,147 +47,10 @@
             </div>
         </div>
     </div>
-    <br>
-
-    <br>
-    <div class="alljbs">
-        <div class="latestjobs">
-            <div class="txt0">
-                <p class="txt">Recent added job</p>
-                <span class="tag">N</span>
-            </div>
-            <div class="jbs">
-                <!--job name-->
-                <span class="jobname">IBM_MARKETTING</span> <br>
-                <!--job comapny with link to apply-->
-                <span class="jobcompany"><a class="jobapplication" href="#">Zata_Tech </a></span>
-                <!--how long to work-->
-                <span class="hourworking"> Full time</span> <br>
-                <span class="description"> Get the job description from the database and call it here as a
-                    variable.</span>
-
-            </div>
-        </div>
-        <br>
-        <div class="latestjobs">
-            <div class="txt0">
-                <p class="txt">Recent added job</p>
-                <span class="tag">N</span>
-            </div>
-            <div class="jbs">
-                <!--job name-->
-                <span class="jobname">IBM_MARKETTING</span> <br>
-                <!--job comapny with link to apply-->
-                <span class="jobcompany"><a class="jobapplication" href="#">Zata_Tech </a></span>
-                <!--how long to work-->
-                <span class="hourworking"> Full time</span> <br>
-                <span class="description"> Get the job description from the database and call it here as a
-                    variable.</span>
-
-            </div>
-        </div>
-        <br>
-        <div class="latestjobs">
-            <div class="txt0">
-                <p class="txt">Recent added job</p>
-                <span class="tag">N</span>
-            </div>
-            <div class="jbs">
-                <!--job name-->
-                <span class="jobname">IBM_MARKETTING</span> <br>
-                <!--job comapny with link to apply-->
-                <span class="jobcompany"><a class="jobapplication" href="#">Zata_Tech </a></span>
-                <!--how long to work-->
-                <span class="hourworking"> Full time</span> <br>
-                <span class="description"> Get the job description from the database and call it here as a
-                    variable.</span>
-            </div>
-        </div>
-        <br>
-
-        <div class="latestjobs">
-            <div class="txt0">
-                <p class="txt">Recent added job</p>
-                <span class="tag">N</span>
-            </div>
-            <div class="jbs">
-                <!--job name-->
-                <span class="jobname">IBM_MARKETTING</span> <br>
-                <!--job comapny with link to apply-->
-                <span class="jobcompany"><a class="jobapplication" href="#">Zata_Tech </a></span>
-                <!--how long to work-->
-                <span class="hourworking"> Full time</span> <br>
-                <span class="description"> Get the job description from the database and call it here as a
-                    variable.</span>
-
-            </div>
-        </div>
-        <br>
-
-        <div class="latestjobs">
-            <div class="txt0">
-                <p class="txt">Recent added job</p>
-                <span class="tag">N</span>
-            </div>
-            <div class="jbs">
-                <!--job name-->
-                <span class="jobname">IBM_MARKETTING</span> <br>
-                <!--job comapny with link to apply-->
-                <span class="jobcompany"><a class="jobapplication" href="#">Zata_Tech </a></span>
-                <!--how long to work-->
-                <span class="hourworking"> Full time</span> <br>
-                <span class="description"> Get the job description from the database and call it here as a
-                    variable.</span>
-
-            </div>
-        </div>
-        <br> <br>
-        <div class="latestjobs">
-            <div class="txt0">
-                <p class="txt">Recent added job</p>
-                <span class="tag">N</span>
-            </div>
-            <div class="jbs">
-                <!--job name-->
-                <span class="jobname">IBM_MARKETTING</span> <br>
-                <!--job comapny with link to apply-->
-                <span class="jobcompany"><a class="jobapplication" href="#">Zata_Tech </a></span>
-                <!--how long to work-->
-                <span class="hourworking"> Full time</span> <br>
-                <span class="description"> Get the job description from the database and call it here as a
-                    variable.</span>
-
-            </div>
-        </div>
-        <br>
-    </div>
-    <br> <br>
-
-    <br>
-    <br>
-
-    <div class="registered">
-        <div class="heading">
-            Companies registered with OneCode.
-        </div>
-        <div class="images">
-            <img class="logos1" src="index images\company logos\akothe safaris.jpg" alt="">
-            <img class="logos1" src="index images\company logos\ANDELA.png" alt="">
-            <img class="logos1" src="index images\company logos\cocacola.jpg" alt="">
-            <img class="logos1" src="index images\company logos\jkuat.jpg" alt="">
-            <img class="logos1" src="index images\company logos\maasai mara logo.png" alt="">
-            <img class="logos1" src="index images\company logos\microsoft.png" alt="">
-            <img class="logos1" src="index images\company logos\standard media group.png" alt="">
-            <img class="logos1" src="index images\company logos\UON.jpg" alt="">
-        </div>
-    </div>
-    <hr>
     <br> <br>
 
     <!--the responses from our users-->
     <div class="sayings">
-        <p class="say">What our users say</p>
-
         <div class="responses">
             <div class="user1">
                 <img id="user1png" src="index images\merin.jpg" alt="">
@@ -232,24 +95,11 @@
         </div>
     </div>
     <br>
-    <br>
 
-    <!--subscribe form-->
-    <div class="newsletter">
-        <div class="inside-news">
-            <i id="red" class="fas fa-envelope-open"></i>
-            <p class="sub">Subscribe Now!</p>
-            <p class="sub1">for latest updates...</p>
-            <!--the subscription form-->
-            <form action="#">
-                <input id="input1" type="email" placeholder="Your E-Mail">
-                <button id="insidebtn" type="submit"><i id="blue" class="fas fa-paper-plane"></i></button>
-            </form>
-        </div>
-    </div>
     <div class="ffter">
-    <?php include "myfooter.php";
+        <?php include "myfooter.php";
 ?>
     </div>
 </body>
+
 </html>
