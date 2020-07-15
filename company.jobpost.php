@@ -9,7 +9,7 @@
     <script src="ckeditor/ckeditor.js"></script>
 </head>
 
-<body>
+<body class="joppp">
     <?php  include "companyheader.php" ?>
     <div class="postjob">
         <div class="thejob">

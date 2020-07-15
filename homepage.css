@@ -7,18 +7,19 @@
 /*the navigation*/
 
 .navgation{
-  height: fit-content;
-  width: 100%;
+  position: sticky;
   height: 60px;
-  background-color:#2c3968;
+  width: 100%;
+  background-color:#222;
 }
 
 .logo #mylogo{
   height: 3.7em;
   float: left;
-  margin-top: 5px;
+  padding-top: 5px;
   padding-bottom: 5px;
-  border-radius: 6pc;
+  margin-left: .5em;
+  border-radius: 4px 13px 4px 13px;
 }
 .fa-user{
   color: #E0FFFF;
@@ -29,26 +30,31 @@
   color:#6F00FF ;
   font-size: 1.5em;
 }
+.fa-building{
+  color:#6F00FF;
+  font-size: 1.5em;
+}
 .fa-sign-out-alt{
   color: red;
 }
-#mylogo{
-  padding:0px 12px;
+.header{
+  line-height: 60px;
 }
 .header ul{
   float: right;
+  margin-right: .5em;
 }
 .header ul li{
   float: left;
   list-style: none;
   position: relative;
+  padding:0px  13px;
 }
 .header ul li a{
   display: block;
   font-family: Arial, Helvetica, sans-serif;
-  color: #E1EBEE;
+  color: #E0FFFF;
   font-size: 17px;
-  padding: 15px 14px;
   text-decoration: none;
 }
 .header ul li button{
@@ -59,26 +65,29 @@
 }
 /*styling the dropdown*/
 .header ul li ul{
+  line-height: 22px;
   display: none;
   position: absolute;
-  background-color: black;
-  padding: 10px ;
+  background-color: #222;
+  padding:0px 3px ;
   border-radius: 0px 0px 4px 4px;
 }
 .header ul li:hover ul{
   display: block;
 }
 .header ul li ul li{
-  width: 120px;
+  width: 110px;
+  white-space: nowrap;
   border-radius: 10px;
+  padding: 4px 10px;
 }
 .header ul li ul li a{
-  padding: 8px 12px;
+  padding:2px 2px;
   color: gold;
 }
-/*.header ul li ul li a:hover{
-  background-color: #;
-}*/ 
+.header ul li ul li a:hover{
+  background-color: #222;
+} 
 /*logout btn*/
 #logout{
   background:none;
@@ -123,7 +132,7 @@
   -moz-box-shadow: 7px 10px 5px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 7px 10px 5px 1px rgba(0, 0, 0, 0.75);
 }
-#searchit:active,:focus{
+#searchit:focus{
   background-color: skyblue;
 }
 

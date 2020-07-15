@@ -34,7 +34,7 @@
     <!--the header-->
     <div class="navgation">
         <div class="header">
-            <div class="logo"><img id="mylogo" src="index images\mylogo for (2).PNG" alt="logo"></div>
+            <div class="logo"><a href="homepage.php"><img id="mylogo" src="index images\mylogo for (2).PNG" alt="logo"></a></div>
             <ul class="main">
                 <li><a href="#"><i class="fas fa-user"> </i><i class="fas fa-angle-down"></i></a>
                     <ul>

@@ -1,23 +1,24 @@
-body{
+.companysitee{
     background-color: silver;
     margin: 0px;
 }
 .welcome{
     border-radius: 10pc;
     width: fit-content;
-    background-color: white;
+    background-color: #222222;
     margin: auto;
 }
 .welcome-note{
     margin-top: 1em;
-    font-size: 22px;
+    font-size: 13px;
     font-family:Helvetica Neue,Helvetica,Arial,Liberation Sans,Roboto,Noto,sans-serif;;
     width: fit-content;
-    padding: 12px;
+    padding:3px 14px;
     text-align: center;
+    color: white;
 }
 .link{
-    color:#00416A ;
-    font-weight: bold;
+    color:#FEBE10 ;
+    font-weight: bolder;
     text-transform: capitalize;
 }

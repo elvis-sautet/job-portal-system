@@ -11,14 +11,14 @@ session_start();
     <title>Document</title>
 </head>
 
-<body>
+<body class="companysitee">
     <?php
     include "companyheader.php";
     ?>
     <div class="welcome">
         <div class="welcome-note">
             <p>Welcome <span style="color:#FF4500;font-weight:bold;"><?php echo $_SESSION['companyname'] ?></span> to
-                One<span style="color:#6CB4EE;" class="code">Code</span> . </p>
+                One<span style="color:#6CB4EE;" class="code">Code</span>. </p>
             <p>Inneed of a developer🤔 from One<span style="color:#6CB4EE;" class="code">Code</span>
                 <a class="link" href="#" class="clickre">Get One here😉😉!!!</a>
             </p>
@@ -26,7 +26,7 @@ session_start();
     </div>
     <div class="recentjobs">
         <div class="recent">
-            <h3 class="heading">recently posted</h3>
+            <h3 class="heading">Recently posted</h3>
         </div>
     </div>
 </body>

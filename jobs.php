@@ -53,7 +53,7 @@ $start_from = ($page-1) * $limit;
             
 
     $sql="SELECT id,jobname,companyname,joblocation,employment_type,job_salary,joboverview,dateposted
-     FROM  jobpost LIMIT $start_from, $limit";
+     FROM  jobpost ORDER BY id DESC LIMIT $start_from, $limit";
     $stmt = $conn->query($sql);
     $resultcount = $stmt->rowcount(); 
         while($row = $stmt->fetch()){
