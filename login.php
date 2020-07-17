@@ -78,7 +78,7 @@
     
 <?php include "myfooter.php";
 ?>
-<script src="login.js"></script>
+<script src="javafile/login.js"></script>
 </body>
 
 </html>

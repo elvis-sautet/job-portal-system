@@ -96,7 +96,7 @@ $jobgiver="Recruiter";
             </div>
         </div>
     </div>
-    <script src="signup.js"></script>
+    <script src="javafile/signup.js"></script>
     <?php include "myfooter.php";
     ?>
 </body>
