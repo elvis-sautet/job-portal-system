@@ -48,7 +48,37 @@
 .goto:hover {
     text-decoration: none;
 }
+/*searchhomepagejobs.php*/
+.messagedisplayget {
+    color: #0018A8;
+    text-transform: capitalize;
+    padding: 12px;
+    font-style: italic;
+    font-size: 14px;
+}
 
+.messageto {
+    margin-top: 0px;
+    margin-left: 13em;
+    width: fit-content;
+    border-radius: 10pc;
+    background-color: #A3C1AD;
+}
+.messagesrr{
+    font-size: 29px;
+    color: #7C0A02;
+    padding: 12px;
+    font-weight: bolder;
+}
+.err{
+    background-color: #B0C4DE;
+    width: fit-content;
+    margin: auto;
+}
+/*pagination*/
+.pagination{
+    margin-left: 1rem;
+}
 @media screen and (max-width:850px) {
 
     .jobsheader {
@@ -71,6 +101,21 @@
         color: brown;
         font-weight: bolder;
         font-size: 13px;
+    }
+    /*searchhomepagejobs*/
+    .messageto{
+        margin: auto;
+        width: fit-content;
+        margin-top: 12px;
+        border-radius: 4px;
+    }
+    .messagedisplayget{
+        padding: 5px;
+        font-size: 17px;
+    }
+    .messagesrr{
+        font-size: 17px;
+        
     }
 
 }

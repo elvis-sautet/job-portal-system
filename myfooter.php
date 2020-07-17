@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
         integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-    <link rel="stylesheet" href="myfooter.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="stylesheets/myfooter.css?v=<?php echo time(); ?>">
     <meta charset="UTF-8">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>

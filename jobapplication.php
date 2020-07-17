@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <head>
-        <link rel="stylesheet" href="jobapplication.css?v=<?php echo time()   ?>">
+        <link rel="stylesheet" href="stylesheets/jobapplication.css?v=<?php echo time()   ?>">
         <script src="ckeditor/ckeditor.js"></script>
 
     </head>

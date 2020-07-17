@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color:#002D72;
+  background-color:#222;
 }
 
 
@@ -28,13 +28,11 @@
   margin-right: 1rem;
   margin-top: 15px;
   color: white;
-  
 }
 .link a:hover{
-  color: black;
   text-decoration: none;
+  color: white;
 }
-
 #iconstart{
   color: #008200;
   position: relative;
@@ -55,8 +53,9 @@
 }
 .img{
   padding-top: 3px;
+  padding-bottom: 3px;
   border-radius: 12pc;
-  height: 3em;
+  height: 4em;
 }
 #nav-header{
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 26px -50px 10px 50px rgba(0,0,0,0); 
