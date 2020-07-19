@@ -9,7 +9,7 @@ if(isset($_POST['Update'])){
 
     session_start();
     $id = $_SESSION['id'];
-
+$_SESSION['name'] = $firstname;
     if(empty($firstname) || empty($lastname) || empty($email) ||empty($phone)){
         header("Location: ../usersprofileupdate1.php?error=emptyfields");
         exit();

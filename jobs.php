@@ -32,7 +32,7 @@ if (isset($_GET['page'])) {
 } else {
     $page = 1;
 }
-$limit = 10;
+$limit = 15;
 $start_from = ($page-1) * $limit;
 
             require "includes/dbconnection.php";
@@ -65,12 +65,11 @@ $start_from = ($page-1) * $limit;
             $employment_type=$row->employment_type;
             $job_salary=$row->job_salary;
             $overview = $row->joboverview;  
-
-            
+  $_SESSION['pagepass']=$id;          
 ?>
     <div class="jobsheader">
         <div class="jobsin">
-            <a class="goto" href="jobapplication.php?companyname=<?php echo $id ?>">
+            <a class="goto" href="jobapplication.php?companyname=<?php echo $_SESSION['pagepass'] ?>">
                 <p class="jobname"><?php echo $jbname; ?></p>
             </a>
             <p class="companyname"><?php echo  $companyname; ?></p>
