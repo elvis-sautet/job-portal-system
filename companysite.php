@@ -5,7 +5,7 @@ session_start();
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="companysite.css?v=<?php echo time()?>">
+    <link rel="stylesheet" href="stylesheets/company.jobpost.css?v=<?php echo time()?>">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>

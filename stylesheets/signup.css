@@ -18,7 +18,7 @@
 .register1 {
     display: flex;
     flex-direction: column;
-    padding: 13px;
+    padding: 8px;
     justify-content: center;
     align-content: center;
     overflow: hidden;
@@ -27,18 +27,17 @@
 }
 
 .heading {
-    line-height: 1.8;
-    font-size: 20px;
+    font-size: 12px;
 }
 
 .work {
-    font-size: 32px;
+    font-size: 17px;
     text-indent: 10px;
     width: fit-content;
     border-left: 8px solid #0CAFFF;
 }
 .starthere{
-font-size: 22px;
+font-size: 14px;
 }
 .required{
     color: red;
@@ -55,25 +54,25 @@ input[type="radio"]{
 .detailing{
     width: 100%;
     line-height: 1.8;
-    font-size: 22px;
+    font-size: 16px;
 }
 input[type="text"]{
     width: 70%;
-    padding: 12px;
+    padding: 5px;
     border: 1PX solid brown;
     border-radius: 12px;
     outline: none;
 }
 input[type="number"]{
     width: 70%;
-    padding: 12px;
+    padding: 5px;
     border: 1PX solid brown;
     border-radius: 12px;
     outline: none;
 }
 input[type="password"]{
     width: 70%;
-    padding: 12px;
+    padding: 5px;
     border-radius: 12px;
     outline: none;
     border: 1PX solid brown;
@@ -81,7 +80,7 @@ input[type="password"]{
 }
 select{
     width: 73%;
-    padding: 12px;
+    padding: 8px;
     border-radius: 12px;
     outline: none;
     border: 1PX solid brown;
@@ -99,7 +98,7 @@ select{
 
 option{
     width: 100%;
-    font-size: 19px;
+    font-size: 12px;
     border: none;
     border-radius: 12px;
 }
@@ -114,11 +113,11 @@ input[type="text"]:hover,:focus{
 } 
 input[type="submit"]{
     word-wrap: break-word;
-    width: 60%;
-    padding: 13px;
+    width: 40%;
+    padding: 8px;
     text-align: center;
     color: #fff;
-    font-size: 20px;
+    font-size: 13px;
     border-radius: 12px;
     outline: none;
     background-color: #0000FF;
@@ -140,7 +139,7 @@ input[type="submit"]:hover,:focus{
 .have{
     color: #2a2a2a;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: bolder;
 }
 .have:hover,:focus{
@@ -152,7 +151,7 @@ input[type="submit"]:hover,:focus{
 @media screen and (max-width:800px){
     .heading{
         line-height: 1.6;
-        font-size: 16px;
+        font-size: 14px;
     }
     .register{
         width: 100%;

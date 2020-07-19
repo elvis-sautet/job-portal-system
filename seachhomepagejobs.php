@@ -1,10 +1,8 @@
 <?php
 include 'homepageheader.php';
 ?>
-    <link rel="stylesheet" href="pagination.css?v=<?php  echo time()  ?>">
 
-    <link rel="stylesheet" href="jobs.css?v=<?php  echo time()  ?>">
-    <link rel="stylesheet" href="searchhomepagejobs.css?v=<?php  echo time()  ?>">
+    <link rel="stylesheet" href="stylesheets/jobs.css?v=<?php  echo time()  ?>">
 
 <?php
 require "includes/dbconnection.php";

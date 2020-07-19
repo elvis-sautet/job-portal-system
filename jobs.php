@@ -17,14 +17,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="jobs.css?v=<?php  echo time()  ?>">
-    <link rel="stylesheet" href="pagination.css?v=<?php  echo time()  ?>">
+    <link rel="stylesheet" href="stylesheets/jobs.css?v=<?php  echo time()  ?>">
+    <link rel="stylesheet" href="stylesheets/pagination.css?v=<?php  echo time()  ?>">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <?php
+<<<<<<< HEAD
     include 'homepageheader.php';
     include 'searchbox.php';
     if (isset($_GET['page'])) {
@@ -34,6 +35,17 @@
     }
     $limit = 10;
     $start_from = ($page-1) * $limit;
+=======
+include 'homepageheader.php';
+include 'searchbox.php';
+if (isset($_GET['page'])) {
+    $page = $_GET['page'];
+} else {
+    $page = 1;
+}
+$limit = 15;
+$start_from = ($page-1) * $limit;
+>>>>>>> 5bc287a91b79bca7878aea1f33d7a3c7f595ca67
 
                 require "includes/dbconnection.php";
                 function custom_echo($row, $length){
@@ -52,6 +64,7 @@
                 $total_pages = ceil($total_rows / $limit);
                 
 
+<<<<<<< HEAD
         $sql="SELECT id,jobname,companyname,joblocation,employment_type,job_salary,joboverview,dateposted
         FROM  jobpost ORDER BY id DESC LIMIT $start_from, $limit";
         $stmt = $conn->query($sql);
@@ -68,9 +81,26 @@
 
                 
     ?>
+=======
+    $sql="SELECT id,jobname,companyname,joblocation,employment_type,job_salary,joboverview,dateposted
+     FROM  jobpost ORDER BY id DESC LIMIT $start_from, $limit";
+    $stmt = $conn->query($sql);
+    $resultcount = $stmt->rowcount(); 
+        while($row = $stmt->fetch()){
+            $dateposted=$row->dateposted;
+            $id=$row->id;
+            $jbname=$row->jobname;
+            $companyname=$row->companyname;
+            $joblocation=$row->joblocation;
+            $employment_type=$row->employment_type;
+            $job_salary=$row->job_salary;
+            $overview = $row->joboverview;  
+  $_SESSION['pagepass']=$id;          
+?>
+>>>>>>> 5bc287a91b79bca7878aea1f33d7a3c7f595ca67
     <div class="jobsheader">
         <div class="jobsin">
-            <a class="goto" href="jobapplication.php?companyname=<?php echo $id ?>">
+            <a class="goto" href="jobapplication.php?companyname=<?php echo $_SESSION['pagepass'] ?>">
                 <p class="jobname"><?php echo $jbname; ?></p>
             </a>
             <p class="companyname"><?php echo  $companyname; ?></p>

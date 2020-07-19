@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="homepage.css?v=<?php echo time()  ?>">
+<link rel="stylesheet" href="stylesheets/homepage.css?v=<?php echo time()  ?>">
 
 <div class="search">
         <div class="searchbox">

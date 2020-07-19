@@ -7,51 +7,71 @@
     <title>Document</title>
 
     <head>
-        <link rel="stylesheet" href="jobapplication.css?v=<?php echo time()   ?>">
+        <link rel="stylesheet" href="stylesheets/jobapplication.css?v=<?php echo time()   ?>">
         <script src="ckeditor/ckeditor.js"></script>
 
     </head>
 
 <body>
-
+<?php include_once "homepageheader.php";
+  
+  ?>
     <?php
 require 'includes/dbconnection.php';
 if(isset($_GET['companyname'])){
     $id= $_GET['companyname'];
+   $_SESSION['page'] = $id;
     $sql = "SELECT * FROM jobpost WHERE id=$id";
     $stmt = $conn->query($sql);
     while($row = $stmt->fetch()){
-        $id=$row->id;
-        $jbname=$row->jobname;
-        $companyname=$row->companyname;
-        $joblocation=$row->joblocation;
-        $employment_type=$row->employment_type;
-        $job_salary=$row->job_salary;
-        $overview = $row->joboverview;
-        $jobduties=$row->jobduties;
-        
-    
-    
+        $_SESSION['idof']=$row->id;
+        $_SESSION['jobname']=$row->jobname;
+        $_SESSION['companyname']=$row->companyname;
+        $_SESSION['joblocation']=$row->joblocation;
+        $_SESSION['employment_type']=$row->employment_type;
+        $_SESSION['jobsalary']=$row->job_salary;
+        $_SESSION['joboverview'] = $row->joboverview;
+        $_SESSION['jobduties']=$row->jobduties;
+    }
+}
+?>
+   
 
-?>
-    <?php include_once "homepageheader.php";
-?>
     <div class="jobsheader">
         <div class="jobsin">
             <a class="goto" href="#">
-                <p class="jobname"><?php echo $jbname; ?></p>
+                <p class="jobname"><?php echo $_SESSION['jobname']; ?></p>
             </a>
-            <p class="companyname"><?php echo  $companyname; ?></p>
-            <span id="some" class="joblocation"><?php echo  $joblocation; ?><span style='color:gray'> | </span>
-                <span id="some" class="employment_type"> <?php  echo $employment_type; ?>
+            <p class="companyname"><?php echo  $_SESSION['companyname']; ?></p>
+            <span id="some" class="joblocation"><?php echo  $_SESSION['joblocation']; ?><span style='color:gray'> | </span>
+                <span id="some" class="employment_type"> <?php  echo $_SESSION['employment_type']; ?>
                     <span id="some" class="jobsalary"><span style='color:gray'> | </span><span
-                            style='font-weight:bold'>Ksh </span><?php echo $job_salary; ?></span>
+                            style='font-weight:bold'>Ksh </span><?php echo $_SESSION['jobsalary']; ?></span>
 
-                    <div class="jobsumarry"><?php echo  $overview ?></div>
+                    <div class="jobsumarry"><?php echo  $_SESSION['joboverview'] ?></div>
 
-                    <div class="jobsumarry"><?php echo  $jobduties ?></div>
+                    <div class="jobsumarry"><?php echo  $_SESSION['jobduties'] ?></div>
         </div>
-    </div>
+    </div> 
+
+  
+
+
+
+    <?php     
+   $id = $_SESSION['id'];
+   $sql = "SELECT* FROM job_seeker_registration WHERE id=?";
+   $stmt = $conn->prepare($sql);
+   $stmt->execute([$id]);
+   $result=$stmt->rowcount();
+   if($result>0){
+       while($row = $stmt->fetch()){
+          $firstname= $row->firstname;
+          $lastname =  $row->lastname;
+          $phoneno= $row->phonenumber;
+       }
+    }
+?>
     <div class="apply">
         <div class="jobto">
             <div class="applyhere">
@@ -59,13 +79,35 @@ if(isset($_GET['companyname'])){
                 <p class="somenotes">Note: The application form uses some of your saved account details. </p>
             </div>
             <div class="accountdetails">
-                <form action="#" enctype="multipart/form-data" method="post" id="getch">
+            <?php
+                if(isset($_SESSION['error'])){
+                    echo "
+                      <div class='alert alert-danger alert-dismissible'>
+                        <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+                        <h4><i class='icon fa fa-warning'></i> Error!</h4>
+                        ".$_SESSION['error']."
+                      </div>
+                    ";
+                    unset($_SESSION['error']);
+                  }
+                  if(isset($_SESSION['success'])){
+                    echo "
+                      <div class='alert alert-success alert-dismissible'>
+                        <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+                        <h4><i class='icon fa fa-check'></i> Success!</h4>
+                        ".$_SESSION['success']."
+                      </div>
+                    ";
+                    unset($_SESSION['success']);
+                  }
+            ?>
+                 <form action="includes/jobaplly.php" enctype="multipart/form-data" method="post" id="getch">
                     <label for="firstaname">firstname</label> <br>
-                    <input type="text" name="fname" id="txt"> <br>
+                    <input type="text" name="fname" id="txt" value="<?php echo $firstname  ?>"> <br>
                     <label for="lastname">Lastname</label> <br>
-                    <input type="text" name="lname" id="txt"> <br>
+                    <input type="text" name="lname" id="txt" value="<?php echo $lastname          ?>"> <br>
                     <label for="phone">Mobile Number</label> <br>
-                    <input type="number" name="phonenumber" id="txt"> <br>
+                    <input type="number" name="phonenumber" id="txt" value="<?php     echo    '0'.$phoneno          ?>"> <br>
                     <label for="qualifications">Minimum qualifications</label> <br>
                     <select name="Qualifications" id="qualification">
                         <option value="">Select...</option>
@@ -99,7 +141,7 @@ if(isset($_GET['companyname'])){
                     <input type="text" name="salary" id="txtadd"> <!-- from text to number validation pregmatch()   --> <br>
                     <label for="coverletter">Cover Letter</label> <br>
                     <textarea name="coverletter" 
-                        placeholder="Max. 2000 characters" rows="7" cols="34"></textarea> <br>
+                         rows="7" cols="34" ></textarea> <br>
                     <label for="cvattatch"> Attach a CV</label> <br>
                     <input type="file" name="CV"> <br>
                     <br>
@@ -111,12 +153,10 @@ if(isset($_GET['companyname'])){
     <br>
 
     <?php
-    
 include 'myfooter.php';
 
-    }
-}
 ?>
+
 </body>
 
 </html>
