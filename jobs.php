@@ -25,17 +25,6 @@
 
 <body>
     <?php
-<<<<<<< HEAD
-    include 'homepageheader.php';
-    include 'searchbox.php';
-    if (isset($_GET['page'])) {
-        $page = $_GET['page'];
-    } else {
-        $page = 1;
-    }
-    $limit = 10;
-    $start_from = ($page-1) * $limit;
-=======
 include 'homepageheader.php';
 include 'searchbox.php';
 if (isset($_GET['page'])) {
@@ -45,7 +34,6 @@ if (isset($_GET['page'])) {
 }
 $limit = 15;
 $start_from = ($page-1) * $limit;
->>>>>>> 5bc287a91b79bca7878aea1f33d7a3c7f595ca67
 
                 require "includes/dbconnection.php";
                 function custom_echo($row, $length){
@@ -63,27 +51,7 @@ $start_from = ($page-1) * $limit;
                 $total_rows = $stmt->rowCount();
                 $total_pages = ceil($total_rows / $limit);
                 
-
-<<<<<<< HEAD
-        $sql="SELECT id,jobname,companyname,joblocation,employment_type,job_salary,joboverview,dateposted
-        FROM  jobpost ORDER BY id DESC LIMIT $start_from, $limit";
-        $stmt = $conn->query($sql);
-        $resultcount = $stmt->rowcount(); 
-            while($row = $stmt->fetch()){
-                $dateposted=$row->dateposted;
-                $id=$row->id;
-                $jbname=$row->jobname;
-                $companyname=$row->companyname;
-                $joblocation=$row->joblocation;
-                $employment_type=$row->employment_type;
-                $job_salary=$row->job_salary;
-                $overview = $row->joboverview;  
-
-                
-    ?>
-=======
-    $sql="SELECT id,jobname,companyname,joblocation,employment_type,job_salary,joboverview,dateposted
-     FROM  jobpost ORDER BY id DESC LIMIT $start_from, $limit";
+    $sql="SELECT id,jobname,companyname,joblocation,employment_type,job_salary,joboverview,dateposted FROM  jobpost ORDER BY id DESC LIMIT $start_from, $limit";
     $stmt = $conn->query($sql);
     $resultcount = $stmt->rowcount(); 
         while($row = $stmt->fetch()){
@@ -97,7 +65,6 @@ $start_from = ($page-1) * $limit;
             $overview = $row->joboverview;  
   $_SESSION['pagepass']=$id;          
 ?>
->>>>>>> 5bc287a91b79bca7878aea1f33d7a3c7f595ca67
     <div class="jobsheader">
         <div class="jobsin">
             <a class="goto" href="jobapplication.php?companyname=<?php echo $_SESSION['pagepass'] ?>">
