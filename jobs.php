@@ -25,49 +25,49 @@
 
 <body>
     <?php
-include 'homepageheader.php';
-include 'searchbox.php';
-if (isset($_GET['page'])) {
-    $page = $_GET['page'];
-} else {
-    $page = 1;
-}
-$limit = 10;
-$start_from = ($page-1) * $limit;
+    include 'homepageheader.php';
+    include 'searchbox.php';
+    if (isset($_GET['page'])) {
+        $page = $_GET['page'];
+    } else {
+        $page = 1;
+    }
+    $limit = 10;
+    $start_from = ($page-1) * $limit;
 
-            require "includes/dbconnection.php";
-            function custom_echo($row, $length){
-              if(strlen($row)<=$length){
-                echo $row;
-              }else{
-                $y=substr($row,0,$length) . '...';
-                echo $y;
-              }
-              
-              
-            }
-            $sql = "SELECT* FROM jobpost";
-            $stmt =$conn->query($sql) ;
-            $total_rows = $stmt->rowCount();
-            $total_pages = ceil($total_rows / $limit);
-            
+                require "includes/dbconnection.php";
+                function custom_echo($row, $length){
+                if(strlen($row)<=$length){
+                    echo $row;
+                }else{
+                    $y=substr($row,0,$length) . '...';
+                    echo $y;
+                }
+                
+                
+                }
+                $sql = "SELECT* FROM jobpost";
+                $stmt =$conn->query($sql) ;
+                $total_rows = $stmt->rowCount();
+                $total_pages = ceil($total_rows / $limit);
+                
 
-    $sql="SELECT id,jobname,companyname,joblocation,employment_type,job_salary,joboverview,dateposted
-     FROM  jobpost ORDER BY id DESC LIMIT $start_from, $limit";
-    $stmt = $conn->query($sql);
-    $resultcount = $stmt->rowcount(); 
-        while($row = $stmt->fetch()){
-            $dateposted=$row->dateposted;
-            $id=$row->id;
-            $jbname=$row->jobname;
-            $companyname=$row->companyname;
-            $joblocation=$row->joblocation;
-            $employment_type=$row->employment_type;
-            $job_salary=$row->job_salary;
-            $overview = $row->joboverview;  
+        $sql="SELECT id,jobname,companyname,joblocation,employment_type,job_salary,joboverview,dateposted
+        FROM  jobpost ORDER BY id DESC LIMIT $start_from, $limit";
+        $stmt = $conn->query($sql);
+        $resultcount = $stmt->rowcount(); 
+            while($row = $stmt->fetch()){
+                $dateposted=$row->dateposted;
+                $id=$row->id;
+                $jbname=$row->jobname;
+                $companyname=$row->companyname;
+                $joblocation=$row->joblocation;
+                $employment_type=$row->employment_type;
+                $job_salary=$row->job_salary;
+                $overview = $row->joboverview;  
 
-            
-?>
+                
+    ?>
     <div class="jobsheader">
         <div class="jobsin">
             <a class="goto" href="jobapplication.php?companyname=<?php echo $id ?>">
