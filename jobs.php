@@ -35,25 +35,23 @@ if (isset($_GET['page'])) {
 $limit = 15;
 $start_from = ($page-1) * $limit;
 
-            require "includes/dbconnection.php";
-            function custom_echo($row, $length){
-              if(strlen($row)<=$length){
-                echo $row;
-              }else{
-                $y=substr($row,0,$length) . '...';
-                echo $y;
-              }
-              
-              
-            }
-            $sql = "SELECT* FROM jobpost";
-            $stmt =$conn->query($sql) ;
-            $total_rows = $stmt->rowCount();
-            $total_pages = ceil($total_rows / $limit);
-            
-
-    $sql="SELECT id,jobname,companyname,joblocation,employment_type,job_salary,joboverview,dateposted
-     FROM  jobpost ORDER BY id DESC LIMIT $start_from, $limit";
+                require "includes/dbconnection.php";
+                function custom_echo($row, $length){
+                if(strlen($row)<=$length){
+                    echo $row;
+                }else{
+                    $y=substr($row,0,$length) . '...';
+                    echo $y;
+                }
+                
+                
+                }
+                $sql = "SELECT* FROM jobpost";
+                $stmt =$conn->query($sql) ;
+                $total_rows = $stmt->rowCount();
+                $total_pages = ceil($total_rows / $limit);
+                
+    $sql="SELECT id,jobname,companyname,joblocation,employment_type,job_salary,joboverview,dateposted FROM  jobpost ORDER BY id DESC LIMIT $start_from, $limit";
     $stmt = $conn->query($sql);
     $resultcount = $stmt->rowcount(); 
         while($row = $stmt->fetch()){

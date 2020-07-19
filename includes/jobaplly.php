@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 if(isset($_POST['apply-Job'])){
 require_once "dbconnection.php";
 
@@ -10,6 +10,7 @@ require_once "dbconnection.php";
     $experience = $_POST['experience'];
     $salary = $_POST['salary'];
     $coverletter = $_POST['coverletter'];
+<<<<<<< HEAD
     $Cv = $_FILES['CV'];
 
     // $file = $_FILES['CV'];
@@ -110,3 +111,27 @@ require_once "dbconnection.php";
 }else{
   echo "error occured";
 }
+=======
+    $Cv = $_FILES['CV']['name'];
+    if(!empty($cv))
+    {
+        move_uploaded_file($_FILES['CV']['tmp_name'],'../uploads/'.$cv);
+    }
+
+    try{
+      $sql = "INSERT INTO jobapplicantion (firstname,lastname,mobilenumber,qualification,experience,salaryexpected,coverletter,CV) VALUES (?,?,?,?,?,?,?,?)";
+      $stmt =$conn->prepare($sql);
+      $stmt -> execute([$firstname,$lastname,$phoneno,$qualifiction,$experience,$salary,$coverletter,$Cv]);
+      $_SESSION['success']= "Job application succesfully";
+    }
+    catch(PDOExcecution $e){
+      $_SESSION['error']= $e->getMessage();
+    }
+  }
+else{
+  $_SESSION['error'] = "Click the apply button";
+  
+}
+header("Location: ../jobapplication.php");
+?>
+>>>>>>> a1aabfa96abde75462ae2b215f1f9b6692390f9e
