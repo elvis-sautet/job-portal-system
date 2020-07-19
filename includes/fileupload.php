@@ -16,24 +16,24 @@ if(isset($_POST['apply-Job'])){
   $allowed = array('pdf', 'txt','docx');
   //4. check if the file is allowed to be uploaded in the website
   if(in_array($actualfileExt, $allowed)){
-    //a. check if there was an error uploading
-    if($fileerror === 0){
-      //check size of the file to upload
-      if($filesize < 10000000){
-        //uploading the file by giving it a unique name so that it cannot be replaced with another
-        $fileNameNew =$firstname.uniqid('', true).'.'.$actualfileExt;
-        //tell where we will upload the file
-        $filedestination = '../uploads/'.$fileNameNew;
-        //write a function to move the temporary location in to the actual location that we want it to be uploaded to.
-        move_uploaded_file($filetempName, $filedestination);
-      }else{
-        header("Location: ../jobapplication.php?error=filesizeistoobig");
-        exit();
-      }
-    }else{
-        header("Location: ../jobapplication.php?error=erroruploadingyourfile");
-        exit();
-    }
+        //a. check if there was an error uploading
+        if($fileerror === 0){
+        //check size of the file to upload
+        if($filesize < 10000000){
+            //uploading the file by giving it a unique name so that it cannot be replaced with another
+            $fileNameNew =$firstname.uniqid('', true).'.'.$actualfileExt;
+            //tell where we will upload the file
+            $filedestination = '../uploads/'.$fileNameNew;
+            //write a function to move the temporary location in to the actual location that we want it to be uploaded to.
+            move_uploaded_file($filetempName, $filedestination);
+        }else{
+            header("Location: ../jobapplication.php?error=filesizeistoobig");
+            exit();
+        }
+        }else{
+            header("Location: ../jobapplication.php?error=erroruploadingyourfile");
+            exit();
+        }
   }else{
     header("Location: ../jobapplication.php?error=cannotuploadthistypeoffile");
     exit();
