@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="stylesheets/usersprofileupdate.css?v=<?php echo time(); ?>">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>update_data</title>
+    <link rel="shortcut icon" type="image/png" href="index images\favicon.PNG" >
+
 </head>
 
 <body>
@@ -20,8 +22,7 @@
             <div class="formaccount">
 
 <?php
-    require "includes/dbconnection.php";
-
+ require "includes/dbconnection.php";
  $id = $_SESSION['id'];
 $sql = "SELECT* FROM job_seeker_registration WHERE id=?";
 $stmt = $conn->prepare($sql);
@@ -34,7 +35,6 @@ if($result>0){
        $lastname =  $row->lastname;
        $email= $row->email;
        $phoneno= $row->phonenumber;
-
 ?>
                 <form action="includes/userprofileupdate.php" Method="Post">
                     <label for="firstname">Fistname</label><br>

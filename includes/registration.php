@@ -45,9 +45,9 @@
             $sql = "INSERT INTO job_seeker_registration (username,firstname,lastname,email,phonenumber,gender,password) VALUES (?,?,?,?,?,?,?)";
             $stmt = $conn->prepare($sql);
             $stmt ->execute([$username,$firstname,$lastname,$email,$phone,$gender,$hashedpass]);
+            //inserting data in the other table
             header("Location: ../signup.php?signup=success");
             exit();
-
         }
         
     }

@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="stylesheets/signup.css?v=<?php echo time(); ?>">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign_up</title>
+    <link rel="shortcut icon" type="image/png" href="index images\favicon.PNG" >
+
 </head>
 
 <body class="signupp">

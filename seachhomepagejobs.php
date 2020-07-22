@@ -3,6 +3,7 @@ include 'homepageheader.php';
 ?>
 
     <link rel="stylesheet" href="stylesheets/jobs.css?v=<?php  echo time()  ?>">
+    <link rel="shortcut icon" type="image/png" href="index images\favicon.PNG" >
 
 <?php
 require "includes/dbconnection.php";

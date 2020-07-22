@@ -10,7 +10,7 @@
   position: sticky;
   height: 60px;
   width: 100%;
-  background-color:#222;
+  background-color:#2b2b2b;
 }
 
 .logo #mylogo{
@@ -19,15 +19,19 @@
   padding-top: 5px;
   padding-bottom: 5px;
   margin-left: .5em;
-  border-radius: 4px 13px 4px 13px;
+  border-radius: 4px 1px 4px 1px;
 }
-.fa-user{
-  color: #E0FFFF;
+.fa-user-lock{
+  color: #FF9933;
   font-size: 1.5em;
   border-bottom: 1px solid white;
 }
 .fa-user-graduate{
-  color:#6F00FF ;
+  color:#4032ff ;
+  font-size: 1.5em;
+}
+.fa-user{
+  color:#FFff ;
   font-size: 1.5em;
 }
 .fa-building{
@@ -76,7 +80,7 @@
   display: block;
 }
 .header ul li ul li{
-  width: 110px;
+  width: 120px;
   white-space: nowrap;
   border-radius: 10px;
   padding: 4px 10px;
@@ -84,9 +88,10 @@
 .header ul li ul li a{
   padding:2px 2px;
   color: gold;
+  text-transform: capitalize;
 }
 .header ul li ul li a:hover{
-  background-color: #222;
+  background-color: #666666;
 } 
 /*logout btn*/
 #logout{
@@ -95,16 +100,55 @@
   border: none;
   font-size: 14px;
 }
-
-
-
-
-
-
-
-
-
-
+.careerprofile{
+  overflow: hidden;
+  padding-bottom: 1em;
+  color: #4e5559;
+  margin-top: 1em;
+  width: 60%;
+  margin-left: 4em;
+  word-wrap: break-word;
+  background-color: white;
+}
+.topic{
+  background-color: #2b2b2b;
+  color: #ff1e00;
+  font-weight: 600;
+}
+.topic p{
+  padding:4px 0px;
+}
+.proflepic{
+  border-radius: 12pc;
+  height: 6em;
+  margin-left: 4em;
+  float: left;
+  clear: both;
+}
+/* .imgto{
+  border: 1px solid blue;
+  clear: both;
+} */
+.uploadit{
+  float: left;
+  margin-left: 13em;
+}
+#lbl{
+  display: inline-block;
+  color: #ffb766;
+  font-weight: 400;
+  position: relative;
+  
+}
+input[type="file"]{
+  outline: none;
+  border: none;
+  color: #b8b8b8;
+  position: absolute;
+}
+.names{
+  margin-left: 2em;
+}
 
 /*end of navihation bar*/
 /*the search bar*/
@@ -124,13 +168,13 @@
   width: 40%;
   color: blue;
   padding: 4px;
-  background-color: #CCCCFF;
+  background-color: #ffff;
   border-radius: 12px;
   outline: none;
   text-align: center;
   -webkit-box-shadow: 7px 10px 5px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 7px 10px 5px 1px rgba(0, 0, 0, 0.75);
-  box-shadow: 7px 10px 5px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 10px 5px 1px rgba(0, 0, 0, 0.3);
 }
 #searchit:focus{
   background-color: skyblue;
@@ -152,7 +196,7 @@
 
 #searching {
   font-size: 1.6em;
-  color: #002244;
+  color: #990033;
 }
 #lnk{
   padding: 12px;

@@ -26,7 +26,27 @@
 <body>
     <?php
 include 'homepageheader.php';
+?>
+    <?php
 include 'searchbox.php';
+?>
+    <br>
+    <div class="allss">
+        <div class="top33">
+            <p class="jbs">Jobs in Kenya</p>
+        </div>
+        <div class="ring">
+
+            <?php 
+       $sql = "SELECT* FROM jobpost";
+       $stmt =$conn->query($sql) ;
+       $jobsaround = $stmt->rowCount();
+       ?>
+            <p class="cnt"><?php echo"<span style='font-weight:bolder;'>". $jobsaround."</span>" ?> jobs found.</p>
+            <a  href="#"><p class="alerting">create a job alert</p></a>
+        </div>
+    </div>
+    <?php
 if (isset($_GET['page'])) {
     $page = $_GET['page'];
 } else {
@@ -53,7 +73,8 @@ $start_from = ($page-1) * $limit;
                 
     $sql="SELECT id,jobname,companyname,joblocation,employment_type,job_salary,joboverview,dateposted FROM  jobpost ORDER BY id DESC LIMIT $start_from, $limit";
     $stmt = $conn->query($sql);
-    $resultcount = $stmt->rowcount(); 
+    $resultcount = $stmt->rowcount();
+    if($resultcount > 0) {
         while($row = $stmt->fetch()){
             $dateposted=$row->dateposted;
             $id=$row->id;
@@ -65,9 +86,10 @@ $start_from = ($page-1) * $limit;
             $overview = $row->joboverview;  
   $_SESSION['pagepass']=$id;          
 ?>
+
     <div class="jobsheader">
         <div class="jobsin">
-            <a class="goto" href="jobapplication.php?companyname=<?php echo $_SESSION['pagepass'] ?>">
+            <a class="goto" href="jobapplication?companyname=<?php echo $_SESSION['pagepass'] ?>">
                 <p class="jobname"><?php echo $jbname; ?></p>
             </a>
             <p class="companyname"><?php echo  $companyname; ?></p>
@@ -79,7 +101,10 @@ $start_from = ($page-1) * $limit;
         </div>
     </div>
 
-    <?php } ?>
+    <?php }
+        }else{
+            echo "<h1> there are no jobs posted</h1>";
+        } ?>
 
     <?php
 

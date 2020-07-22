@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JobApplication</title>
+    <link rel="shortcut icon" type="image/png" href="index images\favicon.PNG" >
 
     <head>
         <link rel="stylesheet" href="stylesheets/jobapplication.css?v=<?php echo time()   ?>">
@@ -103,13 +104,13 @@ if(isset($_GET['companyname'])){
             ?>
                  <form action="includes/jobaplly.php" enctype="multipart/form-data" method="post" id="getch">
                     <label for="firstaname">firstname</label> <br>
-                    <input type="text" name="fname" id="txt" value="<?php echo $firstname  ?>"> <br>
+                    <input type="text" name="fname" id="txt" value="<?php echo $firstname  ?>" readonly> <br>
                     <label for="lastname">Lastname</label> <br>
-                    <input type="text" name="lname" id="txt" value="<?php echo $lastname          ?>"> <br>
+                    <input type="text" name="lname" id="txt" value="<?php echo $lastname          ?>" readonly> <br>
                     <label for="phone">Mobile Number</label> <br>
-                    <input type="number" name="phonenumber" id="txt" value="<?php     echo    '0'.$phoneno          ?>"> <br>
+                    <input type="number" name="phonenumber" id="txt" value="<?php     echo    '0'.$phoneno          ?>" readonly> <br>
                     <label for="qualifications">Minimum qualifications</label> <br>
-                    <select name="Qualifications" id="qualification">
+                    <select name="Qualifications" id="qualification" required>
                         <option value="">Select...</option>
                         <option value="Bachelor">Bachelor</option>
                         <option value="Certificate">Certificate</option>
@@ -121,7 +122,7 @@ if(isset($_GET['companyname'])){
                         <option value="Unspecified">Unspecified</option>
                     </select> <br>
                     <label for="Experience">Years of Experience</label> <br>
-                    <select name="experience" id="experiecedyrs">
+                    <select name="experience" id="experiecedyrs" required>
                         <option value="">Select...</option>
                         <option value="No Experience/Less Than 1 Year">No Experience/Less Than 1 Year</option>
                         <option value="1 year">1 year</option>
@@ -138,12 +139,12 @@ if(isset($_GET['companyname'])){
                     </select> <br>
                     <label for="salaryexpected">Monthly Salary Expectation</label> <br>
                     <button type="button" class="disable" disabled><span>KES</span></button>
-                    <input type="text" name="salary" id="txtadd"> <!-- from text to number validation pregmatch()   --> <br>
+                    <input type="number"  name="salary" id="txtadd" required> <!-- from text to number validation pregmatch()   --> <br>
                     <label for="coverletter">Cover Letter</label> <br>
                     <textarea name="coverletter" 
-                         rows="7" cols="34" ></textarea> <br>
+                         rows="7" cols="34" required ></textarea> <br>
                     <label for="cvattatch"> Attach a CV</label> <br>
-                    <input type="file" name="CV"> <br>
+                    <input type="file" name="CV" required> <br>
                     <br>
                     <input type="submit" name="apply-Job" value="Apply">
                 </form>

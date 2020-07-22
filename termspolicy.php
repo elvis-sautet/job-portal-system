@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="stylesheets/usersprofileupdate.css?v=<?php echo time(); ?>">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>privacy policy password_get_info</title>
+    <link rel="shortcut icon" type="image/png" href="index images\favicon.PNG" >
+
+    <title>privacy_policy</title>
 </head>
 
 <body class="terms">

@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="stylesheets/login.css?v=<?php echo time(); ?>">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>doc</title>
+    <title>company_login</title>
+    <link rel="shortcut icon" type="image/png" href="index images\favicon.PNG" >
 </head>
 
 <body class="login">

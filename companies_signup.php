@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="stylesheets/company_signup.css?v=<?php echo time(); ?>">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="index images\favicon.PNG" >
+
+    <title>company_signup</title>
 </head>
 <?php 
 include "header.php";

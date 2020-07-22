@@ -7,3 +7,15 @@ function showpass(){
         pass.type="password";
     }
 }
+
+var loader = function(e){
+let file= e.target.files;
+let show = "<span> selected file : </span>"+file[0].name;
+let output = document.getElementsById('selector');
+output.innerHTML = show;
+output.classList.add("active");
+}
+//add event listener for input
+
+let fileinput = document.getElementById('files');
+fileinput.addEventListener("change", loader)

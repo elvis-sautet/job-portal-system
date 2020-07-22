@@ -26,22 +26,22 @@
                     $_SESSION['UserName']= $row['username'];
                     $_SESSION['LastName']= $row['lastname'];
                     $_SESSION['email']= $row['email'];
-                    header("location: ../homepage.php?login=success");
+                    header("location: ../homepage");
                     exit();
 
 
                 }else{
-                    header("location: ../login.php?error=wrong-password");
+                    header("location: ../login?error=wrong-password");
                     exit();
                 }
             }else{
-                header("location: ../login.php?error=no-usser");
+                header("location: ../login?error=no-usser");
                 exit();
             }
 
 
         }
     }else{
-        header("location: ../frontpage.php");
+        header("location: ../index");
         exit();
     }

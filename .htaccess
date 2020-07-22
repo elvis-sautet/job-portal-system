@@ -1,0 +1,8 @@
+Options -Indexes
+ErrorDocument 404 /PLACEMENT_PORTAL_SYSTEM/not-found-page.php
+
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+

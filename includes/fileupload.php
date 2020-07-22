@@ -1,7 +1,5 @@
 <?php
-require "dbconnection.php";
-include "jobaplly.php";
-if(isset($_POST['apply-Job'])){
+
      //1. get the information of the whole file
   $file = $_FILES['CV'];
   $fileName = $_FILES['CV']['name'];//getting the name of the file
@@ -25,17 +23,16 @@ if(isset($_POST['apply-Job'])){
             //tell where we will upload the file
             $filedestination = '../uploads/'.$fileNameNew;
             //write a function to move the temporary location in to the actual location that we want it to be uploaded to.
-            move_uploaded_file($filetempName, $filedestination);
-        }else{
-            header("Location: ../jobapplication.php?error=filesizeistoobig");
-            exit();
+        if(move_uploaded_file($filetempName, $filedestination)){
+            $up = TRUE;
         }
         }else{
-            header("Location: ../jobapplication.php?error=erroruploadingyourfile");
-            exit();
+            $_SESSION['error']= "file size too big";
         }
-  }else{
-    header("Location: ../jobapplication.php?error=cannotuploadthistypeoffile");
-    exit();
-  }
-}
+        }else{
+            $_SESSION['error']= "Error uploading your file";
+        }
+    }else{
+        $_SESSION['error']= "Cannot upload this type of file";
+    }
+

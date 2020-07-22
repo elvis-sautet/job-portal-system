@@ -1,4 +1,5 @@
-<?php session_start();
+<?php 
+include "includes/session.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,20 +28,20 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="stylesheets/homepage.css?v=<?php echo time()  ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
 </head>
 
 <body class="jobbbbs">
     <!--the header-->
     <div class="navgation">
         <div class="header">
-            <div class="logo"><a href="homepage.php"><img id="mylogo" src="index images\mylogo for (2).PNG" alt="logo"></a></div>
+            <div class="logo"><a href="homepage"><img id="mylogo" src="index images\mylogo for (2).PNG" alt="logo"></a></div>
             <ul class="main">
-                <li><a href="#"><i class="fas fa-user"> </i><i class="fas fa-angle-down"></i></a>
+                <li><a href="#"><i class="fas fa-user"> </i><i class="fas fa-angle-down"></i>User</a>
                     <ul>
-                        <li><a href="#"><?php echo  $_SESSION['Firstname']  ?></a></li>
-                        <li><a href="usersprofileupdate1.php">Account</a></li>
-                        <li><a href="#">Career</a></li>
+                        <li><a href="#"><?php echo $user['firstname'];  ?></a></li>
+                        <li><a href="usersprofileupdate1">Account</a></li>
+                        <li><a href="careerprofile">Career</a></li>
 
                         <li>
                             <form action="includes/logout.php" method="post">

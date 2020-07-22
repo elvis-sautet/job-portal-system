@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="stylesheets/homepage.css?v=<?php echo time()  ?>">
+<link rel="shortcut icon" type="image/png" href="index images\favicon.PNG" >
 
 <div class="search">
         <div class="searchbox">
@@ -9,3 +10,5 @@
             </form>
         </div>
     </div>
+    
+    

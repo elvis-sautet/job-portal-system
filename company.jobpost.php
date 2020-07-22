@@ -1,3 +1,6 @@
+<?php
+include "includes/session.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,8 +8,9 @@
     <link rel="stylesheet" href="stylesheets/company.jobpost.css?v=<?php echo time() ?>">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>job_posting</title>
     <script src="ckeditor/ckeditor.js"></script>
+    <link rel="shortcut icon" type="image/png" href="index images\favicon.PNG" >
 </head>
 
 <body class="joppp">

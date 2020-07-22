@@ -26,7 +26,9 @@
     <link rel="stylesheet" href="stylesheets/pagination.css?v=<?php  echo time()  ?>">
     <link rel="stylesheet" href="stylesheets/homepage.css?v=<?php echo time()  ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jobs</title>
+    <link rel="shortcut icon" type="image/png" href="index images\favicon.PNG" >
+
 </head>
 <body class="jobbbbs">
     <?php include 'jobs.php';

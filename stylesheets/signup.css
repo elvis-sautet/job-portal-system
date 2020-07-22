@@ -105,9 +105,7 @@ option{
 .ex{
     color: #6F00FF;
 }
-input[type="text"]:hover,:focus{
-    border:3px #6F00FF groove;   
-}
+
 .detailing > label{
     font-weight: bolder;  
 } 
