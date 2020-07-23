@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JobApplication</title>
-    <link rel="shortcut icon" type="image/png" href="index images\favicon.PNG" >
+    <link rel="shortcut icon" type="image/png" href="index images\favicon.PNG">
 
     <head>
         <link rel="stylesheet" href="stylesheets/jobapplication.css?v=<?php echo time()   ?>">
@@ -14,15 +14,15 @@
     </head>
 
 <body>
-<?php include_once "homepageheader.php";
+    <?php include_once "homepageheader.php";
   
   ?>
     <?php
 require 'includes/dbconnection.php';
 if(isset($_GET['companyname'])){
-    $id= $_GET['companyname'];
-   $_SESSION['page'] = $id;
-    $sql = "SELECT * FROM jobpost WHERE id=$id";
+    $idcompany= $_GET['companyname'];
+   $_SESSION['page'] = $idcompany;
+    $sql = "SELECT * FROM jobpost WHERE id=$idcompany";
     $stmt = $conn->query($sql);
     while($row = $stmt->fetch()){
         $_SESSION['idof']=$row->id;
@@ -36,7 +36,7 @@ if(isset($_GET['companyname'])){
     }
 }
 ?>
-   
+
 
     <div class="jobsheader">
         <div class="jobsin">
@@ -44,7 +44,8 @@ if(isset($_GET['companyname'])){
                 <p class="jobname"><?php echo $_SESSION['jobname']; ?></p>
             </a>
             <p class="companyname"><?php echo  $_SESSION['companyname']; ?></p>
-            <span id="some" class="joblocation"><?php echo  $_SESSION['joblocation']; ?><span style='color:gray'> | </span>
+            <span id="some" class="joblocation"><?php echo  $_SESSION['joblocation']; ?><span style='color:gray'> |
+                </span>
                 <span id="some" class="employment_type"> <?php  echo $_SESSION['employment_type']; ?>
                     <span id="some" class="jobsalary"><span style='color:gray'> | </span><span
                             style='font-weight:bold'>Ksh </span><?php echo $_SESSION['jobsalary']; ?></span>
@@ -53,9 +54,9 @@ if(isset($_GET['companyname'])){
 
                     <div class="jobsumarry"><?php echo  $_SESSION['jobduties'] ?></div>
         </div>
-    </div> 
+    </div>
 
-  
+
 
 
 
@@ -80,7 +81,7 @@ if(isset($_GET['companyname'])){
                 <p class="somenotes">Note: The application form uses some of your saved account details. </p>
             </div>
             <div class="accountdetails">
-            <?php
+                <?php
                 if(isset($_SESSION['error'])){
                     echo "
                       <div class='alert alert-danger alert-dismissible'>
@@ -102,13 +103,18 @@ if(isset($_GET['companyname'])){
                     unset($_SESSION['success']);
                   }
             ?>
-                 <form action="includes/jobaplly.php" enctype="multipart/form-data" method="post" id="getch">
+                <form action="includes/jobaplly.php" enctype="multipart/form-data" method="post" id="getch">
+                    <label for="job_id" >Company_Name</label> <br>
+                    <input type="text" name="companyname" class="offset" id="txt" value="<?php echo  $_SESSION['companyname'] ?>" readonly> <br>
+                    <label for="firstaname">Job Name</label> <br>
+                    <input type="text" name="jbname" class="offset" id="txt" value="<?php echo $_SESSION['jobname'] ?>" readonly> <br>
                     <label for="firstaname">firstname</label> <br>
                     <input type="text" name="fname" id="txt" value="<?php echo $firstname  ?>" readonly> <br>
                     <label for="lastname">Lastname</label> <br>
                     <input type="text" name="lname" id="txt" value="<?php echo $lastname          ?>" readonly> <br>
-                    <label for="phone">Mobile Number</label> <br>
-                    <input type="number" name="phonenumber" id="txt" value="<?php     echo    '0'.$phoneno          ?>" readonly> <br>
+                    <label for="phone">Mobile Number</label><br>
+                    <input type="number" name="phonenumber" id="txt" value="<?php     echo    '0'.$phoneno          ?>"
+                        readonly> <br>
                     <label for="qualifications">Minimum qualifications</label> <br>
                     <select name="Qualifications" id="qualification" required>
                         <option value="">Select...</option>
@@ -139,10 +145,10 @@ if(isset($_GET['companyname'])){
                     </select> <br>
                     <label for="salaryexpected">Monthly Salary Expectation</label> <br>
                     <button type="button" class="disable" disabled><span>KES</span></button>
-                    <input type="number"  name="salary" id="txtadd" required> <!-- from text to number validation pregmatch()   --> <br>
+                    <input type="number" name="salary" id="txtadd" required>
+                    <!-- from text to number validation pregmatch()   --> <br>
                     <label for="coverletter">Cover Letter</label> <br>
-                    <textarea name="coverletter" 
-                         rows="7" cols="34" required ></textarea> <br>
+                    <textarea name="coverletter" rows="7" cols="34" required></textarea> <br>
                     <label for="cvattatch"> Attach a CV</label> <br>
                     <input type="file" name="CV" required> <br>
                     <br>

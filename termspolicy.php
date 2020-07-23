@@ -40,7 +40,7 @@
                 research
                 companies. Every day, we connect hundreds of people to new opportunities.
             </p>
-            <a href="frontpage.php"><button type="button" class="btn btn-primary">visit OneCode</button></a>
+            <a href="index"><button type="button" class="btn btn-primary">visit OneCode</button></a>
             <br> <br>
             <h2 class="policy">Cookie Policy</h2>
             <h5>last Updated: <?php echo $lastupdated; ?></h5>

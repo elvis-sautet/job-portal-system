@@ -31,7 +31,7 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="company.jobpost.php"><i class="far fa-building"></i> Post job</a></li>
+                <li><a href="company.jobpost.php"> Post job</a></li>
             </ul>
         </div>
     </div> 

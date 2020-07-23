@@ -84,7 +84,7 @@ $jobgiver="Recruiter";
                     <label for="confirmpassword">Confirm password<span class="required">*</span></label><br>
                     <input type="password" name="confirm_password" onclick=" check()" id="my_pass"><br>
                     <span style="color:red" id="validating" class="verify"></span> <br>
-                    <input type="checkbox" style="zoom:1.5;" onclick="showpass()"><span style="color:brown;">Check
+                    <input type="checkbox" style="zoom:1;" onclick="showpass()"><span style="color:brown;">Check
                         Password</span> <br> <br>
                     <div class="submit">
                         <input type="submit" name="register-submit" value="Register Now">

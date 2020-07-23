@@ -15,18 +15,18 @@
 .detailing {
     width: 100%;
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 12px;
 }
 input[type="text"]{
-    font-size: 16px;
+    font-size: 12px;
     width: 70%;
-    padding: 12px;
+    padding: 8px;
     border: 1PX solid brown;
     border-radius: 12px;
     outline: none;
 }
 input[type="number"]{
-    font-size: 16px;
+    font-size: 12px;
     width: 70%;
     padding: 12px;
     border: 1PX solid brown;
@@ -34,16 +34,14 @@ input[type="number"]{
     outline: none;
 }
 input[type="password"]{
-    font-size: 16px;
+    font-size: 12px;
     width: 70%;
-    padding: 12px;
+    padding: 8px;
     border-radius: 12px;
     outline: none;
     border: 1PX solid brown;
 }
-input[type="text"]:hover,:focus{
-    border:3px #6F00FF groove;   
-}
+
 .have{
     width: fit-content;
     margin-left: auto;
@@ -58,7 +56,7 @@ input[type="text"]:hover,:focus{
 .haveacc{
     color: #2a2a2a;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: bolder;
     text-transform: capitalize;
 }
@@ -70,17 +68,17 @@ input[type="text"]:hover,:focus{
 input[type="submit"]{
     word-wrap: break-word;
     width: 70%;
-    padding: 13px;
+    padding: 6px;
     text-align: center;
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 12px;
     outline: none;
-    background-color: #0000FF;
+    background-color: #0090ff;
 }
  label{
     font-weight:bold; 
-    font-size: 22px; 
+    font-size: 14px; 
 }
 .required{
     color: red;

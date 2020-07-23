@@ -8,7 +8,9 @@ body{
     border-radius: 12px;
     
   }
-  
+ .offset{
+   color: #007bff;
+ }
   .jobsin {
     border-radius: 12px;
     overflow: hidden;
@@ -24,7 +26,7 @@ body{
     margin-bottom: 3em;
   }
   .jobname {
-    color: brown;
+    color: #007bff;
     font-weight: bolder;
     font-size: 16px;
     margin-bottom: 8px;

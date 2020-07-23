@@ -33,11 +33,21 @@ include "includes/session.php";
 
 <body class="jobbbbs">
     <!--the header-->
+    <?php
+     $sqlprofile = "SELECT profileimage  FROM job_seeker_registration WHERE id=$user[id]";
+     $result = $conn->query($sqlprofile);
+     $resultcount = $result->rowcount();
+     if($resultcount>0){
+         while($row=$result->fetch()){
+             $image = $row->profileimage;
+             if($image == NULL){
+                 ?>
     <div class="navgation">
         <div class="header">
             <div class="logo"><a href="homepage"><img id="mylogo" src="index images\mylogo for (2).PNG" alt="logo"></a></div>
             <ul class="main">
-                <li><a href="#"><i class="fas fa-user"> </i><i class="fas fa-angle-down"></i>User</a>
+            <li><a href="homepage">Jobs</a></li>
+                <li><a href="#"><img src="profiles/mainpic.png" class='profle'></img> user</a>
                     <ul>
                         <li><a href="#"><?php echo $user['firstname'];  ?></a></li>
                         <li><a href="usersprofileupdate1">Account</a></li>
@@ -54,6 +64,45 @@ include "includes/session.php";
             </ul>
         </div>
     </div>
+
+
+                 <?php
+
+             }else{
+?>
+    <div class="navgation">
+        <div class="header">
+            <div class="logo"><a href="homepage"><img id="mylogo" src="index images\mylogo for (2).PNG" alt="logo"></a></div>
+            <ul class="main">
+            <li><a href="homepage">Jobs</a></li>
+
+                    <li><a href="#"><img src="profiles/<?php echo $image?>?<?php mt_rand()?>" class='profle'></img> user</a>
+                <ul>
+                        <li><a href="#"><?php echo $user['firstname'];  ?></a></li>
+                        <li><a href="usersprofileupdate1">Account</a></li>
+                        <li><a href="careerprofile">Career</a></li>
+
+                        <li>
+                            <form action="includes/logout.php" method="post">
+                              <a href="#"><button id="logout" type="submit" name="logout"><i class="fas fa-sign-out-alt"></i> logout</button></a> 
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fas fa-user-graduate"></i> Students</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+<?php
+             }
+         }
+     }else{
+         echo "SQL ERROR";
+     }
+    ?>
+
 
 
 
