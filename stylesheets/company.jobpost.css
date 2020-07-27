@@ -5,21 +5,79 @@
 
 .postjob {
   margin: auto;
-  width: fit-content;
   padding: 14px;
   background-color: white;
   border-radius: 12px;
   margin-top: 3rem;
   margin-bottom: 3rem;
   padding-top: 6px;
+  width: 60%;
+
+}
+.recentjobs{
+  width: 30%;
+  margin-left: 34px;
+}
+.header34{
+  border-bottom: 1px solid #ddd;
+}
+.header34 h3{
+  font-size: 16px;
+  font-weight: 400;
 }
 
+.recent{
+  background-color:#ffff;
+  padding: 12px;
+
+}
 .thejob {
   padding: 13px;
   width: fit-content;
   background-color: white;
+  width: 90%;
 }
-
+.posted{
+  text-align: center;
+  width: fit-content;
+  background-color: white;
+  margin-left: 34px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px #ddd;
+  overflow: hidden;
+  float: left;
+  padding-bottom: 14px;
+}
+.posted h3{
+  color:  #0cafff;
+  padding: 12px;
+  font-family: Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto,
+    sans-serif;
+    font-size: 16px;
+}
+.posted h1{
+  font-family: Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto,
+    sans-serif;
+font-size: 16px;
+margin-top: 4px;
+text-decoration: underline;
+}
+.posted a{
+  box-shadow: 0 0 10px 1px #ddd;
+  color: white;
+  background-color:#6D98AB;
+  padding:4px 12px;
+  font-family: Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto,
+    sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-radius: 15px;
+}
+.posted a:hover{
+  text-decoration: none;
+  color: white;
+background-color: royalblue;
+}
 label {
   font-family: Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto,
     sans-serif;
@@ -27,6 +85,7 @@ label {
   font-size: 14px;
   font-weight: bold;
 }
+
 
 input[type="text"] {
   outline: none;
@@ -47,7 +106,8 @@ select {
   border-radius: 12px;
 }
 option {
-  font-size: 10px;
+  font-size: 15px;
+  border: 1px solid red;
 }
 input[type="submit"] {
   cursor: pointer;
@@ -67,7 +127,7 @@ input[type="submit"]:hover {
 }
 /*company site css*/
 .companysitee{
-  background-color: silver;
+  background-color: #f2f2f2;
   margin: 0px;
 }
 .welcome{
@@ -99,7 +159,7 @@ input[type="submit"]:hover {
     font-size: 15px;
   }
   input[type="text"] {
-    width: 60%;
+    width: 90%;
     padding: 6px;
     font-size: 13px;
     border-radius: 12px;
@@ -113,9 +173,11 @@ input[type="submit"]:hover {
     background-color: white;
     margin-top: 2rem;
     margin-left: 0px;
+    width: 100%;
   }
+
   select {
-    width: 60%;
+    width: 90%;
     padding: 8px;
     border-radius: 12px;
   }

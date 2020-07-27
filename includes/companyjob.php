@@ -12,15 +12,15 @@
 
 
         if(empty($joblocation) ||empty($joboverview) ||empty($jobduties) ||empty($employment_type) ||empty($job_salary) ){
-            header("Location: ../company.jobpost?error=emptyfields&jobname=".$jobname."&location=".$joblocation."&overview=".$joboverview."&responsibilities=".$jobduties);
+            header("Location: ../companyjobpost?error=emptyfields&jobname=".$jobname."&location=".$joblocation."&overview=".$joboverview."&responsibilities=".$jobduties);
             exit();
         }
         elseif(!preg_match("/^[a-zA-Z0-9\s_ '-' :{'+','()',':'}]*$/",$jobname)&& !preg_match("/^[a-zA-Z0-9\s_-]*$/",$joblocation)){
-            header("Location: ../signup?error=details error");
+            header("Location: ../companyjobpost?error=details error");
             exit();
         }
         elseif(!preg_match("/^[a-zA-Z0-9\s_-]*$/",$joblocation)){
-            header("Location: ../company.jobpost?error=invalidjoblocation&jobname=".$jobname."&overview=".$joboverview."&responsibilities=".$jobduties);
+            header("Location: ../companyjobpost?error=invalidjoblocation&jobname=".$jobname."&overview=".$joboverview."&responsibilities=".$jobduties);
             exit();
         }
         else{
@@ -30,13 +30,13 @@
                     VALUES(?,?,?,?,?,?,?,?)";
             $stmt=$conn->prepare($sql);
             $stmt->execute([$indexed,$jobname,  $companynme,$joblocation,$employment_type,$job_salary, $joboverview,$jobduties]);
-            header("Location: ../company.jobpost?posting=success");
+            header("Location: ../companyjobpost?posting=success");
             exit();
         }
         $stmt->closeCursor();
         $conn=null;
 
     }else{
-        header("Location: ../company.jobpost");
+        header("Location: ../companyjobpost");
         exit();
     }

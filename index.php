@@ -10,9 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OneCode</title>
     <link href='https://fonts.googleapis.com/css?family=Black Ops One' rel='stylesheet'>
-    <link rel="shortcut icon" type="image/png" href="index images\favicon.PNG" >
-    <link rel="shortcut icon" type="image/png" href="index images\favicon.PNG" >
-
+    <link rel="shortcut icon" type="image/png" href="index images\favicon.PNG">
+    <link rel="shortcut icon" type="image/png" href="index images\favicon.PNG">
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
 </head>
 
 <body id="frontpage">
@@ -99,10 +102,10 @@
     </div>
     <br>
 
-    <div class="ffter">
-        <?php include "myfooter.php";
+  
+
+    <?php include "myfooter.php";
 ?>
-    </div>
 </body>
 
 </html>

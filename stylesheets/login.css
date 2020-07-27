@@ -11,15 +11,21 @@
 }
 
 .allt {
-    padding: 1em;
     display: flex;
     flex-direction: column;
 }
-
+.xx{
+    background-color:  #3498DB !important;
+    text-align: center;
+}
 .signin {
     font-family: Arial, Helvetica, sans-serif;
+    color: honeydew;
     font-size: 18px;
     font-weight: bolder;
+    padding:3px 0px;
+    text-transform: capitalize;
+    font-family: Coda !important;
 }
 label{
     font-size: 14px;
@@ -35,6 +41,7 @@ label{
     padding-bottom: 12px;
 }
 .form {
+    padding: 1em;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -102,6 +109,14 @@ input[type="text"] {
     padding: 7px;
     border-radius: 12px;
 }
+input[type="email"] {
+    outline: none;
+    border: 1px solid #cccccc;
+    background-color: #fff;
+    width: 100%;
+    padding: 7px;
+    border-radius: 12px;
+}
 
 input[type="password"] {
     outline: none;
@@ -122,7 +137,8 @@ input[type="submit"] {
     color: #fff;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #0000FF;
+    background-color: #3498DB;
+    opacity: .8;
     font-size: 12px;
 }
 input[type="submit"]:hover{

@@ -1,28 +1,32 @@
+<?php
+include "includes/companysessions.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-<link rel="stylesheet" href="stylesheets/usersprofileupdate.css?v=<?php echo time(); ?>">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career_Profile</title>
+    <title>Company_Profile</title>
     <link rel="stylesheet" href="stylesheets\homepage.css">
     <link rel="shortcut icon" type="image/png" href="index images\favicon.PNG" >
 
 </head>
-<body  >
+
+<body class="zoomin">
     <?php
-  include "homepageheader.php";
+  include "companyheader.php";
 ?>
     <?php 
-$userid = $user['id'];
-    $sqlprofile = "SELECT *  FROM job_seeker_registration WHERE id=$userid ";
+$companyid = $user['id'];
+
+    $sqlprofile = "SELECT *  FROM companyregistration WHERE id=$companyid ";
     $result = $conn->query($sqlprofile);
     $resultcount = $result->rowcount();
     
     if($resultcount > 0 ){
         while($rowprofile =$result->fetch()){            
-            $profile = $rowprofile->profileimage;
+            $profile = $rowprofile->companyprofile;
             if($profile == NULL){
                 ?>
     <div class='careerprofile'>
@@ -35,7 +39,7 @@ $userid = $user['id'];
         <hr>
         <img class='proflepic' src='profiles/mainpic.png'> <br>
         <div class='uploadit'>
-            <form action="profileupload.php" method="POST" enctype="multipart/form-data">
+            <form action="companyprofile.php" method="POST" enctype="multipart/form-data">
                 <label for="file" id="lbl">choose profile</label> <br>
                 <input type="file" name="file"> <br><br>
                 <input type="submit" name="upload" value="UPLOAD">
@@ -62,15 +66,16 @@ $userid = $user['id'];
             </div>
         </div>
         <br>
+        
         <div class='uploadit'>
         <?php
-                if(isset($_SESSION['failed'])){
+                if(isset($_SESSION['cannot'])){
                     echo "
                       
-                    <p style='color:red'>".$_SESSION['failed']."</p>
+                    <p style='color:red'>".$_SESSION['cannot']."</p>
                       
                     ";
-                    unset($_SESSION['failed']);
+                    unset($_SESSION['cannot']);
                   }
                   if(isset($_SESSION['pass'])){
                     echo "
@@ -83,7 +88,7 @@ $userid = $user['id'];
                     unset($_SESSION['pass']);
                   }
             ?>
-            <form action="profileupload.php" method="POST" enctype="multipart/form-data">
+            <form action="companyprofile.php" method="POST" enctype="multipart/form-data">
                 <label for="file" id="lbl">choose profile</label> <br>
                 <input type="file" name="file"> <br> <br>
                 <input type="submit" name="upload" value="UPLOAD">
@@ -102,51 +107,7 @@ $userid = $user['id'];
     
     
 ?>
- <div class="usersdaa">
-        <div class="profiling">
-            <div class="accountsettun">
-                <h2 class="settings">Account Settings</h2>
-            </div>
-            <div class="formaccount">
 
-<?php
- require "includes/dbconnection.php";
- $id = $_SESSION['id'];
-$sql = "SELECT* FROM job_seeker_registration WHERE id=?";
-$stmt = $conn->prepare($sql);
-$stmt->execute([$id]);
-$result=$stmt->rowcount();
-if($result>0){
-    while($row = $stmt->fetch()){
-       $username= $row->username;
-       $firstname= $row->firstname;
-       $lastname =  $row->lastname;
-       $email= $row->email;
-       $phoneno= $row->phonenumber;
-?>
-                <form action="includes/userprofileupdate.php" Method="Post">
-                    <label for="firstname">Fistname</label><br>
-                    <input type="text" name="fname" value="<?php echo  $firstname;     ?>"><br>
-                    <label for="lastname">Lastname</label><br>
-                    <input type="text" name="lname" value="<?php echo  $lastname;     ?>"><br>
-                    <label for="email">Email</label><br>
-                    <input type="text" name="email" value="<?php echo  $email;     ?>"><br>
-                    <label for="phone">Phone</label><br>
-                    <input type="number" name="number" value="<?php echo  $phoneno; ?>"><br>
-                    <br>
-                    <input type="submit" name="Update" value="Update">
-                </form>
-            </div>
-        </div>
-    </div>
-    <?php  }
-}else{
-    echo "something went wrong, please try again!";
-}  ?>
 <?php
   include "myfooter.php";
 ?>
-
-</body>
-
-</html>

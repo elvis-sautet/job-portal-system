@@ -22,8 +22,10 @@ CKEDITOR.editorConfig = function( config ) {
 		{ name: 'others', groups: [ 'others' ] },
 		{ name: 'about', groups: [ 'about' ] }
 	];
-
-	config.removeButtons = 'About,Find,Replace,SelectAll,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,Anchor,Unlink,Link,Image,Flash,Table,Smiley,SpecialChar,PageBreak,Iframe,Blockquote,CreateDiv,Indent,Outdent,Strike,Subscript,Superscript,Source,Save,NewPage,Preview,Print,Templates,PasteText,Paste,Maximize,ShowBlocks,HorizontalRule,BidiRtl,Language,BidiLtr,JustifyRight,Cut,Copy,PasteFromWord';
+	
+	config.removeButtons = 'About,Find,Replace,SelectAll,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,Anchor,Unlink,Link,Image,Flash,Table,Smiley,SpecialChar,PageBreak,Iframe,Blockquote,CreateDiv,Indent,Outdent,Strike,Subscript,Superscript,Source,Save,NewPage,Preview,Print,Templates,PasteText,Paste,Maximize,ShowBlocks,HorizontalRule,BidiRtl,Language,BidiLtr,JustifyRight,Cut,Copy,PasteFromWord,Bold,Italic,Underline,CopyFormatting,RemoveFormat,JustifyBlock,JustifyCenter,JustifyLeft,TextColor,BGColor,Styles,Format,Font,FontSize';
 	config.width = "auto";
     config.height = "auto";
 };
+
+

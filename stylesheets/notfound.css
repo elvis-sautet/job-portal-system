@@ -1,7 +1,124 @@
-.not{
-    height: 80px;
-    background-color: orange;
-    border-radius: 50%;
-    width: 80px;
-    display: inline-block;
+.not {
+  height: 80px;
+  background-color: orange;
+  border-radius: 50%;
+  width: 80px;
+  display: inline-block;
+}
+.processphp {
+  background-color: #f2f2f2;
+}
+.receipt {
+  background-color: white;
+  width: 60%;
+  margin: auto;
+  box-shadow: 0 2px 3px 1px #ddd;
+}
+.ppp:hover {
+  border-bottom: #007bff;
+}
+.ppp {
+  text-align: center;
+  padding: 12px;
+  font-family: roboto;
+  margin-top: 1em;
+}
+.ppp h3 {
+  color: #4e4e4e;
+  font-weight: 600;
+  font-size: 22px;
+}
+.ppp ul {
+  line-height: 1.3;
+  list-style-type: none;
+  text-align: center;
+  font-family: Cairo;
+  color: #4e4e4e;
+}
+.dev {
+  transition: background-color 300ms ease-in;
+  border-radius: 4px;
+  padding: 6px 12px;
+  color: white;
+  opacity: 0.8;
+  background-color: royalblue;
+}
+.dev:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #0090ff;
+}
+.ppp h3 {
+  font-weight: 600;
+}
+.allplans {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 60%;
+  /* z-index: -1; */
+  margin-top: 4em;
+  height: auto;
+}
+.chosed{
+    color: #33c4b6;
+}
+.chosed:hover{
+    color: #33c4b6;
+    text-decoration: none;
+}
+.plans {
+  font-weight: 400;
+  color: #9f9f9f;
+  font-size: 15px;
+
+  justify-content: center;
+  width: 30%;
+  padding: 6px 12px;
+  background-color: white;
+  display: flex;
+  margin-right: 4px;
+  border-radius: 12px;
+  border: 3px solid #e8e8e8;
+  height: 17em;
+  transition: margin-top 300ms linear;
+  line-height: 1;
+}
+.fist h2{
+    color: #565656;
+    font-weight: 300;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+.plans:hover {
+  cursor: pointer;
+  margin-top: -36px;
+  transition: margin-top 300ms linear;
+}
+
+.cashd {
+  position: relative;
+  border-radius: 13px;
+  color: #33c4b6;
+  font-weight: 700;
+  padding: 3px;
+  border: 1px solid #ddd;
+}
+.fa-check {
+  float: left;
+  clear: both;
+}
+#plnms {
+  z-index: 1000;
+  border: 3px solid #33c4b6;
+  box-shadow: 0 2px 3px 1px #ddd;
+}
+.fa-check {
+  color: #33c4b6;
+}
+/* .lstngs .listings{
+    margin-top: -3px;
+} */
+.fa-check {
+  margin-bottom: -6px;
 }

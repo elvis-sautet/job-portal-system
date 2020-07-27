@@ -2,7 +2,9 @@
   margin: 0px;
   background-color: #f2f2f2;
 }
-
+.zoomin{
+  background-color: #f2f2f2;
+}
 .profle {
   height: 2em;
   width: 2em;
@@ -52,7 +54,7 @@
 }
 .header ul {
   float: right;
-  margin-right: 6rem;
+  margin-right: 2rem;
 
 }
 .header ul li {
@@ -91,7 +93,7 @@
   transform: translate(-1.7em);
 }
 .header ul li ul li {
-  width: 150px;
+  width: 110px;
   white-space: nowrap;
   padding: 4px 10px;
   transition: background-color 300ms ease-in-out;

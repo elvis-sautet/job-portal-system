@@ -31,11 +31,16 @@
 
 </head>
 <body class="jobbbbs">
-    <?php include 'jobs.php';
-        ?>
+    <?php
+    include "homepageheader.php";
+    include 'searchbox.php';
+
+     include 'jobs.php';
+  ?>
 <?php
 include "myfooter.php";
 ?>
+
 </body>
 
 </html>

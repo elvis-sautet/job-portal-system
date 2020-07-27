@@ -30,58 +30,67 @@
 
 <body class="myfinalf">
     <!-- Site footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <h6>About</h6>
-                    <p class="text-justify">OneCode <i> JOBS TO BE EASY </i> is an initiative to help the
-                         Jobseekers and students with the allocation of jobs and findings. Onecode focuses on providing the most efficient works or
-                        jobs For you our site users and viewers. We will even help Jobseekers with the navigation on  oursite in different
-                        Locations.</p>
-                </div>
+<div class="maincccc">
+    
+</div>
+<br>
+<br>
+    <div class="footerrr">
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h6>About</h6>
+                        <p class="text-justify">OneCode <i> JOBS TO BE EASY </i> is an initiative to help the
+                            Jobseekers and students with the allocation of jobs and findings. Onecode focuses on
+                            providing the most efficient works or
+                            jobs For you our site users and viewers. We will even help Jobseekers with the navigation on
+                            oursite in different
+                            Locations.</p>
+                    </div>
 
-                <div class="col-xs-6 col-md-3">
-                    <h6>Categories</h6>
-                    <ul class="footer-links">
-                        <li><a href="#">Country jobs</a></li>
-                        <li><a href="#">Need CodeDesign?</a></li>
-                        <li><a href="#">Outside Country Jobs</a></li>
-                    </ul>
-                </div>
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Categories</h6>
+                        <ul class="footer-links">
+                            <li><a href="#">Country jobs</a></li>
+                            <li><a href="#">Need CodeDesign?</a></li>
+                            <li><a href="#">Outside Country Jobs</a></li>
+                        </ul>
+                    </div>
 
-                <div class="col-xs-6 col-md-3">
-                    <h6>Quick Links</h6>
-                    <ul class="footer-links">
-                        <li><a href="termspolicy.php">About Us</a></li>
-                        <li><a href="termspolicy.php">Contact Us</a></li>
-                        <li><a href="#">Contribute</a></li>
-                        <li><a href="termspolicy.php">Privacy Policy</a></li>
-                        <li><a href="#">Sitemap</a></li>
-                    </ul>
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="termspolicy.php">About Us</a></li>
+                            <li><a href="termspolicy.php">Contact Us</a></li>
+                            <li><a href="#">Contribute</a></li>
+                            <li><a href="termspolicy.php">Privacy Policy</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+                            <a href="#">Onecode</a>.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <hr>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
-                        <a href="#">Onecode</a>.
-                    </p>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <ul class="social-icons">
-                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+    
 </body>
 
 </html>

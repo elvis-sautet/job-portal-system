@@ -3,16 +3,16 @@
     if(isset($_POST['login'])){
         require "dbconnection.php";
 
-        $username = $_POST['usernameemail'];
+        $username = $_POST['email'];
         $password = $_POST['Password1'];
         
         if(empty($username) || empty($password)){
             header("location: ../companylogin?error=emptyfields");
             exit();
         }else{
-            $sql = "SELECT * FROM companyregistration  WHERE username=? OR email=?";
+            $sql = "SELECT * FROM companyregistration  WHERE  email=?";
             $stmt = $conn->prepare($sql);
-            $stmt->execute([$username, $username]);
+            $stmt->execute([$username]);
             $results = $stmt->rowcount();
             if($row = $stmt->fetch($results )){
                 $pwdcheck = password_verify($password, $row['password']);
@@ -24,7 +24,7 @@
                     $_SESSION['companyname']= $row['companyName'];
                     $_SESSION['email']= $row['email'];
                     $_SESSION['id']=$row['id'];
-                    header("location: ../companysite?login=success");
+                    header("location: ../companysite?");
                     exit();
                 }else{
                     header("location: ../companylogin?error=wrong-password");

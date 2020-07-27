@@ -1,306 +1,335 @@
-
-.usersdaa{
-    width: 40%;
-    margin-top: 2em;
-    margin-left: 3em;
+/* .slider-container {
+  width: 50%;
+  margin: auto;
+  overflow: auto;
 }
-.profiling{
-    background-color: white;
-    padding-bottom: 12px;
+.sliderh {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  padding: 3px;
+  text-align: center;
+  overflow: hidden;
+  float: left;
 }
-.accountsettun{
-    text-transform: capitalize;
-    color: white;
-    background:linear-gradient(0deg,#bc2132,#d42b3d);
+.sliderh img {
+  display: none;
+  height: 300px;
+  width: 500px;
 }
-.settings{
-    font-size: 16px;
-    padding: 4px;
-    margin-left: 4px;
+.sliderh img.active {
+  display: inline-block;
 }
-.formaccount{
-    margin-top: 0px;
-    overflow: hidden;
-    background-color: white;
-    padding: 13px;
-    border-radius: 12px;
+.fa-arrow-left,
+.fa-arrow-right {
+  float: left;
+  margin-top: 130px;
+  cursor: pointer;
+  color: white;
+  padding: 4px;
+  background-color: black;
 }
-input[type="text"]{
-    width: 70%;
-    border: 1PX solid brown;
-    border-radius: 12px;
-    outline: none;
+.fa-arrow-right {
+  position: relative;
+  z-index: 100;
+  color: rebeccapurple;
+} */
+.usersdaa {
+  width: 40%;
+  margin-top: 2em;
+  margin-left: 3em;
 }
-input[type="number"]{
-    width: 70%;
-    border: 1PX solid brown;
-    border-radius: 12px;
-    outline: none;
+.profiling {
+  background-color: white;
+  padding-bottom: 12px;
 }
-input[type="submit"]{
-    word-wrap: break-word;
-    width: fit-content;
-    padding: 4px;
-    text-align: center;
-    color: #fff;
-    font-size: 14px;
-    border-radius: 12px;
-    outline: none;
-    background-color: #0000FF;
+.accountsettun {
+  text-transform: capitalize;
+  color: white;
+  background: linear-gradient(0deg, #bc2132, #d42b3d);
 }
-input[type="submit"]:hover{
-
-    background-color: #7B68EE;
+.settings {
+  font-size: 16px;
+  padding: 4px;
+  margin-left: 4px;
 }
-label{
-    font-size: 12px;
-    font-family: Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto, sans-serif;;
-    font-weight: 300;
+.formaccount {
+  margin-top: 0px;
+  overflow: hidden;
+  background-color: white;
+  padding: 13px;
+  border-radius: 12px;
+}
+input[type="text"] {
+  width: 70%;
+  border: 1px solid brown;
+  border-radius: 12px;
+  outline: none;
+}
+input[type="number"] {
+  width: 70%;
+  border: 1px solid brown;
+  border-radius: 12px;
+  outline: none;
+}
+input[type="submit"] {
+  word-wrap: break-word;
+  width: fit-content;
+  padding: 4px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 12px;
+  outline: none;
+  background-color: #0000ff;
+}
+input[type="submit"]:hover {
+  background-color: #7b68ee;
+}
+label {
+  font-size: 12px;
+  font-family: Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto,
+    sans-serif;
+  font-weight: 300;
 }
 
 /*indexpage css*/
-*{
-    box-sizing: border-box;
-  
-  }
-  #frontpage{
-    background-color:#f2f2f2;
-  }
-  
-  .areyou{
-    -webkit-box-shadow: -1px 6px 15px 3px rgba(0,0,0,0.75);
-  -moz-box-shadow: -1px 6px 15px 3px rgba(0,0,0,0.75);
-  box-shadow: -1px 6px 15px 3px rgba(0,0,0,0.75);
-    background-color: white;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+* {
+  box-sizing: border-box;
+}
+#frontpage {
+  background-color: #f2f2f2;
+}
+
+.areyou {
+  background-color: white;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
   flex-wrap: wrap;
+}
+.ask {
+  text-align: center;
+  padding: 4px;
+}
+.ask1 {
+  font-size: 12px;
+  font-weight: bold;
+}
+.body2 {
+  display: flex;
+  justify-content: space-between;
+}
+.ask2 {
+  width: 50%;
+  text-align: center;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.or {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.and {
+  font-weight: bolder;
+  font-size: 12px;
+}
+.signup1 {
+  color: #0090ff;
+  text-decoration: none;
+}
+.signup1:hover {
+  text-decoration: none;
+  color: #0090ff;
+  font-weight: 400;
+}
+.asktxt {
+  font-size: 14px;
+}
+#phone {
+  font-size: 1em;
+}
+
+/*testimonials*/
+.sayings {
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  clear: both;
+}
+
+.responses {
+  align-content: center;
+  width: 80%;
+  display: flex;
+}
+.user1 {
+  border-radius: 12px;
+  overflow: hidden;
+  word-wrap: break-word;
+  background-color: white;
+  max-width: fit-content;
+  text-align: center;
+  padding-top: 12px;
+  padding: 12px;
+  margin-right: 2em;
+}
+#user1png {
+  height: 4em;
+  border-radius: 14pc;
+}
+.txt1 {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.namesay {
+  font-size: 14px;
+  color: #0090ff;
+}
+/* terms and policy.php */
+.terms {
+  background-color: #f2f2f2;
+}
+
+.alltermss {
+  margin-bottom: 3em;
+  margin-top: 1em;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+.thecookie {
+  word-wrap: break-word;
+  overflow: hidden;
+  line-height: 1.8;
+  padding: 13px;
+  font-family: "coda";
+}
+.para {
+  font-size: 14px;
+  word-wrap: break-word;
+}
+.h1 {
+  font-weight: bolder;
+  font-size: 5px;
+}
+h2 {
+  font-weight: bold;
+}
+h3 {
+  font-weight: 600;
+}
+h5 {
+  font-size: 14px;
+  color: chocolate;
+}
+.numbering {
+  list-style-type: none;
+}
+.dire {
+  font-weight: bold;
+}
+.terms {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1230px) {
+  .usersdaa {
+    width: 60%;
+    margin-left: 2em;
+    margin-top: 3em;
   }
-  .ask{
+}
+
+@media screen and (max-width: 930px) {
+  .areyou {
+    width: 60%;
+  }
+  .ask {
     text-align: center;
-    padding: 4px;
+    padding: 10px;
   }
-  .ask1{
-    font-size: 12px;
-    font-weight: bold;
+  .ask1 {
+    font-size: 13px;
   }
-  .body2{
-    display: flex;
-    justify-content: space-between;
-  }
-  .ask2{
-    width: 50%;
-    text-align: center;
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
-  .or{
+  .or {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .and{
+  .and {
     font-weight: bolder;
-    font-size: 12px;
+    font-size: 18px;
   }
-  .signup1{
-    color: goldenrod;
+  .signup1 {
+    color: orange;
     text-decoration: none;
   }
-  .asktxt{
+  .signup1:hover {
+    text-decoration: none;
+  }
+  .asktxt {
     font-size: 14px;
   }
-  #phone{
-    font-size: 1em;
-  }
-  
-  
-  /*testimonials*/
-  .sayings{
-    margin-left: 250px;
+  .sayings {
+    margin-left: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     clear: both;
-  
   }
-  
-  .responses{
+  .responses {
+    margin: auto;
     align-content: center;
-    width: 80%;
+    width: 70%;
     display: flex;
-    
+    flex-direction: column;
   }
-  .user1{
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    border-radius: 12px;
-    overflow: hidden;
-    word-wrap: break-word;
-    background-color: floralwhite;
-    max-width: fit-content;
-    text-align: center;
-    padding-top: 12px;
-    padding: 12px;
-    margin-right: 2em;
-  
-  }
-  #user1png{
-    height: 4em;
-    border-radius: 14pc;
-  }
-  .txt1{
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-  .namesay{
-    font-size: 14px;
-    color:#120A8F;
-  }
-  /* terms and policy.php */
-  .terms{
-    
-    background-color: silver;
 }
-
-.alltermss{
-    margin-bottom: 3em;
+@media screen and (max-width: 800px) {
+  .alltermss {
+    width: 100%;
+  }
+  .thecookie {
+    line-height: 1.6;
+  }
+  .para {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 15px;
+    text-decoration: underline;
+  }
+  .logoss {
     margin-top: 1em;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #fff;
-}
-.thecookie{
-    word-wrap: break-word;
-    overflow: hidden;
-    line-height: 1.8;
-    padding: 13px;
-    font-family: "coda";
-}
-.para{
-    font-size: 14px;
-    word-wrap: break-word;
-}
-.h1{
-    font-weight: bolder;
-    font-size: 5px;
-}
-h2{
-    font-weight: bold;
-}
-h3{
-    font-weight: 600;
-}
-h5{
-    font-size: 14px;
-    color: chocolate;
-}
-.numbering{
-    list-style-type: none;
-}
-.dire{
-    font-weight: bold;
-}
-.terms{
-    list-style-type: none;
-    font-weight: bold;
-}
-
-@media screen and (max-width:1230px){
-    .usersdaa{
-        width: 60%;
-        margin-left: 2em;
-        margin-top: 3em;
-    }
-}
-
-@media screen and (max-width:930px){
-    .areyou{
-    
-      width: 60%;
-    }
-    .ask{
-      text-align: center;
-      padding: 10px;
-    }
-    .ask1{
-      font-size: 13px;
-    }
-    .or{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .and{
-      font-weight: bolder;
-      font-size: 18px;
-    }
-    .signup1{
-      color: goldenrod;
-      text-decoration: none;
-    }
-    .asktxt{
-      font-size: 14px;
-    }
-    .sayings{
-      margin-left: 20px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      clear: both;
-  
-    }
-    .responses{
-      margin: auto;
-      align-content: center;
-      width: 70%;
-      display: flex;
-      flex-direction: column;
-    }
   }
-  @media screen and (max-width:800px){
-    .alltermss{
-        width: 100%;
-    }
-    .thecookie{
-        line-height: 1.6;
-    }
-    .para{
-        font-size: 16px;
-    }
-    h1{
-        font-size: 20px;
-    }
-    h2{
-        font-size: 16px;
-    }
-    h3{
-        font-size: 15px;
-        text-decoration: underline;
-    }
-    .logoss{
-        margin-top: 1em;
-    }
-    .lo{
-        height: 5em;
-    }
+  .lo {
+    height: 5em;
+  }
 }
-@media screen and (max-width:631px){
-    .usersdaa{
-        width: 90%;
-        margin-right: 3em;
-        margin-left: 4px;
-        margin-top: 3em;
-    }
+@media screen and (max-width: 631px) {
+  .usersdaa {
+    width: 90%;
+    margin-right: 3em;
+    margin-left: 4px;
+    margin-top: 3em;
+  }
 }

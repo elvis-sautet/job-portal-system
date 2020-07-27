@@ -4,7 +4,6 @@
 if(isset($_POST['register-company'])){
     require "dbconnection.php";
     
-    $username=$_POST['username1'];
     $companyname=$_POST['cname'];
     $adress=$_POST['cAdress'];
     $email=$_POST['email'];
@@ -29,19 +28,19 @@ if(isset($_POST['register-company'])){
         header("Location: ../companies_signup?error=invalidaddress&username1=".$username."&email=".$email."&cname=".$companyname);
         exit();
     }else{
-        $sql = "SELECT username FROM companyregistration WHERE username=?";
+        $sql = "SELECT CompanyName, Email  FROM companyregistration WHERE CompanyName = ? or Email=?";
         $stmt = $conn->prepare($sql);
-        $stmt->execute([$username]);
+        $stmt->execute([$companyname,$email]);
         $checkresult=$stmt->rowcount();
         if($checkresult>0){
-            header("Location: ../companies_signup?error=usernametaken&email=".$email);
+            header("Location: ../companies_signup?error=Companyandemailshouldbeunique");
             exit(); 
         }else{
             $hashedpass= password_hash($password,PASSWORD_DEFAULT );
-            $sql = "INSERT INTO companyregistration (userName,companyName,CompanyAddress,Email,password) VALUES (?,?,?,?,?)";
+            $sql = "INSERT INTO companyregistration (companyName,CompanyAddress,Email,password) VALUES (?,?,?,?)";
             $stmt = $conn->prepare($sql);
-            $stmt ->execute([$username,$companyname,$adress,$email,$hashedpass]);
-            header("Location: ../companies_signup?signup=success");
+            $stmt ->execute([$companyname,$adress,$email,$hashedpass]);
+            header("Location: ../companylogin?registrationsuccesslogin");
             exit();
         }
         

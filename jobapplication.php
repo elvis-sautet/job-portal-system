@@ -74,6 +74,7 @@ if(isset($_GET['companyname'])){
        }
     }
 ?>
+
     <div class="apply">
         <div class="jobto">
             <div class="applyhere">
@@ -104,10 +105,12 @@ if(isset($_GET['companyname'])){
                   }
             ?>
                 <form action="includes/jobaplly.php" enctype="multipart/form-data" method="post" id="getch">
-                    <label for="job_id" >Company_Name</label> <br>
-                    <input type="text" name="companyname" class="offset" id="txt" value="<?php echo  $_SESSION['companyname'] ?>" readonly> <br>
+                    <label for="job_id">Company_Name</label> <br>
+                    <input type="text" name="companyname" class="offset" id="txt"
+                        value="<?php echo  $_SESSION['companyname'] ?>" readonly> <br>
                     <label for="firstaname">Job Name</label> <br>
-                    <input type="text" name="jbname" class="offset" id="txt" value="<?php echo $_SESSION['jobname'] ?>" readonly> <br>
+                    <input type="text" name="jbname" class="offset" id="txt" value="<?php echo $_SESSION['jobname'] ?>"
+                        readonly> <br>
                     <label for="firstaname">firstname</label> <br>
                     <input type="text" name="fname" id="txt" value="<?php echo $firstname  ?>" readonly> <br>
                     <label for="lastname">Lastname</label> <br>
@@ -156,13 +159,12 @@ if(isset($_GET['companyname'])){
                 </form>
             </div>
         </div>
+
     </div>
-    <br>
+<br>
 
-    <?php
-include 'myfooter.php';
-
-?>
+    
+  
 
 </body>
 

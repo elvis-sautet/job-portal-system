@@ -48,9 +48,10 @@ include "includes/session.php";
             <ul class="main">
             <li><a href="homepage">Jobs</a></li>
                 <li><a href="#"><img src="profiles/mainpic.png" class='profle'></img> user</a>
+                <li><a href="#"><i class="fas fa-user-graduate"></i> Students</a></li>
+
                     <ul>
                         <li><a href="#"><?php echo $user['firstname'];  ?></a></li>
-                        <li><a href="usersprofileupdate1">Account</a></li>
                         <li><a href="careerprofile">Career</a></li>
 
                         <li>
@@ -60,7 +61,6 @@ include "includes/session.php";
                         </li>
                     </ul>
                 </li>
-                <li><a href="#"><i class="fas fa-user-graduate"></i> Students</a></li>
             </ul>
         </div>
     </div>
@@ -74,12 +74,12 @@ include "includes/session.php";
         <div class="header">
             <div class="logo"><a href="homepage"><img id="mylogo" src="index images\mylogo for (2).PNG" alt="logo"></a></div>
             <ul class="main">
-            <li><a href="homepage">Jobs</a></li>
+            <li ><a href="homepage">Jobs</a></li>
+            <li><a href="#"><i class="fas fa-user-graduate"></i> Students</a></li>
 
                     <li><a href="#"><img src="profiles/<?php echo $image?>?<?php mt_rand()?>" class='profle'></img> user</a>
                 <ul>
                         <li><a href="#"><?php echo $user['firstname'];  ?></a></li>
-                        <li><a href="usersprofileupdate1">Account</a></li>
                         <li><a href="careerprofile">Career</a></li>
 
                         <li>
@@ -89,7 +89,6 @@ include "includes/session.php";
                         </li>
                     </ul>
                 </li>
-                <li><a href="#"><i class="fas fa-user-graduate"></i> Students</a></li>
             </ul>
         </div>
     </div>

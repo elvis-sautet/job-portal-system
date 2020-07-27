@@ -21,14 +21,15 @@
     <link rel="stylesheet" href="stylesheets/pagination.css?v=<?php  echo time()  ?>">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
 
-<body>
+</head>
+<script>
+    $document.re
+</script>
+<body >
+
     <?php
-include 'homepageheader.php';
-?>
-    <?php
-include 'searchbox.php';
+include "includes/dbconnection.php";
 ?>
     <br>
     <div class="allss">
@@ -42,7 +43,7 @@ include 'searchbox.php';
        $stmt =$conn->query($sql) ;
        $jobsaround = $stmt->rowCount();
        ?>
-            <p class="cnt"><?php echo"<span style='font-weight:bolder;'>". $jobsaround."</span>" ?> jobs found.</p>
+            <p class="cnt" id="canttake"><?php echo"<span style='font-weight:bolder;'>". $jobsaround."</span>" ?> jobs found.</p>
             <a  href="#"><p class="alerting">create a job alert</p></a>
         </div>
     </div>
@@ -87,7 +88,7 @@ $start_from = ($page-1) * $limit;
   $_SESSION['pagepass']=$id;          
 ?>
 
-    <div class="jobsheader">
+    <div class="jobsheader" id="demo">
         <div class="jobsin">
             <a class="goto" href="jobapplication?companyname=<?php echo $_SESSION['pagepass'] ?>">
                 <p class="jobname"><?php echo $jbname; ?></p>
@@ -102,8 +103,6 @@ $start_from = ($page-1) * $limit;
     </div>
 
     <?php }
-        }else{
-            echo "<h1> there are no jobs posted</h1>";
         } ?>
 
     <?php
@@ -117,9 +116,5 @@ $start_from = ($page-1) * $limit;
 
 ?>
 
-
-    <?php
-
-        $_SESSION['companyname']=$id;
-        ?>
+   
 </body>

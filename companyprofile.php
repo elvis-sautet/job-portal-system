@@ -1,5 +1,5 @@
 <?php
-include "includes/session.php";
+include "includes/companysessions.php";
 if(isset($_POST['upload'])){
    $id = $user['id'];   //1. get the information of the whole file
   $file = $_FILES['file'];
@@ -18,35 +18,34 @@ if(isset($_POST['upload'])){
         //a. check if there was an error uploading
         if($fileerror === 0){
         //check size of the file to upload
-        if($filesize < 10000000){
+        if($filesize < 1000000){
             //uploading the file by giving it a unique name so that it cannot be replaced with another
             $fileNameNew =uniqid('', true).'.'.$actualfileExt;
             //tell where we will upload the file
             $filedestination = 'profiles/'.$fileNameNew;
             //write a function to move the temporary location in to the actual location that we want it to be uploaded to.
         if(move_uploaded_file($filetempName, $filedestination)){
-            $sql = "UPDATE job_seeker_registration SET profileimage = ? WHERE id = ?";
+            $sql = "UPDATE companyregistration SET companyprofile = ? WHERE id = ?";
             $stmt =$conn->prepare($sql);
             $stmt -> execute([$fileNameNew, $id]);
-            header("Location: careerprofile");
-
+            header("Location: companyaccount");
         }
         }else{
-            $_SESSION['failed'] = "error=filesizetoobig";
-            header("Location: careerprofile");
+            $_SESSION['cannot'] = "error=filesizetoobig";
+            header("Location: companyaccount");
         }
         }else{
-            $_SESSION['failed'] = "Error=uploading your file";
-            header("Location: careerprofile");
+            $_SESSION['cannot'] = "Error=uploading your file";
+            header("Location: companyaccount");
         }
     }else{
-        $_SESSION['failed']  = "Cannot upload this type of file allowed JPG & PNG";
-        header("Location: careerprofile");
+        $_SESSION['cannot']  = "Cannot upload this type of file allowed JPG & PNG";
+        header("Location:  companyaccount");
 
     }
 }else{
-    $_SESSION['failed'] = "Click the apply button";
-    header("Location: homepage");
+    $_SESSION['cannot'] = "Click the apply button";
+    header("Location: companysite");
 
   }
 

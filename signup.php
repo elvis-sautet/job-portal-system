@@ -28,9 +28,7 @@ $jobgiver="Recruiter";
                     with
                     <?php echo $company?> features.</p>
             </div>
-            <div class="starthere">
-                <p class="some">You are <span class="required">*</span></p>
-            </div>
+          
 
             <?php
             $empty = 'fill up all the fields';
@@ -80,7 +78,7 @@ $jobgiver="Recruiter";
                     <input type="radio" id="other" name="gender" value="other">
                     <label for="other">Other</label> <br>
                     <label for="password">password<span class="required">*</span></label><br>
-                    <input type="password" name="password1" id="mypass" onclick=" check()"> <br>
+                    <input type="password" name="password1" id="mypass" onclick=" check()" > <br>
                     <label for="confirmpassword">Confirm password<span class="required">*</span></label><br>
                     <input type="password" name="confirm_password" onclick=" check()" id="my_pass"><br>
                     <span style="color:red" id="validating" class="verify"></span> <br>

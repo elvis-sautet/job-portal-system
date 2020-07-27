@@ -1,6 +1,5 @@
-<?php
-include "includes/session.php";
-?>
+<?php  include "includes/companysessions.php";
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +13,8 @@ include "includes/session.php";
 </head>
 
 <body class="joppp">
-    <?php  include "companyheader.php" ?>
+    <?php  include "companyheader.php";
+    ?>
     <div class="postjob">
         <div class="thejob">
             <form action="includes/companyjob.php" method="post">
