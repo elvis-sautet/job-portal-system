@@ -20,6 +20,8 @@ include "includes\companysessions.php";
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="index images\favicon.PNG" >
+
     <link rel="stylesheet" href="stylesheets/notfound.css?v=<?php  echo time()  ?>">
     <title>Document</title>
 </head>

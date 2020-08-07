@@ -71,6 +71,7 @@ if(isset($_GET['companyname'])){
           $firstname= $row->firstname;
           $lastname =  $row->lastname;
           $phoneno= $row->phonenumber;
+          $identification=$row->id;
        }
     }
 ?>
@@ -113,6 +114,8 @@ if(isset($_GET['companyname'])){
                         readonly> <br>
                     <label for="firstaname">firstname</label> <br>
                     <input type="text" name="fname" id="txt" value="<?php echo $firstname  ?>" readonly> <br>
+                    <label for="identification">Identification</label> <br>
+                    <input type="text" name="identify" id="txt" value="<?php echo $identification  ?>" readonly> <br>
                     <label for="lastname">Lastname</label> <br>
                     <input type="text" name="lname" id="txt" value="<?php echo $lastname          ?>" readonly> <br>
                     <label for="phone">Mobile Number</label><br>

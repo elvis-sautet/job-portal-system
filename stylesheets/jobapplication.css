@@ -1,33 +1,31 @@
 /* the job applications in companies styles */
-.applications{
+.applications {
   background-color: #f2f2f2;
-  font-family: Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto, sans-serif;
-
+  font-family: Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto,
+    sans-serif;
 }
 
-.person{
+.person {
   background-color: white;
   width: 50%;
   color: #444;
   margin: auto;
   padding-bottom: 12px;
   box-shadow: 0 0 10px 1px #ddd;
-
 }
-.person:hover{
+.person:hover {
   opacity: 1;
-
 }
-.coverletter{
+.coverletter {
   font-size: 14px;
 }
-.ontop{
-   margin-left: 1em;
+.ontop {
+  margin-left: 1em;
 }
-.detailsof{
+.detailsof {
   padding: 12px;
 }
-.cvdownload{
+.cvdownload {
   font-weight: 600;
   background-color: #fff;
   color: #0090ff;
@@ -37,23 +35,115 @@
   text-transform: capitalize;
   box-shadow: 0 0 10px 1px #ddd;
 }
-.cvdownloading{
+/* .cvdownloading{
   text-align: center;
-}
-.cvdownload:hover{
+} */
+.cvdownload:hover {
   text-decoration: none;
   color: white;
   background-color: #007bff;
   transition: background-color 200ms ease-in;
 }
+.applicationl {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cvdownload .fa-download {
+  color: #000000;
+}
+.accept:hover {
+  background-color: #73af59;
+}
+.accept{
+  position: relative;
+}
+.rejectapp:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #aa1111;
+  transition: background-color 200ms ease-in;
+}
+.messaging {
+  border-radius: 12px;
+  width: 30%;
+  background-color:#fff;
+  margin: auto;
+  margin-top: 20px;
+  display: none;
+  box-shadow: 0 0 10px 1px #ddd;
+  margin-bottom: 3em;
+  position: relative;
+}
+.form {
+  padding: 12px;
+  margin: auto;
+}
+.form label {
+  color: #007bff;
+  font-family: Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto,
+    sans-serif;
+}
 
-.namesto{
+.form input {
+  width: 100%;
+  border-radius:12px;
+  outline: none;
+  text-align: center;
+  border: 1px solid #2b2b2b;
+}
+.form input[type="text"] {
+  padding: 6px;
+}
+.fa-times{
+  float: right;
+  margin-top: -13px;
+  margin-right: -19px;
+  background-color: black;
+  padding: 8px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: red;
+  font-weight: 900;
+  text-align: center;
+  clear: both;
+  cursor: pointer;
+}
+#messsagesss{
+  border-radius: 12px;
+  box-shadow: 0 0 10px 1px #ddd;
+  background-color: white;
+  color: #007bff;
+  text-transform: capitalize;
+  border: 1px solid orange;
+  padding: 5px;
+  font-weight: 500;
+  width: 40%;
+}
+#messsagesss:hover {
+  background-color: orange;
+  transition: background-color 200ms ease-in;
+
+  color: white;
+}
+.form textarea {
+  border-radius: 12px;
+  max-height: 200px;
+  min-height: 200px;
+  outline: none;
+  width: 100%;
+}
+
+.cend {
+  text-align: center;
+}
+.namesto {
   color: #007bff;
   text-transform: capitalize;
   display: inline-block;
   font-weight: 500;
 }
-.egg{
+.egg {
   color: #000000;
   font-weight: 600;
   text-transform: capitalize;
@@ -61,127 +151,126 @@
 
 .mobil
 /* the end of the style */
-body{
-    background-color: #f2f2f2;
+body {
+  background-color: #f2f2f2;
 }
 .jobsheader {
-    margin-top: 2em;
-    max-width: 50%;
-    margin-left: 1em;
-    border-radius: 12px;
-  }
- .offset{
-   color: #007bff;
- }
-  .jobsin {
-    border-radius: 12px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    font-family: Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto, sans-serif;
-    ;
-    background-color: white;
-    padding: 14px;
-    text-decoration: none;
-    float: left;
-    clear: both;
-    margin-bottom: 3em;
-  }
-  .jobname {
-    color: #007bff;
-    font-weight: bolder;
-    font-size: 16px;
-    margin-bottom: 8px;
-  }
-  
-  #some {
-    font-size: 12px;
-    text-transform: capitalize;
-  }
-  
-  .companyname {
-    font-size: 12px;
-    margin-top: 0px;
-    color: #367588;
-    text-transform: capitalize;
-  }
-  
-  .jobsumarry {
-    border-top: 1px solid #CCCCFF;
-    color: #4e5559;
-    margin-top: 2em;
-    line-height: 1.6;
-    font-size: .75rem;
-  }
-  
-  .goto {
-    text-decoration: none;
-  }
-  
-  .goto:hover {
-    text-decoration: none;
-  }
-  
-  .line {
-    border: 1px solid #CCCCFF;
-  }
-  /*the jo application form*/
-.apply{
+  margin-top: 2em;
+  max-width: 50%;
+  margin-left: 1em;
+  border-radius: 12px;
+}
+.offset {
+  color: #007bff;
+}
+.jobsin {
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto,
+    sans-serif;
+  background-color: white;
+  padding: 14px;
+  text-decoration: none;
+  float: left;
+  clear: both;
+  margin-bottom: 3em;
+}
+.jobname {
+  color: #007bff;
+  font-weight: bolder;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+#some {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.companyname {
+  font-size: 12px;
+  margin-top: 0px;
+  color: #367588;
+  text-transform: capitalize;
+}
+
+.jobsumarry {
+  border-top: 1px solid #ccccff;
+  color: #4e5559;
+  margin-top: 2em;
+  line-height: 1.6;
+  font-size: 0.75rem;
+}
+
+.goto {
+  text-decoration: none;
+}
+
+.goto:hover {
+  text-decoration: none;
+}
+
+.line {
+  border: 1px solid #ccccff;
+}
+/*the jo application form*/
+.apply {
   font-size: 15px;
-margin-left: 3em;
-background-color: #fff;
-width: 35%;
-overflow: hidden;
-float: left; 
-margin-bottom: 3em;
+  margin-left: 3em;
+  background-color: #fff;
+  width: 35%;
+  overflow: hidden;
+  float: left;
+  margin-bottom: 3em;
 }
-.jobto{
-  font-family: Roboto,sans-serif;
+.jobto {
+  font-family: Roboto, sans-serif;
 }
-.applyhere{
+.applyhere {
   background-color: #1112;
 }
-.note{
-background-color: #222;
-padding: 12px 24px;
-color: white;
-font-weight: 700;
+.note {
+  background-color: #222;
+  padding: 12px 24px;
+  color: white;
+  font-weight: 700;
 }
-.somenotes{
-  padding:0px 12px;
-  color:#4e5559;
+.somenotes {
+  padding: 0px 12px;
+  color: #4e5559;
   width: 96%;
-
 }
-#getch{
-  padding:0px 12px;
-  color:#4e5559;
+#getch {
+  padding: 0px 12px;
+  color: #4e5559;
   padding-bottom: 12px;
 }
-label{
+label {
   text-transform: capitalize;
   padding-top: 3px;
 }
-#txt{
+#txt {
   width: 70%;
   padding: 4px;
   border-radius: 5px;
   border: 1px solid #222;
 }
-#txtadd{
-  width:59%;
+#txtadd {
+  width: 59%;
   padding: 4px;
   border-radius: 5px;
   border: 1px solid #222;
 }
 
-select{
+select {
   width: 70%;
   padding: 4px;
   border-radius: 5px;
   border: 1px solid #222;
 }
-input[type="submit"]{
+input[type="submit"] {
   background-color: #f69322;
   outline: none;
   color: #fff;
@@ -191,45 +280,42 @@ input[type="submit"]{
   padding: 8px 20px;
   cursor: pointer;
 }
-input[type="file"]{
+input[type="file"] {
   cursor: pointer;
 }
-textarea{
+textarea {
   cursor: text;
   border: 1px solid #222;
 }
 
+/*end of the form*/
+@media screen and (max-width: 850px) {
+  .jobsheader {
+    margin-top: 0.5em;
+    max-width: 100%;
+    margin-left: 6px;
+    margin-right: 6px;
+    border-radius: 12px;
+  }
 
-  /*end of the form*/
-@media screen and (max-width:850px){
-    .jobsheader {
-        margin-top: .5em;
-        max-width: 100%;
-        margin-left: 6px;
-        margin-right: 6px;
-        border-radius: 12px;
-    
-      }
-    
-      .jobsin {
-    
-        padding: 6px;
-        text-decoration: none;
-      }
-    
-      .jobname {
-        color: brown;
-        font-weight: bolder;
-        font-size: 13px;
-      }
-      .apply{
-      font-size: 15px;
-      background-color: #fff;
-      width: 90%;
-      overflow: hidden;
-      float: left; 
-      margin-left: 3em;
-      margin-right: 3em;
-      margin-bottom: 3em;
-      }
+  .jobsin {
+    padding: 6px;
+    text-decoration: none;
+  }
+
+  .jobname {
+    color: brown;
+    font-weight: bolder;
+    font-size: 13px;
+  }
+  .apply {
+    font-size: 15px;
+    background-color: #fff;
+    width: 90%;
+    overflow: hidden;
+    float: left;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 3em;
+  }
 }

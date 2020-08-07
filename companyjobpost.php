@@ -79,7 +79,7 @@
 
 
     <script>
-    CKEDITOR.timestamp = 'something_ran';
+    CKEDITOR.timestamp = 'something_rand';
     CKEDITOR.replace('responsibility');
     CKEDITOR.replace('joboverview');
     </script>

@@ -48,8 +48,24 @@
                         alt="logo"></a></div>
             <ul class="main">
                 <li><a href="processpost">Post job</a></li>
-                <li><a href="applications" id="jobss">Applications</a></li>
-                <li><a href="#"><img src="profiles/mainpic.png" class='profle'></img> user</a>
+                <?php
+    $companylogged = $user['companyName'];
+    $sql = "SELECT * FROM jobapplicantion WHERE companyname = ? AND Message IS NULL ORDER BY id DESC  ";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([$companylogged]);
+    $rows = $stmt->rowcount();
+    if($rows>0){
+        ?>
+                <li><a href="applications" id="rfrsh">Applications <i class="far fa-bell" style="color:#0090ff"><sup><sup class="sup"><?php echo $rows   ?></sup></sup></i></a></li>
+
+    <?php
+    }else{
+        ?>
+                <li><a href="applications" id="rfrsh">Applications</a></li>
+
+        <?php
+    }
+    ?>                <li><a href="#"><img src="profiles/mainpic.png" class='profle'></img> user</a>
                     <ul>
                         <li><a href="companyaccount">Account</a></li>
 
@@ -76,7 +92,24 @@
                         alt="logo"></a></div>
             <ul class="main">
                 <li><a href="processpost">Post job</a></li>
-                <li><a href="applications" id="rfrsh">Applications</a></li>
+                <?php
+    $companylogged = $user['companyName'];
+    $sql = "SELECT * FROM jobapplicantion WHERE companyname = ? AND Message IS NULL ORDER BY id DESC  ";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([$companylogged]);
+    $rows = $stmt->rowcount();
+    if($rows>0){
+        ?>
+                <li><a href="applications" id="rfrsh">Applications <i class="far fa-bell" style="color:#0090ff"><sup><sup class="sup"><?php echo $rows   ?></sup></sup></i></a></li>
+
+    <?php
+    }else{
+        ?>
+                <li><a href="applications" id="rfrsh">Applications </a></li>
+
+        <?php
+    }
+    ?>
                 <li><a href="#"><img src="profiles/<?php echo $image?>?<?php mt_rand()?>" class='profle'></img> user</a>
                     <ul>
                         <li><a href="companyaccount">Account</a></li>
