@@ -50,7 +50,7 @@
                 <li><a href="processpost">Post job</a></li>
                 <?php
     $companylogged = $user['companyName'];
-    $sql = "SELECT * FROM jobapplicantion WHERE companyname = ? AND Message IS NULL ORDER BY id DESC  ";
+    $sql = "SELECT * FROM jobapplicantion WHERE companyname = ? AND Message IS NULL ORDER BY id DESC";
     $stmt = $conn->prepare($sql);
     $stmt->execute([$companylogged]);
     $rows = $stmt->rowcount();
@@ -94,7 +94,7 @@
                 <li><a href="processpost">Post job</a></li>
                 <?php
     $companylogged = $user['companyName'];
-    $sql = "SELECT * FROM jobapplicantion WHERE companyname = ? AND Message IS NULL ORDER BY id DESC  ";
+    $sql = "SELECT * FROM jobapplicantion WHERE companyname = ? AND Message IS NULL ORDER BY id DESC";
     $stmt = $conn->prepare($sql);
     $stmt->execute([$companylogged]);
     $rows = $stmt->rowcount();

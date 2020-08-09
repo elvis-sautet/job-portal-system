@@ -57,6 +57,54 @@
 .accept{
   position: relative;
 }
+.alltreje textarea{
+  width: 100%;
+  min-height: 100px;
+  max-height: 100px;
+  border-radius: 12px;
+  outline: none;
+}
+.rejectapplication h3{
+  color: maroon;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.rejectapplication{
+  border-radius: 12px;
+  width: 30%;
+  background-color:#fff;
+  margin: auto;
+  margin-top: 20px;
+  display: none;
+  box-shadow: 0 0 10px 1px #ddd;
+  margin-bottom: 3em;
+  position: relative;
+}
+.cenddetete{
+  text-align: center;
+}
+.cenddetete button{
+  width: 50%;
+  border: none;
+  color: white;
+  border-radius: 12px;
+  text-transform: capitalize;
+  background-color: maroon;
+}
+
+.alltreje{
+  padding: 12px;
+
+}
+.alltreje input[type="text"]{
+  width: 100%;
+  border-radius: 12px;
+  text-align: center;
+}
+.thttt form label{
+  color: #0090ff;
+}
+
 .rejectapp:hover {
   text-decoration: none;
   color: white;

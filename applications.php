@@ -50,7 +50,6 @@ include "includes\companysessions.php";
             $Cv = $row->CV;
             $jobname=$row->Jobname;
             $message =$row->Message;
-            
            ?>
 
     <br>
@@ -75,9 +74,9 @@ include "includes\companysessions.php";
             <br>
             <div class="ticksreplied">
             <?php
-    if($message == null){
+    if($message== null){
         ?>
-        <img src="uploads\pending.PNG" class="pending" style="height:60px;">
+        <img src="uploads\pendinG.PNG" class="pending" style="height:60px;">
         <?php
     }else{
         ?>
@@ -175,7 +174,7 @@ include "includes\companysessions.php";
             <br>
             <div class="ticksreplied">
             <?php
-    if($message == null){
+    if($message== null){
         ?>
         <img src="uploads\pending.PNG" class="pending" style="height:60px;">
         <?php

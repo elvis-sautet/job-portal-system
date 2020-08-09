@@ -12,8 +12,24 @@ $(document).ready(function () {
     });
     $(".fa-times").click(function (e) { 
         $(".detailsof").css("opacity", "1");
-        $(".messaging").hide(function(){
+        $(".messaging").hide(10,function(){
             $(".applicationl").fadeIn();
+            $(".person").show();
+        });
+
+    });
+    $(".reject").click(function (e) { 
+        e.preventDefault();
+        $(".person").hide();
+
+        $(".rejectapplication").show(function(){
+            $(".applicationl").css("display", "none");
+        });
+    });
+    $(".fa-times").click(function (e) { 
+        $(".rejectapplication").hide(10,function(){
+            $(".applicationl").fadeIn();
+            $(".detailsof").css("opacity", "1");
             $(".person").show();
         });
 

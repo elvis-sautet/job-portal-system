@@ -44,7 +44,6 @@ include "includes\companysessions.php";
                 $jobname=$row->Jobname;
               $jobid=$row->id;
               $message =$row->Message;
-
         $_SESSION['jobidplaced'] =$jobid;
         $_SESSION['loggedcompanynow'] = $user['id'];
         $_SESSION['jobnameapplied']=$row->Jobname;
@@ -71,7 +70,7 @@ include "includes\companysessions.php";
             </div>
             <br>
             <?php
-                    if($message == null){
+                    if($message== null){
                 ?>
             <div class="applicationl">
                 <div class="reject">
@@ -86,26 +85,31 @@ include "includes\companysessions.php";
                     <a class="accept cvdownload" href="#">Accept <i class="fas fa-comments" style="color:black"></i></a>
                 </div>
             </div>
-            
+
             <?php
                     }else{
                         ?>
             <div class="applicationl">
                 <div class="reject" style="  pointer-events: none;">
-                    <a class="rejectapp cvdownload" href="#"style="cursor: no-drop;" >Reject/deny <i class="fas fa-lock" style="color:red;"></i></a>
-
+                    
+                        <a class="rejectapp cvdownload" href="#" style="cursor: no-drop;">Reject/deny <i
+                                    class="fas fa-lock" style="color:red;"></i></a>
+                    
                 </div>
                 <div class="cvdownloading" style="  pointer-events: none;">
-                    <a class="somecv cvdownload" href="includes/downloadfile?file=<?php echo $Cv ?>" style="cursor: no-drop;">CV<i class="fas fa-lock" style="color:red;"></i> <i
-                            class="fas fa-download"   ></i></a>
+                    <a class="somecv cvdownload" href="includes/downloadfile?file=<?php echo $Cv ?>"
+                        style="cursor: no-drop;">CV<i class="fas fa-lock" style="color:red;"></i> <i
+                            class="fas fa-download"></i></a>
                 </div>
-                <div class="shortlist"  style="  pointer-events: none;">
-                    <a class="accept cvdownload" href="#" style="cursor: no-drop;">Hire <i class="fas fa-comments" style="color:black;  pointer-events: none;" disabled><i class="fas fa-lock" style="color:red;"></i></i></a>
+                <div class="shortlist" style="  pointer-events: none;">
+                    <a class="accept cvdownload" href="#" style="cursor: no-drop;">Hire <i class="fas fa-comments"
+                            style="color:black;  pointer-events: none;" disabled><i class="fas fa-lock"
+                                style="color:red;"></i></i></a>
                 </div>
             </div>
             <div class="imgsnapo">
-    <img src="uploads\repliedtag.PNG" alt="" id="taged">
-</div>
+                <img src="uploads\repliedtag.PNG" alt="" id="taged">
+            </div>
             <?php
                     }
             ?>
@@ -114,12 +118,16 @@ include "includes\companysessions.php";
     </div>
     <br>
     <?php
-$companyName =  $user['companyName']
+$companyName =  $user['companyName'];
+$nullified ="Application for this job has being nullified,your qualifications are too low,
+thank you...";
     ?>
     <div class="messaging">
         <div class="form">
             <i class="fas fa-times"></i>
             <form action="includes/applicationfeedback.php" method="POST">
+            <h5 style="color:green">Offering the job</h5>
+
                 <label for="cname">To:</label> <br>
                 <input type="text" name="sender" value="<?php echo $firstname ." " . $lastname  ?>" readonly> <br>
                 <label for="by">By:</label> <br>
@@ -135,7 +143,26 @@ $companyName =  $user['companyName']
             </form>
         </div>
     </div>
-
+    <div class="rejectapplication">
+    <i class="fas fa-times"></i>
+        <div class="alltreje">
+            <h5 style="color:red">Rejecting the applicant</h5>
+            <div class="thttt">
+                <form action="includes\rejectjob.php" method="POST">
+                    <label for="cname">Company</label> <br>
+                    <input type="text" name="mesgereject" value="<?php  echo $companyName  ?>" readonly><br>
+                    <label for="jname">Job</label> <br>
+                    <input type="text" name="jname" value="<?php  echo $jobname  ?>" readonly> <br>
+                    <label for="mss">Message</label> <br>
+                    <textarea name="messageofrejection" cols="30" rows="6" readonly><?php  echo $nullified ?>
+                </textarea>
+            </div>
+            <div class="cenddetete">
+                <button type="submit" name="rejectpost">Reject Application</button>
+            </div>
+            </form>
+        </div>
+    </div>
     <?php
             }
         }

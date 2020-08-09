@@ -127,14 +127,7 @@ include "includes/session.php";
             });
             
         });
-        
-        $(document).mouseup(function (e) { 
-            var container = $(".notificationspushover"); 
-            if(!container.is(e.target) &&  
-            container.has(e.target).length === 0) { 
-                container.hide("fast"); 
-            } 
-        });
+       
     });
     </script>
 

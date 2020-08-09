@@ -25,17 +25,14 @@
  </head>
 
  <body class="jobbbbs">
- 
-     <?php
-    include "homepageheader.php";
-    ?>
+
+
     <div class="sss">
     <?php
-    include 'searchbox.php';
-    ?>
-     <?php
      include 'jobs.php';
     ?>
+    
+     
     </div>
     <?php
     include "myfooter.php";

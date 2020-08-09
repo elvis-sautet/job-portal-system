@@ -2,14 +2,15 @@
 include "dbconnection.php";
 session_start();
 $company=$_SESSION['id'];
-$now = date("Y:m:d h:i:ia");
+date_default_timezone_set("Africa/Nairobi");
+$now = date("Y:m:d h:i:s");
 if(isset($_POST['send'])){
   require "dbconnection.php";
     $to = $_POST['sender'];
     $from = $_POST['bywho'];
     $Message = $_POST['message'];
     $jobmessageId= $_SESSION['jobidplaced'];
- echo $deletedjob=   $_SESSION['jobnameapplied'];
+    $deletedjob=   $_SESSION['jobnameapplied'];
     $sql = "UPDATE jobapplicantion SET Message = ?,messagedate = ?  WHERE id = ?";
     $stmt =$conn-> prepare($sql);
     $stmt ->execute([$Message,$now,$jobmessageId]);
@@ -20,3 +21,4 @@ if(isset($_POST['send'])){
   
     header("location: ../applications.php?messagesent");
 }
+
