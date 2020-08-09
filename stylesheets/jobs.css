@@ -2,9 +2,10 @@
     padding-bottom: 9px;
     font-style: Roboto,sans-serif;
     max-width: 50%;
-    margin-left: 12em;
+    margin:auto;
     overflow: hidden;
     clear: both;
+    margin-bottom: 5px;
     background-color: white;
 }
 .top33{
@@ -16,6 +17,7 @@
     font-weight: 600;
     padding: 6px 14px;
 }
+
 .cnt{
     clear: both;
     float: left;
@@ -35,9 +37,9 @@
 
 .jobsheader {
     clear: both;
-    margin-top: .5em;
+    /* margin-top: 5em; */
     max-width: 50%;
-    margin-left: 12em;
+    margin: auto;
     margin-bottom: .5em;
     
 }

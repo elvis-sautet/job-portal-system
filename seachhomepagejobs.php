@@ -2,8 +2,8 @@
 include 'homepageheader.php';
 ?>
 
-    <link rel="stylesheet" href="stylesheets/jobs.css?v=<?php  echo time()  ?>">
-    <link rel="shortcut icon" type="image/png" href="index images\favicon.PNG" >
+<link rel="stylesheet" href="stylesheets/jobs.css?v=<?php  echo time()  ?>">
+<link rel="shortcut icon" type="image/png" href="index images\favicon.PNG">
 
 <?php
 require "includes/dbconnection.php";
@@ -54,19 +54,22 @@ if(isset($_POST['searchjob'])){
             $overview = $row->joboverview;
             
  ?>
-            
-              <div class="jobsheader">
-                    <div class="jobsin"> 
-                    <a class="goto" href="jobapplication.php?companyname=<?php echo $id ?>"><p class="jobname"><?php echo $jbname; ?></p></a>
-                        <p class="companyname"><?php echo $companyname; ?></p>
-                        <span id="some" class="joblocation"><?php echo  $joblocation; ?><span style='color:gray'> | </span>
-                        <span id="some"  class="employment_type"> <?php  echo $employment_type; ?>
-                        <span id="some"  class="jobsalary"><span style='color:gray'> | </span><span style='font-weight:bold'>Ksh </span><?php echo $job_salary; ?></span>
-                        <div class="jobsumarry"><?php echo  custom_echo($overview, 500); ?></div>
-                    </div>
-                </div>
-                      
-  <?php
+<div class="someddd">
+    <div class="jobsheader">
+        <div class="jobsin">
+            <a class="goto" href="jobapplication.php?companyname=<?php echo $id ?>">
+                <p class="jobname"><?php echo $jbname; ?></p>
+            </a>
+            <p class="companyname"><?php echo $companyname; ?></p>
+            <span id="some" class="joblocation"><?php echo  $joblocation; ?><span style='color:gray'> | </span>
+                <span id="some" class="employment_type"> <?php  echo $employment_type; ?>
+                    <span id="some" class="jobsalary"><span style='color:gray'> | </span><span
+                            style='font-weight:bold'>Ksh </span><?php echo $job_salary; ?></span>
+                    <div class="jobsumarry"><?php echo  custom_echo($overview, 500); ?></div>
+        </div>
+    </div>
+</div>
+<?php
     }
      
 
@@ -86,7 +89,3 @@ echo $pagLink . "</ul>";
     }
   }
 ?>
-     
-
-
-

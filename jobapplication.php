@@ -17,6 +17,7 @@
     <?php include_once "homepageheader.php";
   
   ?>
+
     <?php
 require 'includes/dbconnection.php';
 if(isset($_GET['companyname'])){
@@ -55,11 +56,7 @@ if(isset($_GET['companyname'])){
                     <div class="jobsumarry"><?php echo  $_SESSION['jobduties'] ?></div>
         </div>
     </div>
-
-
-
-
-
+   
     <?php     
    $id = $_SESSION['id'];
    $sql = "SELECT* FROM job_seeker_registration WHERE id=?";
@@ -73,9 +70,9 @@ if(isset($_GET['companyname'])){
           $phoneno= $row->phonenumber;
           $identification=$row->id;
        }
-    }
+    }       
 ?>
-
+ 
     <div class="apply">
         <div class="jobto">
             <div class="applyhere">
@@ -164,10 +161,11 @@ if(isset($_GET['companyname'])){
         </div>
 
     </div>
+    
 <br>
 
+
     
-  
 
 </body>
 

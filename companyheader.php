@@ -56,12 +56,12 @@
     $rows = $stmt->rowcount();
     if($rows>0){
         ?>
-                <li><a href="applications" id="rfrsh">Applications <i class="far fa-bell" style="color:#0090ff"><sup><sup class="sup"><?php echo $rows   ?></sup></sup></i></a></li>
+                <li><a href="applications" id="rfrsh">Applications <i class="fas fa-bell"><sup class="sup"><?php echo $rows   ?></sup></i></a></li>
 
     <?php
     }else{
         ?>
-                <li><a href="applications" id="rfrsh">Applications</a></li>
+                <li><a href="applications" id="rfrsh">Applications<i class="fas fa-bell"><sup class="sup"></sup></i></a></li>
 
         <?php
     }
@@ -100,12 +100,12 @@
     $rows = $stmt->rowcount();
     if($rows>0){
         ?>
-                <li><a href="applications" id="rfrsh">Applications <i class="far fa-bell" style="color:#0090ff"><sup><sup class="sup"><?php echo $rows   ?></sup></sup></i></a></li>
+                <li><a href="applications" id="rfrsh">Applications <i class="fas fa-bell" ><sup class="sup"><?php echo $rows   ?> </sup></i></a></li>
 
     <?php
     }else{
         ?>
-                <li><a href="applications" id="rfrsh">Applications </a></li>
+                <li><a href="applications" id="rfrsh">Applications <i class="fas fa-bell"><sup class="sup"></sup></i> </a></li>
 
         <?php
     }

@@ -212,6 +212,7 @@ body {
   text-decoration: none;
 }
 
+
 .line {
   border: 1px solid #ccccff;
 }
@@ -224,6 +225,8 @@ body {
   overflow: hidden;
   float: left;
   margin-bottom: 3em;
+
+  /* clear: both; */
 }
 .jobto {
   font-family: Roboto, sans-serif;

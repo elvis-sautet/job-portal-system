@@ -13,9 +13,7 @@ include "includes/session.php";
         integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
@@ -42,21 +40,23 @@ include "includes/session.php";
              $image = $row->profileimage;
              if($image == NULL){
                  ?>
-   <div class="navgation">
+    <div class="navgation">
         <div class="header">
-            <div class="logo"><a href="homepage"><img id="mylogo" src="index images\mylogo for (2).PNG" alt="logo"></a></div>
+            <div class="logo"><a href="homepage"><img id="mylogo" src="index images\mylogo for (2).PNG" alt="logo"></a>
+            </div>
             <ul class="main">
-            <li ><a href="homepage">Jobs</a></li>
-            <li><a href="#"><i class="fas fa-user-graduate"></i> Students</a></li>
+                <li><a href="homepage">Jobs</a></li>
+                <li class="not"><a href="#"><i class="fas fa-bell" style="color:black"></i></a></li>
 
-                    <li><a href="#"><img src="profiles/mainpic.png" class='profle'></img> user</a>
-                <ul>
+                <li><a href="#"><img src="profiles/mainpic.png" class='profle'></img> user</a>
+                    <ul>
                         <li><a href="#"><?php echo $user['firstname'];  ?></a></li>
                         <li><a href="careerprofile">Career</a></li>
 
                         <li>
                             <form action="includes/logout.php" method="post">
-                              <a href="#"><button id="logout" type="submit" name="logout"><i class="fas fa-sign-out-alt"></i> logout</button></a> 
+                                <a href="#"><button id="logout" type="submit" name="logout"><i
+                                            class="fas fa-sign-out-alt"></i> logout</button></a>
                             </form>
                         </li>
                     </ul>
@@ -66,25 +66,27 @@ include "includes/session.php";
     </div>
 
 
-                 <?php
+    <?php
 
              }else{
 ?>
     <div class="navgation">
         <div class="header">
-            <div class="logo"><a href="homepage"><img id="mylogo" src="index images\mylogo for (2).PNG" alt="logo"></a></div>
+            <div class="logo"><a href="homepage"><img id="mylogo" src="index images\mylogo for (2).PNG" alt="logo"></a>
+            </div>
             <ul class="main">
-            <li ><a href="homepage">Jobs</a></li>
-            <li><a href="#"><i class="fas fa-user-graduate"></i> Students</a></li>
+                <li><a href="homepage">Jobs</a></li>
+                <li class="not"><a href="#"><i class="fas fa-bell" style="color:black" title="Notifications"></i></a></li>
 
-                    <li><a href="#"><img src="profiles/<?php echo $image?>?<?php mt_rand()?>" class='profle'></img> user</a>
-                <ul>
+                <li><a href="#"><img src="profiles/<?php echo $image?>?<?php mt_rand()?>" class='profle'></img> user</a>
+                    <ul>
                         <li><a href="#"><?php echo $user['firstname'];  ?></a></li>
                         <li><a href="careerprofile">Career</a></li>
 
                         <li>
                             <form action="includes/logout.php" method="post">
-                              <a href="#"><button id="logout" type="submit" name="logout"><i class="fas fa-sign-out-alt"></i> logout</button></a> 
+                                <a href="#"><button id="logout" type="submit" name="logout"><i
+                                            class="fas fa-sign-out-alt"></i> logout</button></a>
                             </form>
                         </li>
                     </ul>
@@ -94,15 +96,47 @@ include "includes/session.php";
     </div>
 
 
-<?php
+    <?php
              }
          }
      }else{
          echo "SQL ERROR";
      }
     ?>
+    <main >
+        <div class="notificationspushover">
+            <div class="he">
+                <span>Notifications</span>
+               
+            </div>
 
-
+            <div class="notificationspush">
+            </div>
+        </div>
+ 
+    </main> 
+    <script>
+    $(document).ready(function() {
+        setInterval(function() {
+            $(".notificationspush").load("loadernotification.php");
+        }, 3000);
+        $(".not").click(function(e) {
+            e.preventDefault();
+            $(".notificationspushover").fadeToggle("fast").css({
+                "position": "fixed"
+            });
+            
+        });
+        
+        $(document).mouseup(function (e) { 
+            var container = $(".notificationspushover"); 
+            if(!container.is(e.target) &&  
+            container.has(e.target).length === 0) { 
+                container.hide("fast"); 
+            } 
+        });
+    });
+    </script>
 
 
 </body>

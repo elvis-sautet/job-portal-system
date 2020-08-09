@@ -41,6 +41,7 @@ include "includes/dbconnection.php";
             <a  href="#"><p class="alerting">create a job alert</p></a>
         </div>
     </div>
+    
     <?php
 if (isset($_GET['page'])) {
     $page = $_GET['page'];
