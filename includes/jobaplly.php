@@ -19,7 +19,7 @@ if(isset($_POST['apply-Job'])){
         $sql = "INSERT INTO jobapplicantion (companyname,jobname,firstname,lastname,applicant_id,mobilenumber,qualification,experience,salaryexpected,coverletter,CV) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
         $stmt =$conn->prepare($sql);
         $stmt -> execute([$companyapply,$jobname,$firstname,$lastname,$identification,$phoneno,$qualifiction,$experience,$salary,$coverletter,$fileNameNew]);
-        $_SESSION['success']= "Job application succesfully";
+        $_SESSION['success']= "Application send succesfully";
       }
       catch(PDOExcecution $e){
         $_SESSION['error']= $e->getMessage();

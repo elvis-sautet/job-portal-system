@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="stylesheets/company_signup.css?v=<?php echo time(); ?>">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,28 +20,71 @@ include "header.php";
             $empty = 'fill up all the fields';
             if(isset($_GET['error'])){
                 if($_GET['error']== "emptyfields"){
-                    echo '<p class = "null" style="color:red"> fill all the fields!</p>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "fields cannot be empty!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }elseif($_GET['error']== "details error"){
-                    echo '<p class = "null" style="color:red"> Fill the fields Correctly !<p>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "please fill the fields in a correct format!!" ,  "error" )
+                     </script>
+                    ';
                 }elseif($_GET['error']== "invalidemail"){
-                    echo '<p class = "null" style="color:red"> incorrect email!</p>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "Email is incorrect!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }elseif($_GET['error']== "invalidusername"){
-                    echo '<p class = "null" style="color:red"> please use a correct format username!</p>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "username is invalid!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }elseif($_GET['error']== "invalidcompanyname"){
-                    echo '<p class = "null" style="color:red">Please use a correct company name!!</p>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "company name is invalid!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }elseif($_GET['error']== "usernametaken"){
-                    echo '<p class="null" style="color:red"> please use another username, this is already taken!<span>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "username error!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }elseif($_GET['error']== "invalidaddress"){
-                    echo '<p class="null" style="color:red"> please use a correct address!<span>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "Invalid address format!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }elseif($_GET['error']== "Companyandemailshouldbeunique"){
-                    echo '<p class="null" style="color:red"> Email and company Name must be unique and valid !!<span>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "Company Name and Email must be unique!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }
             }
         
            
             if(isset($_GET['signup'])){
                 if($_GET['signup']== "success")
-                echo '<p class = "correct" style="color:green"> Signup successful!</p>';
+                echo '
+                swal({
+                    icon: "success",
+                  });
+                  ';
             }
             ?>
             <form action="includes/companyregistration.php" method="POST">

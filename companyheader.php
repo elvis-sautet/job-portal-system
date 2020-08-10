@@ -44,7 +44,7 @@
                  ?>
     <div class="navgation">
         <div class="header">
-            <div class="logo"><a href="companysite"><img id="mylogo" src="index images\mylogo for (2).PNG"
+            <div class="logo"><a href="processpost"><img id="mylogo" src="index images\mylogo for (2).PNG"
                         alt="logo"></a></div>
             <ul class="main">
                 <li><a href="processpost">Post job</a></li>
@@ -88,7 +88,7 @@
 ?>
     <div class="navgation">
         <div class="header">
-            <div class="logo"><a href="companysite"><img id="mylogo" src="index images\mylogo for (2).PNG"
+            <div class="logo"><a href="processpost"><img id="mylogo" src="index images\mylogo for (2).PNG"
                         alt="logo"></a></div>
             <ul class="main">
                 <li><a href="processpost">Post job</a></li>

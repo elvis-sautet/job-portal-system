@@ -46,7 +46,7 @@ include "includes/session.php";
             </div>
             <ul class="main">
                 <li><a href="homepage">Jobs</a></li>
-                <li class="not"><a href="#"><i class="fas fa-bell" style="color:black"></i></a></li>
+                <li class="not "><a href="#"><img class="fa-bell" src="index images\bellnoti.png" alt="" title="notifications"></a></li>
 
                 <li><a href="#"><img src="profiles/mainpic.png" class='profle'></img> user</a>
                     <ul>
@@ -76,7 +76,7 @@ include "includes/session.php";
             </div>
             <ul class="main">
                 <li><a href="homepage">Jobs</a></li>
-                <li class="not"><a href="#"><i class="fas fa-bell" style="color:black" title="Notifications"></i></a></li>
+                <li class="not "><a href="#"><img class="fa-bell" src="index images\bellnoti.png" alt="" title="notifications"></a></li>
 
                 <li><a href="#"><img src="profiles/<?php echo $image?>?<?php mt_rand()?>" class='profle'></img> user</a>
                     <ul>

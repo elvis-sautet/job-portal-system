@@ -24,7 +24,7 @@
                     $_SESSION['companyname']= $row['companyName'];
                     $_SESSION['email']= $row['email'];
                     $_SESSION['id']=$row['id'];
-                    header("location: ../companysite?");
+                    header("location: ../processpost");
                     exit();
                 }else{
                     header("location: ../companylogin?error=wrong-password");

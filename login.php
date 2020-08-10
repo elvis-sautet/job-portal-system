@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
         integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -17,6 +20,22 @@
 <body class="login">
     <?php include "header.php";
     ?>
+    <?php
+    if(isset($_GET['signup'])){ 
+        if($_GET['signup']== "success"){
+            ?>
+<script>
+                    swal({
+                        title: "Registration was successful!",
+                        text: "Login here!",
+                        icon: "success",
+                        button: "Okay!",
+                        });
+                    </script>
+<?php
+        }
+    }
+        ?>
     <div class="loginform">
         <div class="allt">
             <div class="xx">
@@ -28,11 +47,26 @@
             
             if(isset($_GET['error'])){
                 if($_GET['error']== "emptyfields"){
-                    echo '<p class = "null" style="color:red;"> fill all the fields!</p>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "Username and Passoword cannot be empty!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }elseif($_GET['error']== "wrong-password"){
-                    echo '<p class = "null" style="color:red;"> Incorrect Password!<p>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "incorrect password!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }elseif($_GET['error']== "no-usser"){
-                    echo '<p class = "null" style="color:red;"> Incorrect username & password!</p>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "incorrect username and password!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }
             }
 

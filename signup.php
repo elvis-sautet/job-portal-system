@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <link rel="stylesheet" href="stylesheets/signup.css?v=<?php echo time(); ?>">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,19 +36,54 @@ $jobgiver="Recruiter";
             $empty = 'fill up all the fields';
             if(isset($_GET['error'])){
                 if($_GET['error']== "emptyfields"){
-                    echo '<p class = "null"> fill all the fields!</p>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "fields cannot be empty!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }elseif($_GET['error']== "details error"){
-                    echo '<p class = "null"> Fill the fields properly !<p>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "details error!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }elseif($_GET['error']== "invalidemail"){
-                    echo '<p class = "null"> incorrect email!</p>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "email is invalid!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }elseif($_GET['error']== "invalidusername"){
-                    echo '<p class = "null"> please use a correct format username!</p>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "please use a correct username format!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }elseif($_GET['error']== "invalidfirstname"){
-                    echo '<p class = "null">Please use a correct firstname!</p>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "incorrect firstname format!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }elseif($_GET['error']== "invalidlastname"){
-                    echo '<p class="null">Please use a correct Laststname!</p>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "incorrect format of lastname!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }elseif($_GET['error']== "usernametaken"){
-                    echo '<p class="null"> please use another username, this is already taken!<span>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "Username already taken,please try another!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }
             }
         

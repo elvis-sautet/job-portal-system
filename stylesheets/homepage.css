@@ -1,4 +1,10 @@
-
+.profileimgto img{
+  height: 60px;
+  width: 90px;
+  float: right;
+  margin-top: 17px;
+  margin-left: 4px;
+}
 .notificationspush:hover {
   overflow-y: scroll;
 }
@@ -7,12 +13,12 @@
   cursor: pointer;
 }
 .themsg {
-  width: 310px;
+  width: 380px;
   padding-left: 5px;
 }
 .mesasgesde {
   padding-bottom: 0.6em;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100%;
   font-size: 14px;
 }
@@ -50,7 +56,7 @@
 .notificationspushover {
   font-family: Arial,Helvetica , sans-serif;
 color: #333;
-  width: 350px;
+  width: 500px;
   clear: both;
   background-color: white;
   overflow: hidden;
@@ -61,7 +67,7 @@ color: #333;
   top: 0;
   display: none;
   z-index: 1000;
-  height: calc(100vh - 1vh);
+  height: calc(100vh - 2vh);
 
 }
 .allddd{
@@ -79,7 +85,7 @@ color: #333;
   /* padding-left: 3px; */
   overflow: hidden;
   white-space: wrap;
-  height: calc(100vh - 4vh);
+  height: calc(100vh - 12vh);
 }
 
 /* width */
@@ -140,7 +146,9 @@ color: #333;
   margin-left: -1px;
 }
 .fa-bell {
-  color: blue;
+  height: 1.8em;
+  padding: 0px;
+  margin: 0px;
 }
 .logo #mylogo {
   height: 3.7em;
@@ -251,13 +259,14 @@ color: #333;
   color: #4e5559;
   margin-top: 1em;
   width: 60%;
-  margin-left: 4em;
+  margin-left: auto;
+  margin-right: auto;
   word-wrap: break-word;
   background-color: white;
 }
 .topic {
   background-color: #2b2b2b;
-  color: #ff1e00;
+  color: white;
   font-weight: 600;
 }
 .topic p {

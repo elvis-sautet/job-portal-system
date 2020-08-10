@@ -4,6 +4,7 @@
 <html lang="en">
 
 <head>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="stylesheets/company.jobpost.css?v=<?php echo time() ?>">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,20 +23,48 @@
             $empty = 'fill up all the fields';
             if(isset($_GET['error'])){
                 if($_GET['error']== "emptyfields"){
-                    echo '<p class = "null" style="color:red;"> fill all the fields!</p>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "fields cannot be empty!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }elseif($_GET['error']== "details error"){
-                    echo '<p class = "null" style="color:red;"> Fill the fields correctly!<p>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "fill all the fields correctly!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }elseif($_GET['error']== "invalidjobname"){
-                    echo '<p class = "null" style="color:red;"> please use a correct format Job Name!</p>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "incorrect format of Job name!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }elseif($_GET['error']== "invalidjoblocation"){
-                    echo '<p class = "null"style="color:red;">Please use a correct Job Location Name!</p>';
+                    echo '
+                    <script>
+                    swal ( "Oops" ,  "invalid job location!!" ,  "error" )
+         
+                     </script>
+                    ';
                 }
             }
         
            
             if(isset($_GET['posting'])){
                 if($_GET['posting']== "success")
-                echo '<p class = "correct"style="color:green;font-weight: bolder;"> Job Post successful!</p>';
+                echo '
+                <script>
+                swal({
+                    title: "Posting!",
+                    text: "The job was posted succesfully!",
+                    icon: "success",
+                    button: "OK",
+                  });
+                  </script>';
             }
             ?>
                 <label for="jobname">Job Name</label> <br>

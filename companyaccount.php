@@ -5,6 +5,7 @@ include "includes/companysessions.php";
 <html lang="en">
 
 <head>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company_Profile</title>
@@ -39,9 +40,34 @@ $companyid = $user['id'];
         <hr>
         <img class='proflepic' src='profiles/mainpic.png'> <br>
         <div class='uploadit'>
+        <?php
+                if(isset($_SESSION['cannot'])){
+                ?>
+                    <script>
+                    swal ( "Oops" , "<?php echo $_SESSION["cannot"]   ?>" ,  "error" )
+         
+                     </script>
+                    
+                    <?php
+                    unset($_SESSION['cannot']);
+                  }
+                  if(isset($_SESSION['pass'])){
+                      ?>
+                      <script>
+                    swal({
+                        title: "Profile uploaded successfully!",
+                        // text: "You clicked the button!",
+                        icon: "success",
+                        button: "Okay!",
+                        });
+                    </script>
+                    <?php
+                    unset($_SESSION['pass']);
+                  }
+            ?>
             <form action="companyprofile.php" method="POST" enctype="multipart/form-data">
                 <label for="file" id="lbl">choose profile</label> <br>
-                <input type="file" name="file"> <br><br>
+                <input type="file" name="file" > <br><br>
                 <input type="submit" name="upload" value="UPLOAD">
             </form>
         </div>
@@ -70,21 +96,26 @@ $companyid = $user['id'];
         <div class='uploadit'>
         <?php
                 if(isset($_SESSION['cannot'])){
-                    echo "
-                      
-                    <p style='color:red'>".$_SESSION['cannot']."</p>
-                      
-                    ";
+                ?>
+                    <script>
+                    swal ( "Oops" , "<?php echo $_SESSION["cannot"]   ?>" ,  "error" )
+         
+                     </script>
+                    
+                    <?php
                     unset($_SESSION['cannot']);
                   }
                   if(isset($_SESSION['pass'])){
-                    echo "
-                      <div class='alert alert-success alert-dismissible'>
-                        <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                        <h4><i class='icon fa fa-check'></i> Success!</h4>
-                        ".$_SESSION['pass']."
-                      </div>
-                    ";
+                      ?>
+                      <script>
+                    swal({
+                        title: "Profile uploaded successfully!",
+                        // text: "You clicked the button!",
+                        icon: "success",
+                        button: "Okay!",
+                        });
+                    </script>
+                    <?php
                     unset($_SESSION['pass']);
                   }
             ?>

@@ -25,8 +25,6 @@
  </head>
 
  <body class="jobbbbs">
-
-
     <div class="sss">
     <?php
      include 'jobs.php';

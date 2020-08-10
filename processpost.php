@@ -21,6 +21,7 @@ include "includes\companysessions.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="index images\favicon.PNG" >
+    <link rel="stylesheet" href="stylesheets/company.jobpost.css?v=<?php echo time()?>">
 
     <link rel="stylesheet" href="stylesheets/notfound.css?v=<?php  echo time()  ?>">
     <title>Document</title>
@@ -30,6 +31,17 @@ include "includes\companysessions.php";
 <?php
 include "companyheader.php";
     ?>
+     <main class="csite">
+        <div class="welcome">
+            <div class="welcome-note">
+                <p>Welcome <span style="color:#FF4500;font-weight:bold;"><?php echo $user['companyName']?></span> to
+                    One<span style="color:#6CB4EE;" class="code">Code</span>. </p>
+                <p>Inneed of a developer🤔 from One<span style="color:#6CB4EE;" class="code">Code</span>
+                    <a class="link" href="#" class="clickre">Get One here😉😉!!!</a>
+                </p>
+            </div>
+        </div>
+    </main>
     <div class="receipt">
         <div class="ppp">
             <h3>POSTING PROCESS</h3>

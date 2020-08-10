@@ -28,8 +28,8 @@ if(isset($_POST['upload'])){
             $sql = "UPDATE job_seeker_registration SET profileimage = ? WHERE id = ?";
             $stmt =$conn->prepare($sql);
             $stmt -> execute([$fileNameNew, $id]);
+            $_SESSION['pass'] = "profile uploaded successfully";
             header("Location: careerprofile");
-
         }
         }else{
             $_SESSION['failed'] = "error=filesizetoobig";

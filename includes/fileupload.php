@@ -17,7 +17,7 @@
         //a. check if there was an error uploading
         if($fileerror === 0){
         //check size of the file to upload
-        if($filesize < 10000000){
+        if($filesize < 100000){
             //uploading the file by giving it a unique name so that it cannot be replaced with another
             $fileNameNew =$firstname.uniqid('', true).'.'.$actualfileExt;
             //tell where we will upload the file
@@ -27,12 +27,12 @@
             $up = TRUE;
         }
         }else{
-            $_SESSION['error']= "file size too big";
+            $_SESSION['error']= "your CV size too big";
         }
         }else{
-            $_SESSION['error']= "Error uploading your file";
+            $_SESSION['error']= "There was an error while sending your CV";
         }
     }else{
-        $_SESSION['error']= "Cannot upload this type of file";
+        $_SESSION['error']= "only CV of type .pdf, .txt, .docx are to be send, please try again";
     }
 

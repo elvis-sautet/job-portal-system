@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="stylesheets/homepage.css?v=<?php echo time()  ?>">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 <?php
 function customizeddata_echo($row, $length){
     if(strlen( $row)<=$length){
@@ -107,32 +109,55 @@ $rowcount=$stmt->rowcount();
 if($rowcount>0){
     
     while($rows = $stmt->fetch()){
-   $company= $rows->companyname;
+    $company= $rows->companyname;
     $jname =  $rows->Jobname;
     $cmessage= $rows->Message;
     $mesoid= $rows->id;
-    $timestamp  = $rows->messagedate ;
-date_default_timezone_set('Africa/Nairobi');  
+    $timestamp  = $rows->messagedate;
+  date_default_timezone_set('Africa/Nairobi');  
 ?>
 
 <div class="mesasgesde"><a href="#?Vgn123onecode=<?php echo  $mesoid    ?>" class="notifi">
     <div class="themsg">
+<?php
+
+$sqlprofile = "SELECT * FROM companyregistration where companyName = ?";
+$stmtprofile = $conn->prepare($sqlprofile);
+$stmtprofile->execute([$company]);
+$profiles = $stmtprofile->rowcount();
+if($profiles>0){
+  while($profiles=$stmtprofile->fetch()){
+    $companyprofile=$profiles->companyprofile;
+    if($companyprofile == NULL){
+?>
+      <span class="profileimgto">
+        <img src="index images\240_F_325131381_5RbWS5PR0WUAR13Ao6IUZYISixWkQukM.jpg" alt="">
+        </span>
+
+<?php
+    }else{   
+?>
+      <span class="profileimgto"><img src="profiles/<?php echo $companyprofile?>?<?php mt_rand()?>" ></span>
+
+<?php
+    }
+  }
+}
+?>
+
         <span class="cname"><span class="inn">Company:</span> <?php echo $company ?></span> <br>
         <span class="jname"><span class="innn">Job Name: </span><?php echo $jname    ?></span> <br>
-        <span class="cmessage"><span class="innn"></span><?php echo  customizeddata_echo($cmessage, 20)   ?></span> <br> 
+      <span class="cmessage" style="color:#996600"><span class="innn"></span><?php echo  $cmessage   ?></span> <br> 
         <div class="dpo">
         <span class="dateposteddt"><span class="dateposted"></span><?php  echo facebook_time_ago($timestamp)  ?></span>
         </div>
     </div></a>
 </div>
-
-
-
 <?php
 
     }
 }else{
-  echo "<span> loading...<span>";
+  echo "0 notifications found";
 }
 
 

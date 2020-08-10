@@ -28,6 +28,7 @@ if(isset($_POST['upload'])){
             $sql = "UPDATE companyregistration SET companyprofile = ? WHERE id = ?";
             $stmt =$conn->prepare($sql);
             $stmt -> execute([$fileNameNew, $id]);
+            $_SESSION['pass'] = "profile uploaded sucessfully";
             header("Location: companyaccount");
         }
         }else{

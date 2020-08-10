@@ -1,6 +1,5 @@
 <?php
 
-
 if(isset($_POST['register-company'])){
     require "dbconnection.php";
     
@@ -40,7 +39,7 @@ if(isset($_POST['register-company'])){
             $sql = "INSERT INTO companyregistration (companyName,CompanyAddress,Email,password) VALUES (?,?,?,?)";
             $stmt = $conn->prepare($sql);
             $stmt ->execute([$companyname,$adress,$email,$hashedpass]);
-            header("Location: ../companylogin?registrationsuccesslogin");
+            header("Location: ../companylogin?registration=success");
             exit();
         }
         
