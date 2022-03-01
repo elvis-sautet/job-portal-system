@@ -1,7 +1,17 @@
-# placement-notification_job-portal-system
-This is job site where people can be apply for jobs around, and even help university students be placed around the institutions, 
+# Placement Portal
 
+The placement portal is a PHP system for Job Opening which attracts both recruiters and job seekers.
+
+## Explanation
+
+The system allows companies and jobseekers to create accounts and log in so that they can utilize the various functionalities provided in the system. For one to use the system, He/she must be authenticated and given rights to access the various pages.
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
 "Simply its a job portal"
-
-->>TOMORROW FUNCTION TO DO FOR DATES
-1)Get the date from the database then subtract from the current date of today then display the time.
